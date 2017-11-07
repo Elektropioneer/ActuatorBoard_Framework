@@ -1,5 +1,7 @@
-main.o: ../main.c ../dynamixel.h ../ax.h
+main.o: ../main.c ../dynamixel.h ../ax.h ../usart.h
 
 ../dynamixel.h:
 
 ../ax.h:
+
+../usart.h:

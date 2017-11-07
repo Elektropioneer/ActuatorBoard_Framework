@@ -12,9 +12,9 @@
 #define UART1_BAUD 9600UL
 #define UBRR1_VALUE (F_CPU/(16*UART1_BAUD) - 1)
 
-void UART1_Init(unsigned long, char);
-void UART1_Write(unsigned char);
+void UART1_Init(unsigned long baud, char isrOnOff);
+void UART1_Write(unsigned char data);
 unsigned char UART1_Read(void);
-void altUart1Write(unsigned char);
+void altUart1Write(unsigned char data);
 
 #endif
