@@ -56,8 +56,8 @@
 #define AX_PUNCH_L                 48
 #define AX_PUNCH_H                 49
 
-uint8_t ax_set_angle(uint8_t id, uint16_t angle, uint16_t speed);
-uint16_t ax_get_angle(uint8_t id);
+uint8_t ax_set_angle(uint8_t id, int angle, uint16_t speed);
+int ax_get_angle(uint8_t id);
 uint8_t ax_check_moving(uint8_t id);
 
 #endif

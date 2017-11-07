@@ -3,61 +3,61 @@ Actuator_2k18.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         00000024  00800100  00000f7c  00001010  2**0
+  0 .data         00000000  00800100  00000f72  00001006  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  1 .text         00000f7c  00000000  00000000  00000094  2**1
+  1 .text         00000f72  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .bss          00000101  00800124  00800124  00001034  2**0
+  2 .bss          00000101  00800100  00800100  00001006  2**0
                   ALLOC
-  3 .stab         000019b0  00000000  00000000  00001034  2**2
+  3 .stab         00001980  00000000  00000000  00001008  2**2
                   CONTENTS, READONLY, DEBUGGING
-  4 .stabstr      00001091  00000000  00000000  000029e4  2**0
+  4 .stabstr      0000121c  00000000  00000000  00002988  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .comment      00000011  00000000  00000000  00003a75  2**0
+  5 .comment      00000011  00000000  00000000  00003ba4  2**0
                   CONTENTS, READONLY
-  6 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00003a88  2**2
+  6 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00003bb8  2**2
                   CONTENTS, READONLY
 
 Disassembly of section .text:
 
 00000000 <__vectors>:
    0:	0c 94 4a 00 	jmp	0x94	; 0x94 <__ctors_end>
-   4:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-   8:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-   c:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  10:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  14:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  18:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  1c:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  20:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  24:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  28:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  2c:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  30:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  34:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  38:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  3c:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  40:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  44:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  48:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  4c:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  50:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  54:	0c 94 c6 00 	jmp	0x18c	; 0x18c <__vector_21>
-  58:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  5c:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  60:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  64:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  68:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  6c:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  70:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  74:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  78:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  7c:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  80:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  84:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  88:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  8c:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
-  90:	0c 94 69 00 	jmp	0xd2	; 0xd2 <__bad_interrupt>
+   4:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+   8:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+   c:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  10:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  14:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  18:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  1c:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  20:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  24:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  28:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  2c:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  30:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  34:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  38:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  3c:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  40:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  44:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  48:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  4c:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  50:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  54:	0c 94 0d 01 	jmp	0x21a	; 0x21a <__vector_21>
+  58:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  5c:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  60:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  64:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  68:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  6c:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  70:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  74:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  78:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  7c:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  80:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  84:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  88:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  8c:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
+  90:	0c 94 5c 00 	jmp	0xb8	; 0xb8 <__bad_interrupt>
 
 00000094 <__ctors_end>:
   94:	11 24       	eor	r1, r1
@@ -67,958 +67,932 @@ Disassembly of section .text:
   9c:	de bf       	out	0x3e, r29	; 62
   9e:	cd bf       	out	0x3d, r28	; 61
 
-000000a0 <__do_copy_data>:
-  a0:	11 e0       	ldi	r17, 0x01	; 1
+000000a0 <__do_clear_bss>:
+  a0:	22 e0       	ldi	r18, 0x02	; 2
   a2:	a0 e0       	ldi	r26, 0x00	; 0
   a4:	b1 e0       	ldi	r27, 0x01	; 1
-  a6:	ec e7       	ldi	r30, 0x7C	; 124
-  a8:	ff e0       	ldi	r31, 0x0F	; 15
-  aa:	00 e0       	ldi	r16, 0x00	; 0
-  ac:	0b bf       	out	0x3b, r16	; 59
-  ae:	02 c0       	rjmp	.+4      	; 0xb4 <__do_copy_data+0x14>
-  b0:	07 90       	elpm	r0, Z+
-  b2:	0d 92       	st	X+, r0
-  b4:	a4 32       	cpi	r26, 0x24	; 36
-  b6:	b1 07       	cpc	r27, r17
-  b8:	d9 f7       	brne	.-10     	; 0xb0 <__do_copy_data+0x10>
+  a6:	01 c0       	rjmp	.+2      	; 0xaa <.do_clear_bss_start>
 
-000000ba <__do_clear_bss>:
-  ba:	22 e0       	ldi	r18, 0x02	; 2
-  bc:	a4 e2       	ldi	r26, 0x24	; 36
-  be:	b1 e0       	ldi	r27, 0x01	; 1
-  c0:	01 c0       	rjmp	.+2      	; 0xc4 <.do_clear_bss_start>
+000000a8 <.do_clear_bss_loop>:
+  a8:	1d 92       	st	X+, r1
 
-000000c2 <.do_clear_bss_loop>:
-  c2:	1d 92       	st	X+, r1
+000000aa <.do_clear_bss_start>:
+  aa:	a1 30       	cpi	r26, 0x01	; 1
+  ac:	b2 07       	cpc	r27, r18
+  ae:	e1 f7       	brne	.-8      	; 0xa8 <.do_clear_bss_loop>
+  b0:	0e 94 c6 05 	call	0xb8c	; 0xb8c <main>
+  b4:	0c 94 b7 07 	jmp	0xf6e	; 0xf6e <_exit>
 
-000000c4 <.do_clear_bss_start>:
-  c4:	a5 32       	cpi	r26, 0x25	; 37
-  c6:	b2 07       	cpc	r27, r18
-  c8:	e1 f7       	brne	.-8      	; 0xc2 <.do_clear_bss_loop>
-  ca:	0e 94 7e 05 	call	0xafc	; 0xafc <main>
-  ce:	0c 94 bc 07 	jmp	0xf78	; 0xf78 <_exit>
+000000b8 <__bad_interrupt>:
+  b8:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
 
-000000d2 <__bad_interrupt>:
-  d2:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+000000bc <ax_convert_to16>:
 
-000000d6 <ax_set_angle>:
- */
-
+#include <stdio.h>
 #include "ax.h"
 #include "dynamixel.h"
 
-uint8_t ax_set_angle(uint8_t id, uint16_t angle, uint16_t speed) {
-  d6:	cf 93       	push	r28
-  d8:	df 93       	push	r29
-  da:	00 d0       	rcall	.+0      	; 0xdc <ax_set_angle+0x6>
-  dc:	00 d0       	rcall	.+0      	; 0xde <ax_set_angle+0x8>
-  de:	1f 92       	push	r1
-  e0:	cd b7       	in	r28, 0x3d	; 61
-  e2:	de b7       	in	r29, 0x3e	; 62
-  e4:	89 83       	std	Y+1, r24	; 0x01
-  e6:	7b 83       	std	Y+3, r23	; 0x03
-  e8:	6a 83       	std	Y+2, r22	; 0x02
-  ea:	5d 83       	std	Y+5, r21	; 0x05
-  ec:	4c 83       	std	Y+4, r20	; 0x04
-	if(dynamixel_writeword(id, AX_GOAL_SPEED_L, speed) == DYNAMIXEL_SUCCESS && dynamixel_writeword(id, AX_GOAL_POSITION_L, angle) == DYNAMIXEL_SUCCESS)
-  ee:	8c 81       	ldd	r24, Y+4	; 0x04
-  f0:	9d 81       	ldd	r25, Y+5	; 0x05
-  f2:	ac 01       	movw	r20, r24
-  f4:	60 e2       	ldi	r22, 0x20	; 32
-  f6:	89 81       	ldd	r24, Y+1	; 0x01
-  f8:	0e 94 a4 04 	call	0x948	; 0x948 <dynamixel_writeword>
-  fc:	81 30       	cpi	r24, 0x01	; 1
-  fe:	59 f4       	brne	.+22     	; 0x116 <ax_set_angle+0x40>
- 100:	8a 81       	ldd	r24, Y+2	; 0x02
- 102:	9b 81       	ldd	r25, Y+3	; 0x03
- 104:	ac 01       	movw	r20, r24
- 106:	6e e1       	ldi	r22, 0x1E	; 30
- 108:	89 81       	ldd	r24, Y+1	; 0x01
- 10a:	0e 94 a4 04 	call	0x948	; 0x948 <dynamixel_writeword>
- 10e:	81 30       	cpi	r24, 0x01	; 1
- 110:	11 f4       	brne	.+4      	; 0x116 <ax_set_angle+0x40>
+static uint16_t ax_convert_to16(int angle)   		   { return (65535 * angle) / 300;     }
+  bc:	cf 93       	push	r28
+  be:	df 93       	push	r29
+  c0:	00 d0       	rcall	.+0      	; 0xc2 <ax_convert_to16+0x6>
+  c2:	00 d0       	rcall	.+0      	; 0xc4 <ax_convert_to16+0x8>
+  c4:	00 d0       	rcall	.+0      	; 0xc6 <ax_convert_to16+0xa>
+  c6:	cd b7       	in	r28, 0x3d	; 61
+  c8:	de b7       	in	r29, 0x3e	; 62
+  ca:	9a 83       	std	Y+2, r25	; 0x02
+  cc:	89 83       	std	Y+1, r24	; 0x01
+  ce:	89 81       	ldd	r24, Y+1	; 0x01
+  d0:	9a 81       	ldd	r25, Y+2	; 0x02
+  d2:	9c 01       	movw	r18, r24
+  d4:	99 0f       	add	r25, r25
+  d6:	44 0b       	sbc	r20, r20
+  d8:	55 0b       	sbc	r21, r21
+  da:	8f ef       	ldi	r24, 0xFF	; 255
+  dc:	9f ef       	ldi	r25, 0xFF	; 255
+  de:	dc 01       	movw	r26, r24
+  e0:	0e 94 ee 05 	call	0xbdc	; 0xbdc <__muluhisi3>
+  e4:	dc 01       	movw	r26, r24
+  e6:	cb 01       	movw	r24, r22
+  e8:	2c e2       	ldi	r18, 0x2C	; 44
+  ea:	31 e0       	ldi	r19, 0x01	; 1
+  ec:	40 e0       	ldi	r20, 0x00	; 0
+  ee:	50 e0       	ldi	r21, 0x00	; 0
+  f0:	bc 01       	movw	r22, r24
+  f2:	cd 01       	movw	r24, r26
+  f4:	0e 94 cf 05 	call	0xb9e	; 0xb9e <__divmodsi4>
+  f8:	da 01       	movw	r26, r20
+  fa:	c9 01       	movw	r24, r18
+  fc:	26 96       	adiw	r28, 0x06	; 6
+  fe:	0f b6       	in	r0, 0x3f	; 63
+ 100:	f8 94       	cli
+ 102:	de bf       	out	0x3e, r29	; 62
+ 104:	0f be       	out	0x3f, r0	; 63
+ 106:	cd bf       	out	0x3d, r28	; 61
+ 108:	df 91       	pop	r29
+ 10a:	cf 91       	pop	r28
+ 10c:	08 95       	ret
+
+0000010e <ax_convert_toangle>:
+static int 		ax_convert_toangle(uint16_t angle_bit) { return (angle_bit * 300) / 65535; }
+ 10e:	cf 93       	push	r28
+ 110:	df 93       	push	r29
+ 112:	00 d0       	rcall	.+0      	; 0x114 <ax_convert_toangle+0x6>
+ 114:	cd b7       	in	r28, 0x3d	; 61
+ 116:	de b7       	in	r29, 0x3e	; 62
+ 118:	9a 83       	std	Y+2, r25	; 0x02
+ 11a:	89 83       	std	Y+1, r24	; 0x01
+ 11c:	49 81       	ldd	r20, Y+1	; 0x01
+ 11e:	5a 81       	ldd	r21, Y+2	; 0x02
+ 120:	2c e2       	ldi	r18, 0x2C	; 44
+ 122:	31 e0       	ldi	r19, 0x01	; 1
+ 124:	42 9f       	mul	r20, r18
+ 126:	c0 01       	movw	r24, r0
+ 128:	43 9f       	mul	r20, r19
+ 12a:	90 0d       	add	r25, r0
+ 12c:	52 9f       	mul	r21, r18
+ 12e:	90 0d       	add	r25, r0
+ 130:	11 24       	eor	r1, r1
+ 132:	21 e0       	ldi	r18, 0x01	; 1
+ 134:	30 e0       	ldi	r19, 0x00	; 0
+ 136:	8f 3f       	cpi	r24, 0xFF	; 255
+ 138:	9f 4f       	sbci	r25, 0xFF	; 255
+ 13a:	10 f4       	brcc	.+4      	; 0x140 <ax_convert_toangle+0x32>
+ 13c:	20 e0       	ldi	r18, 0x00	; 0
+ 13e:	30 e0       	ldi	r19, 0x00	; 0
+ 140:	c9 01       	movw	r24, r18
+ 142:	0f 90       	pop	r0
+ 144:	0f 90       	pop	r0
+ 146:	df 91       	pop	r29
+ 148:	cf 91       	pop	r28
+ 14a:	08 95       	ret
+
+0000014c <ax_set_angle>:
+
+uint8_t ax_set_angle(uint8_t id, int angle, uint16_t speed) {
+ 14c:	cf 93       	push	r28
+ 14e:	df 93       	push	r29
+ 150:	cd b7       	in	r28, 0x3d	; 61
+ 152:	de b7       	in	r29, 0x3e	; 62
+ 154:	27 97       	sbiw	r28, 0x07	; 7
+ 156:	0f b6       	in	r0, 0x3f	; 63
+ 158:	f8 94       	cli
+ 15a:	de bf       	out	0x3e, r29	; 62
+ 15c:	0f be       	out	0x3f, r0	; 63
+ 15e:	cd bf       	out	0x3d, r28	; 61
+ 160:	8b 83       	std	Y+3, r24	; 0x03
+ 162:	7d 83       	std	Y+5, r23	; 0x05
+ 164:	6c 83       	std	Y+4, r22	; 0x04
+ 166:	5f 83       	std	Y+7, r21	; 0x07
+ 168:	4e 83       	std	Y+6, r20	; 0x06
+	uint16_t ax_speed = ax_convert_to16(angle);
+ 16a:	8c 81       	ldd	r24, Y+4	; 0x04
+ 16c:	9d 81       	ldd	r25, Y+5	; 0x05
+ 16e:	0e 94 5e 00 	call	0xbc	; 0xbc <ax_convert_to16>
+ 172:	9a 83       	std	Y+2, r25	; 0x02
+ 174:	89 83       	std	Y+1, r24	; 0x01
+	if(dynamixel_writeword(id, AX_GOAL_SPEED_L, ax_speed) == DYNAMIXEL_SUCCESS && dynamixel_writeword(id, AX_GOAL_POSITION_L, angle) == DYNAMIXEL_SUCCESS)
+ 176:	89 81       	ldd	r24, Y+1	; 0x01
+ 178:	9a 81       	ldd	r25, Y+2	; 0x02
+ 17a:	ac 01       	movw	r20, r24
+ 17c:	60 e2       	ldi	r22, 0x20	; 32
+ 17e:	8b 81       	ldd	r24, Y+3	; 0x03
+ 180:	0e 94 ec 04 	call	0x9d8	; 0x9d8 <dynamixel_writeword>
+ 184:	81 30       	cpi	r24, 0x01	; 1
+ 186:	59 f4       	brne	.+22     	; 0x19e <ax_set_angle+0x52>
+ 188:	8c 81       	ldd	r24, Y+4	; 0x04
+ 18a:	9d 81       	ldd	r25, Y+5	; 0x05
+ 18c:	ac 01       	movw	r20, r24
+ 18e:	6e e1       	ldi	r22, 0x1E	; 30
+ 190:	8b 81       	ldd	r24, Y+3	; 0x03
+ 192:	0e 94 ec 04 	call	0x9d8	; 0x9d8 <dynamixel_writeword>
+ 196:	81 30       	cpi	r24, 0x01	; 1
+ 198:	11 f4       	brne	.+4      	; 0x19e <ax_set_angle+0x52>
 		return 1;
- 112:	81 e0       	ldi	r24, 0x01	; 1
- 114:	01 c0       	rjmp	.+2      	; 0x118 <ax_set_angle+0x42>
+ 19a:	81 e0       	ldi	r24, 0x01	; 1
+ 19c:	01 c0       	rjmp	.+2      	; 0x1a0 <ax_set_angle+0x54>
 	else
 		return 0;
- 116:	80 e0       	ldi	r24, 0x00	; 0
+ 19e:	80 e0       	ldi	r24, 0x00	; 0
 }
- 118:	0f 90       	pop	r0
- 11a:	0f 90       	pop	r0
- 11c:	0f 90       	pop	r0
- 11e:	0f 90       	pop	r0
- 120:	0f 90       	pop	r0
- 122:	df 91       	pop	r29
- 124:	cf 91       	pop	r28
- 126:	08 95       	ret
+ 1a0:	27 96       	adiw	r28, 0x07	; 7
+ 1a2:	0f b6       	in	r0, 0x3f	; 63
+ 1a4:	f8 94       	cli
+ 1a6:	de bf       	out	0x3e, r29	; 62
+ 1a8:	0f be       	out	0x3f, r0	; 63
+ 1aa:	cd bf       	out	0x3d, r28	; 61
+ 1ac:	df 91       	pop	r29
+ 1ae:	cf 91       	pop	r28
+ 1b0:	08 95       	ret
 
-00000128 <ax_get_angle>:
+000001b2 <ax_get_angle>:
 
-uint16_t ax_get_angle(uint8_t id) {
- 128:	cf 93       	push	r28
- 12a:	df 93       	push	r29
- 12c:	00 d0       	rcall	.+0      	; 0x12e <ax_get_angle+0x6>
- 12e:	1f 92       	push	r1
- 130:	cd b7       	in	r28, 0x3d	; 61
- 132:	de b7       	in	r29, 0x3e	; 62
- 134:	8b 83       	std	Y+3, r24	; 0x03
+int ax_get_angle(uint8_t id) {
+ 1b2:	cf 93       	push	r28
+ 1b4:	df 93       	push	r29
+ 1b6:	00 d0       	rcall	.+0      	; 0x1b8 <ax_get_angle+0x6>
+ 1b8:	1f 92       	push	r1
+ 1ba:	cd b7       	in	r28, 0x3d	; 61
+ 1bc:	de b7       	in	r29, 0x3e	; 62
+ 1be:	8b 83       	std	Y+3, r24	; 0x03
 	uint16_t present_angle;
 	if(dynamixel_readword(id, AX_PRESENT_POSITION_L, &present_angle) == DYNAMIXEL_SUCCESS)
- 136:	ce 01       	movw	r24, r28
- 138:	01 96       	adiw	r24, 0x01	; 1
- 13a:	ac 01       	movw	r20, r24
- 13c:	64 e2       	ldi	r22, 0x24	; 36
- 13e:	8b 81       	ldd	r24, Y+3	; 0x03
- 140:	0e 94 ec 03 	call	0x7d8	; 0x7d8 <dynamixel_readword>
- 144:	81 30       	cpi	r24, 0x01	; 1
- 146:	19 f4       	brne	.+6      	; 0x14e <ax_get_angle+0x26>
-		return present_angle;
- 148:	89 81       	ldd	r24, Y+1	; 0x01
- 14a:	9a 81       	ldd	r25, Y+2	; 0x02
- 14c:	02 c0       	rjmp	.+4      	; 0x152 <ax_get_angle+0x2a>
+ 1c0:	ce 01       	movw	r24, r28
+ 1c2:	01 96       	adiw	r24, 0x01	; 1
+ 1c4:	ac 01       	movw	r20, r24
+ 1c6:	64 e2       	ldi	r22, 0x24	; 36
+ 1c8:	8b 81       	ldd	r24, Y+3	; 0x03
+ 1ca:	0e 94 34 04 	call	0x868	; 0x868 <dynamixel_readword>
+ 1ce:	81 30       	cpi	r24, 0x01	; 1
+ 1d0:	29 f4       	brne	.+10     	; 0x1dc <ax_get_angle+0x2a>
+		return ax_convert_toangle(present_angle);
+ 1d2:	89 81       	ldd	r24, Y+1	; 0x01
+ 1d4:	9a 81       	ldd	r25, Y+2	; 0x02
+ 1d6:	0e 94 87 00 	call	0x10e	; 0x10e <ax_convert_toangle>
+ 1da:	02 c0       	rjmp	.+4      	; 0x1e0 <ax_get_angle+0x2e>
 	else
 		return 0;
- 14e:	80 e0       	ldi	r24, 0x00	; 0
- 150:	90 e0       	ldi	r25, 0x00	; 0
+ 1dc:	80 e0       	ldi	r24, 0x00	; 0
+ 1de:	90 e0       	ldi	r25, 0x00	; 0
 }
- 152:	0f 90       	pop	r0
- 154:	0f 90       	pop	r0
- 156:	0f 90       	pop	r0
- 158:	df 91       	pop	r29
- 15a:	cf 91       	pop	r28
- 15c:	08 95       	ret
+ 1e0:	0f 90       	pop	r0
+ 1e2:	0f 90       	pop	r0
+ 1e4:	0f 90       	pop	r0
+ 1e6:	df 91       	pop	r29
+ 1e8:	cf 91       	pop	r28
+ 1ea:	08 95       	ret
 
-0000015e <ax_check_moving>:
+000001ec <ax_check_moving>:
 
 uint8_t ax_check_moving(uint8_t id) {
- 15e:	cf 93       	push	r28
- 160:	df 93       	push	r29
- 162:	00 d0       	rcall	.+0      	; 0x164 <ax_check_moving+0x6>
- 164:	cd b7       	in	r28, 0x3d	; 61
- 166:	de b7       	in	r29, 0x3e	; 62
- 168:	8a 83       	std	Y+2, r24	; 0x02
+ 1ec:	cf 93       	push	r28
+ 1ee:	df 93       	push	r29
+ 1f0:	00 d0       	rcall	.+0      	; 0x1f2 <ax_check_moving+0x6>
+ 1f2:	cd b7       	in	r28, 0x3d	; 61
+ 1f4:	de b7       	in	r29, 0x3e	; 62
+ 1f6:	8a 83       	std	Y+2, r24	; 0x02
 	uint8_t moving_status;
 	if(dynamixel_readbyte(id, AX_MOVING, &moving_status) == DYNAMIXEL_SUCCESS)
- 16a:	ce 01       	movw	r24, r28
- 16c:	01 96       	adiw	r24, 0x01	; 1
- 16e:	ac 01       	movw	r20, r24
- 170:	6e e2       	ldi	r22, 0x2E	; 46
- 172:	8a 81       	ldd	r24, Y+2	; 0x02
- 174:	0e 94 b9 03 	call	0x772	; 0x772 <dynamixel_readbyte>
- 178:	81 30       	cpi	r24, 0x01	; 1
- 17a:	11 f4       	brne	.+4      	; 0x180 <ax_check_moving+0x22>
+ 1f8:	ce 01       	movw	r24, r28
+ 1fa:	01 96       	adiw	r24, 0x01	; 1
+ 1fc:	ac 01       	movw	r20, r24
+ 1fe:	6e e2       	ldi	r22, 0x2E	; 46
+ 200:	8a 81       	ldd	r24, Y+2	; 0x02
+ 202:	0e 94 01 04 	call	0x802	; 0x802 <dynamixel_readbyte>
+ 206:	81 30       	cpi	r24, 0x01	; 1
+ 208:	11 f4       	brne	.+4      	; 0x20e <ax_check_moving+0x22>
 		return moving_status;
- 17c:	89 81       	ldd	r24, Y+1	; 0x01
- 17e:	01 c0       	rjmp	.+2      	; 0x182 <ax_check_moving+0x24>
+ 20a:	89 81       	ldd	r24, Y+1	; 0x01
+ 20c:	01 c0       	rjmp	.+2      	; 0x210 <ax_check_moving+0x24>
 	else
 		return 0;
- 180:	80 e0       	ldi	r24, 0x00	; 0
+ 20e:	80 e0       	ldi	r24, 0x00	; 0
 }
- 182:	0f 90       	pop	r0
- 184:	0f 90       	pop	r0
- 186:	df 91       	pop	r29
- 188:	cf 91       	pop	r28
- 18a:	08 95       	ret
+ 210:	0f 90       	pop	r0
+ 212:	0f 90       	pop	r0
+ 214:	df 91       	pop	r29
+ 216:	cf 91       	pop	r28
+ 218:	08 95       	ret
 
-0000018c <__vector_21>:
+0000021a <__vector_21>:
 volatile uint8_t dynamixel_txpacket[DYNAMIXEL_PACKET_SIZE];
 volatile uint8_t dynamixel_rxpacket[DYNAMIXEL_PACKET_SIZE];
 volatile uint8_t dynamixel_rxindex = 0;
 
 ISR(USART0_RX_vect)
 {
- 18c:	1f 92       	push	r1
- 18e:	0f 92       	push	r0
- 190:	00 90 5f 00 	lds	r0, 0x005F
- 194:	0f 92       	push	r0
- 196:	11 24       	eor	r1, r1
- 198:	00 90 5b 00 	lds	r0, 0x005B
- 19c:	0f 92       	push	r0
- 19e:	2f 93       	push	r18
- 1a0:	3f 93       	push	r19
- 1a2:	8f 93       	push	r24
- 1a4:	9f 93       	push	r25
- 1a6:	ef 93       	push	r30
- 1a8:	ff 93       	push	r31
- 1aa:	cf 93       	push	r28
- 1ac:	df 93       	push	r29
- 1ae:	cd b7       	in	r28, 0x3d	; 61
- 1b0:	de b7       	in	r29, 0x3e	; 62
+ 21a:	1f 92       	push	r1
+ 21c:	0f 92       	push	r0
+ 21e:	00 90 5f 00 	lds	r0, 0x005F
+ 222:	0f 92       	push	r0
+ 224:	11 24       	eor	r1, r1
+ 226:	00 90 5b 00 	lds	r0, 0x005B
+ 22a:	0f 92       	push	r0
+ 22c:	2f 93       	push	r18
+ 22e:	3f 93       	push	r19
+ 230:	8f 93       	push	r24
+ 232:	9f 93       	push	r25
+ 234:	ef 93       	push	r30
+ 236:	ff 93       	push	r31
+ 238:	cf 93       	push	r28
+ 23a:	df 93       	push	r29
+ 23c:	cd b7       	in	r28, 0x3d	; 61
+ 23e:	de b7       	in	r29, 0x3e	; 62
 	dynamixel_rxpacket[dynamixel_rxindex++] = UDR0;
- 1b2:	80 91 24 01 	lds	r24, 0x0124
- 1b6:	91 e0       	ldi	r25, 0x01	; 1
- 1b8:	98 0f       	add	r25, r24
- 1ba:	90 93 24 01 	sts	0x0124, r25
- 1be:	88 2f       	mov	r24, r24
- 1c0:	90 e0       	ldi	r25, 0x00	; 0
- 1c2:	26 ec       	ldi	r18, 0xC6	; 198
- 1c4:	30 e0       	ldi	r19, 0x00	; 0
- 1c6:	f9 01       	movw	r30, r18
- 1c8:	20 81       	ld	r18, Z
- 1ca:	8b 55       	subi	r24, 0x5B	; 91
- 1cc:	9e 4f       	sbci	r25, 0xFE	; 254
- 1ce:	fc 01       	movw	r30, r24
- 1d0:	20 83       	st	Z, r18
+ 240:	80 91 00 01 	lds	r24, 0x0100
+ 244:	91 e0       	ldi	r25, 0x01	; 1
+ 246:	98 0f       	add	r25, r24
+ 248:	90 93 00 01 	sts	0x0100, r25
+ 24c:	88 2f       	mov	r24, r24
+ 24e:	90 e0       	ldi	r25, 0x00	; 0
+ 250:	26 ec       	ldi	r18, 0xC6	; 198
+ 252:	30 e0       	ldi	r19, 0x00	; 0
+ 254:	f9 01       	movw	r30, r18
+ 256:	20 81       	ld	r18, Z
+ 258:	8f 57       	subi	r24, 0x7F	; 127
+ 25a:	9e 4f       	sbci	r25, 0xFE	; 254
+ 25c:	fc 01       	movw	r30, r24
+ 25e:	20 83       	st	Z, r18
 }
- 1d2:	df 91       	pop	r29
- 1d4:	cf 91       	pop	r28
- 1d6:	ff 91       	pop	r31
- 1d8:	ef 91       	pop	r30
- 1da:	9f 91       	pop	r25
- 1dc:	8f 91       	pop	r24
- 1de:	3f 91       	pop	r19
- 1e0:	2f 91       	pop	r18
- 1e2:	0f 90       	pop	r0
- 1e4:	00 92 5b 00 	sts	0x005B, r0
- 1e8:	0f 90       	pop	r0
- 1ea:	00 92 5f 00 	sts	0x005F, r0
- 1ee:	0f 90       	pop	r0
- 1f0:	1f 90       	pop	r1
- 1f2:	18 95       	reti
+ 260:	df 91       	pop	r29
+ 262:	cf 91       	pop	r28
+ 264:	ff 91       	pop	r31
+ 266:	ef 91       	pop	r30
+ 268:	9f 91       	pop	r25
+ 26a:	8f 91       	pop	r24
+ 26c:	3f 91       	pop	r19
+ 26e:	2f 91       	pop	r18
+ 270:	0f 90       	pop	r0
+ 272:	00 92 5b 00 	sts	0x005B, r0
+ 276:	0f 90       	pop	r0
+ 278:	00 92 5f 00 	sts	0x005F, r0
+ 27c:	0f 90       	pop	r0
+ 27e:	1f 90       	pop	r1
+ 280:	18 95       	reti
 
-000001f4 <dynamixel_init>:
+00000282 <dynamixel_init>:
 
 void dynamixel_init(double baud)
 {
- 1f4:	cf 93       	push	r28
- 1f6:	df 93       	push	r29
- 1f8:	00 d0       	rcall	.+0      	; 0x1fa <dynamixel_init+0x6>
- 1fa:	00 d0       	rcall	.+0      	; 0x1fc <dynamixel_init+0x8>
- 1fc:	cd b7       	in	r28, 0x3d	; 61
- 1fe:	de b7       	in	r29, 0x3e	; 62
- 200:	69 83       	std	Y+1, r22	; 0x01
- 202:	7a 83       	std	Y+2, r23	; 0x02
- 204:	8b 83       	std	Y+3, r24	; 0x03
- 206:	9c 83       	std	Y+4, r25	; 0x04
+ 282:	cf 93       	push	r28
+ 284:	df 93       	push	r29
+ 286:	00 d0       	rcall	.+0      	; 0x288 <dynamixel_init+0x6>
+ 288:	00 d0       	rcall	.+0      	; 0x28a <dynamixel_init+0x8>
+ 28a:	cd b7       	in	r28, 0x3d	; 61
+ 28c:	de b7       	in	r29, 0x3e	; 62
+ 28e:	69 83       	std	Y+1, r22	; 0x01
+ 290:	7a 83       	std	Y+2, r23	; 0x02
+ 292:	8b 83       	std	Y+3, r24	; 0x03
+ 294:	9c 83       	std	Y+4, r25	; 0x04
 	// Set UART baudrate
 	UBRR0H = ((F_CPU / 8 + DYNAMIXEL_BAUDRATE / 2) / DYNAMIXEL_BAUDRATE - 1) >> 8;
- 208:	85 ec       	ldi	r24, 0xC5	; 197
- 20a:	90 e0       	ldi	r25, 0x00	; 0
- 20c:	fc 01       	movw	r30, r24
- 20e:	10 82       	st	Z, r1
+ 296:	85 ec       	ldi	r24, 0xC5	; 197
+ 298:	90 e0       	ldi	r25, 0x00	; 0
+ 29a:	fc 01       	movw	r30, r24
+ 29c:	10 82       	st	Z, r1
 	UBRR0L = ((F_CPU / 8 + DYNAMIXEL_BAUDRATE / 2) / DYNAMIXEL_BAUDRATE - 1);
- 210:	84 ec       	ldi	r24, 0xC4	; 196
- 212:	90 e0       	ldi	r25, 0x00	; 0
- 214:	fc 01       	movw	r30, r24
- 216:	10 82       	st	Z, r1
+ 29e:	84 ec       	ldi	r24, 0xC4	; 196
+ 2a0:	90 e0       	ldi	r25, 0x00	; 0
+ 2a2:	25 e0       	ldi	r18, 0x05	; 5
+ 2a4:	fc 01       	movw	r30, r24
+ 2a6:	20 83       	st	Z, r18
 
 	// Enable UART TX, RX, and RX interrupt
 	UCSR0B |= (1 << TXEN0);
- 218:	81 ec       	ldi	r24, 0xC1	; 193
- 21a:	90 e0       	ldi	r25, 0x00	; 0
- 21c:	21 ec       	ldi	r18, 0xC1	; 193
- 21e:	30 e0       	ldi	r19, 0x00	; 0
- 220:	f9 01       	movw	r30, r18
- 222:	20 81       	ld	r18, Z
- 224:	28 60       	ori	r18, 0x08	; 8
- 226:	fc 01       	movw	r30, r24
- 228:	20 83       	st	Z, r18
+ 2a8:	81 ec       	ldi	r24, 0xC1	; 193
+ 2aa:	90 e0       	ldi	r25, 0x00	; 0
+ 2ac:	21 ec       	ldi	r18, 0xC1	; 193
+ 2ae:	30 e0       	ldi	r19, 0x00	; 0
+ 2b0:	f9 01       	movw	r30, r18
+ 2b2:	20 81       	ld	r18, Z
+ 2b4:	28 60       	ori	r18, 0x08	; 8
+ 2b6:	fc 01       	movw	r30, r24
+ 2b8:	20 83       	st	Z, r18
 	UCSR0B |= (1 << RXEN0);
- 22a:	81 ec       	ldi	r24, 0xC1	; 193
- 22c:	90 e0       	ldi	r25, 0x00	; 0
- 22e:	21 ec       	ldi	r18, 0xC1	; 193
- 230:	30 e0       	ldi	r19, 0x00	; 0
- 232:	f9 01       	movw	r30, r18
- 234:	20 81       	ld	r18, Z
- 236:	20 61       	ori	r18, 0x10	; 16
- 238:	fc 01       	movw	r30, r24
- 23a:	20 83       	st	Z, r18
+ 2ba:	81 ec       	ldi	r24, 0xC1	; 193
+ 2bc:	90 e0       	ldi	r25, 0x00	; 0
+ 2be:	21 ec       	ldi	r18, 0xC1	; 193
+ 2c0:	30 e0       	ldi	r19, 0x00	; 0
+ 2c2:	f9 01       	movw	r30, r18
+ 2c4:	20 81       	ld	r18, Z
+ 2c6:	20 61       	ori	r18, 0x10	; 16
+ 2c8:	fc 01       	movw	r30, r24
+ 2ca:	20 83       	st	Z, r18
 	UCSR0B |= (1 << RXCIE0);
- 23c:	81 ec       	ldi	r24, 0xC1	; 193
- 23e:	90 e0       	ldi	r25, 0x00	; 0
- 240:	21 ec       	ldi	r18, 0xC1	; 193
- 242:	30 e0       	ldi	r19, 0x00	; 0
- 244:	f9 01       	movw	r30, r18
- 246:	20 81       	ld	r18, Z
- 248:	20 68       	ori	r18, 0x80	; 128
- 24a:	fc 01       	movw	r30, r24
- 24c:	20 83       	st	Z, r18
+ 2cc:	81 ec       	ldi	r24, 0xC1	; 193
+ 2ce:	90 e0       	ldi	r25, 0x00	; 0
+ 2d0:	21 ec       	ldi	r18, 0xC1	; 193
+ 2d2:	30 e0       	ldi	r19, 0x00	; 0
+ 2d4:	f9 01       	movw	r30, r18
+ 2d6:	20 81       	ld	r18, Z
+ 2d8:	20 68       	ori	r18, 0x80	; 128
+ 2da:	fc 01       	movw	r30, r24
+ 2dc:	20 83       	st	Z, r18
 
 	// Set UART direction pins as outputs
 	DDRD |= (1 << PD2);
- 24e:	8a e2       	ldi	r24, 0x2A	; 42
- 250:	90 e0       	ldi	r25, 0x00	; 0
- 252:	2a e2       	ldi	r18, 0x2A	; 42
- 254:	30 e0       	ldi	r19, 0x00	; 0
- 256:	f9 01       	movw	r30, r18
- 258:	20 81       	ld	r18, Z
- 25a:	24 60       	ori	r18, 0x04	; 4
- 25c:	fc 01       	movw	r30, r24
- 25e:	20 83       	st	Z, r18
+ 2de:	8a e2       	ldi	r24, 0x2A	; 42
+ 2e0:	90 e0       	ldi	r25, 0x00	; 0
+ 2e2:	2a e2       	ldi	r18, 0x2A	; 42
+ 2e4:	30 e0       	ldi	r19, 0x00	; 0
+ 2e6:	f9 01       	movw	r30, r18
+ 2e8:	20 81       	ld	r18, Z
+ 2ea:	24 60       	ori	r18, 0x04	; 4
+ 2ec:	fc 01       	movw	r30, r24
+ 2ee:	20 83       	st	Z, r18
 	DDRD |= (1 << PD3);
- 260:	8a e2       	ldi	r24, 0x2A	; 42
- 262:	90 e0       	ldi	r25, 0x00	; 0
- 264:	2a e2       	ldi	r18, 0x2A	; 42
- 266:	30 e0       	ldi	r19, 0x00	; 0
- 268:	f9 01       	movw	r30, r18
- 26a:	20 81       	ld	r18, Z
- 26c:	28 60       	ori	r18, 0x08	; 8
- 26e:	fc 01       	movw	r30, r24
- 270:	20 83       	st	Z, r18
+ 2f0:	8a e2       	ldi	r24, 0x2A	; 42
+ 2f2:	90 e0       	ldi	r25, 0x00	; 0
+ 2f4:	2a e2       	ldi	r18, 0x2A	; 42
+ 2f6:	30 e0       	ldi	r19, 0x00	; 0
+ 2f8:	f9 01       	movw	r30, r18
+ 2fa:	20 81       	ld	r18, Z
+ 2fc:	28 60       	ori	r18, 0x08	; 8
+ 2fe:	fc 01       	movw	r30, r24
+ 300:	20 83       	st	Z, r18
 
 	// Reset rx index
 	dynamixel_rxindex = 0;
- 272:	10 92 24 01 	sts	0x0124, r1
+ 302:	10 92 00 01 	sts	0x0100, r1
 }
- 276:	0f 90       	pop	r0
- 278:	0f 90       	pop	r0
- 27a:	0f 90       	pop	r0
- 27c:	0f 90       	pop	r0
- 27e:	df 91       	pop	r29
- 280:	cf 91       	pop	r28
- 282:	08 95       	ret
+ 306:	0f 90       	pop	r0
+ 308:	0f 90       	pop	r0
+ 30a:	0f 90       	pop	r0
+ 30c:	0f 90       	pop	r0
+ 30e:	df 91       	pop	r29
+ 310:	cf 91       	pop	r28
+ 312:	08 95       	ret
 
-00000284 <dynamixel_settx>:
+00000314 <dynamixel_settx>:
 
 void dynamixel_settx(void)
 {
- 284:	cf 93       	push	r28
- 286:	df 93       	push	r29
- 288:	cd b7       	in	r28, 0x3d	; 61
- 28a:	de b7       	in	r29, 0x3e	; 62
+ 314:	cf 93       	push	r28
+ 316:	df 93       	push	r29
+ 318:	cd b7       	in	r28, 0x3d	; 61
+ 31a:	de b7       	in	r29, 0x3e	; 62
 	// Set UART direction pins
 	PORTD |= (1 << PD2);
- 28c:	8b e2       	ldi	r24, 0x2B	; 43
- 28e:	90 e0       	ldi	r25, 0x00	; 0
- 290:	2b e2       	ldi	r18, 0x2B	; 43
- 292:	30 e0       	ldi	r19, 0x00	; 0
- 294:	f9 01       	movw	r30, r18
- 296:	20 81       	ld	r18, Z
- 298:	24 60       	ori	r18, 0x04	; 4
- 29a:	fc 01       	movw	r30, r24
- 29c:	20 83       	st	Z, r18
+ 31c:	8b e2       	ldi	r24, 0x2B	; 43
+ 31e:	90 e0       	ldi	r25, 0x00	; 0
+ 320:	2b e2       	ldi	r18, 0x2B	; 43
+ 322:	30 e0       	ldi	r19, 0x00	; 0
+ 324:	f9 01       	movw	r30, r18
+ 326:	20 81       	ld	r18, Z
+ 328:	24 60       	ori	r18, 0x04	; 4
+ 32a:	fc 01       	movw	r30, r24
+ 32c:	20 83       	st	Z, r18
 	PORTD &= ~(1 << PD3);
- 29e:	8b e2       	ldi	r24, 0x2B	; 43
- 2a0:	90 e0       	ldi	r25, 0x00	; 0
- 2a2:	2b e2       	ldi	r18, 0x2B	; 43
- 2a4:	30 e0       	ldi	r19, 0x00	; 0
- 2a6:	f9 01       	movw	r30, r18
- 2a8:	20 81       	ld	r18, Z
- 2aa:	27 7f       	andi	r18, 0xF7	; 247
- 2ac:	fc 01       	movw	r30, r24
- 2ae:	20 83       	st	Z, r18
+ 32e:	8b e2       	ldi	r24, 0x2B	; 43
+ 330:	90 e0       	ldi	r25, 0x00	; 0
+ 332:	2b e2       	ldi	r18, 0x2B	; 43
+ 334:	30 e0       	ldi	r19, 0x00	; 0
+ 336:	f9 01       	movw	r30, r18
+ 338:	20 81       	ld	r18, Z
+ 33a:	27 7f       	andi	r18, 0xF7	; 247
+ 33c:	fc 01       	movw	r30, r24
+ 33e:	20 83       	st	Z, r18
 
 	//UCSR0B |= (1 << TXEN0);
 	//UCSR0B &= ~(1 << RXEN0);
 	//UCSR0B &= ~(1 << RXCIE0);
 }
- 2b0:	df 91       	pop	r29
- 2b2:	cf 91       	pop	r28
- 2b4:	08 95       	ret
+ 340:	df 91       	pop	r29
+ 342:	cf 91       	pop	r28
+ 344:	08 95       	ret
 
-000002b6 <dynamixel_setrx>:
+00000346 <dynamixel_setrx>:
 
 void dynamixel_setrx(void)
 {
- 2b6:	cf 93       	push	r28
- 2b8:	df 93       	push	r29
- 2ba:	cd b7       	in	r28, 0x3d	; 61
- 2bc:	de b7       	in	r29, 0x3e	; 62
- 2be:	a0 97       	sbiw	r28, 0x20	; 32
- 2c0:	0f b6       	in	r0, 0x3f	; 63
- 2c2:	f8 94       	cli
- 2c4:	de bf       	out	0x3e, r29	; 62
- 2c6:	0f be       	out	0x3f, r0	; 63
- 2c8:	cd bf       	out	0x3d, r28	; 61
+ 346:	cf 93       	push	r28
+ 348:	df 93       	push	r29
+ 34a:	cd b7       	in	r28, 0x3d	; 61
+ 34c:	de b7       	in	r29, 0x3e	; 62
+ 34e:	a0 97       	sbiw	r28, 0x20	; 32
+ 350:	0f b6       	in	r0, 0x3f	; 63
+ 352:	f8 94       	cli
+ 354:	de bf       	out	0x3e, r29	; 62
+ 356:	0f be       	out	0x3f, r0	; 63
+ 358:	cd bf       	out	0x3d, r28	; 61
 	// Wait for TX complete flag before turning the bus around
 	while(bit_is_clear(UCSR0A, TXC0));
- 2ca:	00 00       	nop
- 2cc:	80 ec       	ldi	r24, 0xC0	; 192
- 2ce:	90 e0       	ldi	r25, 0x00	; 0
- 2d0:	fc 01       	movw	r30, r24
- 2d2:	80 81       	ld	r24, Z
- 2d4:	88 2f       	mov	r24, r24
- 2d6:	90 e0       	ldi	r25, 0x00	; 0
- 2d8:	80 74       	andi	r24, 0x40	; 64
- 2da:	99 27       	eor	r25, r25
- 2dc:	89 2b       	or	r24, r25
- 2de:	b1 f3       	breq	.-20     	; 0x2cc <dynamixel_setrx+0x16>
- 2e0:	80 e0       	ldi	r24, 0x00	; 0
- 2e2:	90 e0       	ldi	r25, 0x00	; 0
- 2e4:	a0 e8       	ldi	r26, 0x80	; 128
- 2e6:	bf e3       	ldi	r27, 0x3F	; 63
- 2e8:	89 83       	std	Y+1, r24	; 0x01
- 2ea:	9a 83       	std	Y+2, r25	; 0x02
- 2ec:	ab 83       	std	Y+3, r26	; 0x03
- 2ee:	bc 83       	std	Y+4, r27	; 0x04
+ 35a:	00 00       	nop
+ 35c:	80 ec       	ldi	r24, 0xC0	; 192
+ 35e:	90 e0       	ldi	r25, 0x00	; 0
+ 360:	fc 01       	movw	r30, r24
+ 362:	80 81       	ld	r24, Z
+ 364:	88 2f       	mov	r24, r24
+ 366:	90 e0       	ldi	r25, 0x00	; 0
+ 368:	80 74       	andi	r24, 0x40	; 64
+ 36a:	99 27       	eor	r25, r25
+ 36c:	89 2b       	or	r24, r25
+ 36e:	b1 f3       	breq	.-20     	; 0x35c <dynamixel_setrx+0x16>
+ 370:	80 e0       	ldi	r24, 0x00	; 0
+ 372:	90 e0       	ldi	r25, 0x00	; 0
+ 374:	a0 e8       	ldi	r26, 0x80	; 128
+ 376:	bf e3       	ldi	r27, 0x3F	; 63
+ 378:	89 83       	std	Y+1, r24	; 0x01
+ 37a:	9a 83       	std	Y+2, r25	; 0x02
+ 37c:	ab 83       	std	Y+3, r26	; 0x03
+ 37e:	bc 83       	std	Y+4, r27	; 0x04
 	__builtin_avr_delay_cycles(__ticks_dc);
 
 #else
 	uint8_t __ticks;
 	double __tmp2 ; 
 	__tmp = ((F_CPU) / 3e6) * __us;
- 2f0:	2a ef       	ldi	r18, 0xFA	; 250
- 2f2:	3d ee       	ldi	r19, 0xED	; 237
- 2f4:	4b e6       	ldi	r20, 0x6B	; 107
- 2f6:	50 e4       	ldi	r21, 0x40	; 64
- 2f8:	69 81       	ldd	r22, Y+1	; 0x01
- 2fa:	7a 81       	ldd	r23, Y+2	; 0x02
- 2fc:	8b 81       	ldd	r24, Y+3	; 0x03
- 2fe:	9c 81       	ldd	r25, Y+4	; 0x04
- 300:	0e 94 4f 07 	call	0xe9e	; 0xe9e <__mulsf3>
- 304:	dc 01       	movw	r26, r24
- 306:	cb 01       	movw	r24, r22
- 308:	8d 83       	std	Y+5, r24	; 0x05
- 30a:	9e 83       	std	Y+6, r25	; 0x06
- 30c:	af 83       	std	Y+7, r26	; 0x07
- 30e:	b8 87       	std	Y+8, r27	; 0x08
+ 380:	2a ef       	ldi	r18, 0xFA	; 250
+ 382:	3d ee       	ldi	r19, 0xED	; 237
+ 384:	4b e6       	ldi	r20, 0x6B	; 107
+ 386:	50 e4       	ldi	r21, 0x40	; 64
+ 388:	69 81       	ldd	r22, Y+1	; 0x01
+ 38a:	7a 81       	ldd	r23, Y+2	; 0x02
+ 38c:	8b 81       	ldd	r24, Y+3	; 0x03
+ 38e:	9c 81       	ldd	r25, Y+4	; 0x04
+ 390:	0e 94 4a 07 	call	0xe94	; 0xe94 <__mulsf3>
+ 394:	dc 01       	movw	r26, r24
+ 396:	cb 01       	movw	r24, r22
+ 398:	8d 83       	std	Y+5, r24	; 0x05
+ 39a:	9e 83       	std	Y+6, r25	; 0x06
+ 39c:	af 83       	std	Y+7, r26	; 0x07
+ 39e:	b8 87       	std	Y+8, r27	; 0x08
 	__tmp2 = ((F_CPU) / 4e6) * __us;
- 310:	2c e7       	ldi	r18, 0x7C	; 124
- 312:	32 ef       	ldi	r19, 0xF2	; 242
- 314:	40 e3       	ldi	r20, 0x30	; 48
- 316:	50 e4       	ldi	r21, 0x40	; 64
- 318:	69 81       	ldd	r22, Y+1	; 0x01
- 31a:	7a 81       	ldd	r23, Y+2	; 0x02
- 31c:	8b 81       	ldd	r24, Y+3	; 0x03
- 31e:	9c 81       	ldd	r25, Y+4	; 0x04
- 320:	0e 94 4f 07 	call	0xe9e	; 0xe9e <__mulsf3>
- 324:	dc 01       	movw	r26, r24
- 326:	cb 01       	movw	r24, r22
- 328:	89 87       	std	Y+9, r24	; 0x09
- 32a:	9a 87       	std	Y+10, r25	; 0x0a
- 32c:	ab 87       	std	Y+11, r26	; 0x0b
- 32e:	bc 87       	std	Y+12, r27	; 0x0c
+ 3a0:	2c e7       	ldi	r18, 0x7C	; 124
+ 3a2:	32 ef       	ldi	r19, 0xF2	; 242
+ 3a4:	40 e3       	ldi	r20, 0x30	; 48
+ 3a6:	50 e4       	ldi	r21, 0x40	; 64
+ 3a8:	69 81       	ldd	r22, Y+1	; 0x01
+ 3aa:	7a 81       	ldd	r23, Y+2	; 0x02
+ 3ac:	8b 81       	ldd	r24, Y+3	; 0x03
+ 3ae:	9c 81       	ldd	r25, Y+4	; 0x04
+ 3b0:	0e 94 4a 07 	call	0xe94	; 0xe94 <__mulsf3>
+ 3b4:	dc 01       	movw	r26, r24
+ 3b6:	cb 01       	movw	r24, r22
+ 3b8:	89 87       	std	Y+9, r24	; 0x09
+ 3ba:	9a 87       	std	Y+10, r25	; 0x0a
+ 3bc:	ab 87       	std	Y+11, r26	; 0x0b
+ 3be:	bc 87       	std	Y+12, r27	; 0x0c
 	if (__tmp < 1.0)
- 330:	20 e0       	ldi	r18, 0x00	; 0
- 332:	30 e0       	ldi	r19, 0x00	; 0
- 334:	40 e8       	ldi	r20, 0x80	; 128
- 336:	5f e3       	ldi	r21, 0x3F	; 63
- 338:	6d 81       	ldd	r22, Y+5	; 0x05
- 33a:	7e 81       	ldd	r23, Y+6	; 0x06
- 33c:	8f 81       	ldd	r24, Y+7	; 0x07
- 33e:	98 85       	ldd	r25, Y+8	; 0x08
- 340:	0e 94 2f 06 	call	0xc5e	; 0xc5e <__cmpsf2>
- 344:	88 23       	and	r24, r24
- 346:	1c f4       	brge	.+6      	; 0x34e <dynamixel_setrx+0x98>
+ 3c0:	20 e0       	ldi	r18, 0x00	; 0
+ 3c2:	30 e0       	ldi	r19, 0x00	; 0
+ 3c4:	40 e8       	ldi	r20, 0x80	; 128
+ 3c6:	5f e3       	ldi	r21, 0x3F	; 63
+ 3c8:	6d 81       	ldd	r22, Y+5	; 0x05
+ 3ca:	7e 81       	ldd	r23, Y+6	; 0x06
+ 3cc:	8f 81       	ldd	r24, Y+7	; 0x07
+ 3ce:	98 85       	ldd	r25, Y+8	; 0x08
+ 3d0:	0e 94 2a 06 	call	0xc54	; 0xc54 <__cmpsf2>
+ 3d4:	88 23       	and	r24, r24
+ 3d6:	1c f4       	brge	.+6      	; 0x3de <dynamixel_setrx+0x98>
 		__ticks = 1;
- 348:	81 e0       	ldi	r24, 0x01	; 1
- 34a:	8d 87       	std	Y+13, r24	; 0x0d
- 34c:	b2 c0       	rjmp	.+356    	; 0x4b2 <dynamixel_setrx+0x1fc>
+ 3d8:	81 e0       	ldi	r24, 0x01	; 1
+ 3da:	8d 87       	std	Y+13, r24	; 0x0d
+ 3dc:	b2 c0       	rjmp	.+356    	; 0x542 <dynamixel_setrx+0x1fc>
 	else if (__tmp2 > 65535)
- 34e:	20 e0       	ldi	r18, 0x00	; 0
- 350:	3f ef       	ldi	r19, 0xFF	; 255
- 352:	4f e7       	ldi	r20, 0x7F	; 127
- 354:	57 e4       	ldi	r21, 0x47	; 71
- 356:	69 85       	ldd	r22, Y+9	; 0x09
- 358:	7a 85       	ldd	r23, Y+10	; 0x0a
- 35a:	8b 85       	ldd	r24, Y+11	; 0x0b
- 35c:	9c 85       	ldd	r25, Y+12	; 0x0c
- 35e:	0e 94 4a 07 	call	0xe94	; 0xe94 <__gesf2>
- 362:	18 16       	cp	r1, r24
- 364:	0c f0       	brlt	.+2      	; 0x368 <dynamixel_setrx+0xb2>
- 366:	7b c0       	rjmp	.+246    	; 0x45e <dynamixel_setrx+0x1a8>
+ 3de:	20 e0       	ldi	r18, 0x00	; 0
+ 3e0:	3f ef       	ldi	r19, 0xFF	; 255
+ 3e2:	4f e7       	ldi	r20, 0x7F	; 127
+ 3e4:	57 e4       	ldi	r21, 0x47	; 71
+ 3e6:	69 85       	ldd	r22, Y+9	; 0x09
+ 3e8:	7a 85       	ldd	r23, Y+10	; 0x0a
+ 3ea:	8b 85       	ldd	r24, Y+11	; 0x0b
+ 3ec:	9c 85       	ldd	r25, Y+12	; 0x0c
+ 3ee:	0e 94 45 07 	call	0xe8a	; 0xe8a <__gesf2>
+ 3f2:	18 16       	cp	r1, r24
+ 3f4:	0c f0       	brlt	.+2      	; 0x3f8 <dynamixel_setrx+0xb2>
+ 3f6:	7b c0       	rjmp	.+246    	; 0x4ee <dynamixel_setrx+0x1a8>
 	{
 		_delay_ms(__us / 1000.0);
- 368:	20 e0       	ldi	r18, 0x00	; 0
- 36a:	30 e0       	ldi	r19, 0x00	; 0
- 36c:	4a e7       	ldi	r20, 0x7A	; 122
- 36e:	54 e4       	ldi	r21, 0x44	; 68
- 370:	69 81       	ldd	r22, Y+1	; 0x01
- 372:	7a 81       	ldd	r23, Y+2	; 0x02
- 374:	8b 81       	ldd	r24, Y+3	; 0x03
- 376:	9c 81       	ldd	r25, Y+4	; 0x04
- 378:	0e 94 34 06 	call	0xc68	; 0xc68 <__divsf3>
- 37c:	dc 01       	movw	r26, r24
- 37e:	cb 01       	movw	r24, r22
- 380:	8e 87       	std	Y+14, r24	; 0x0e
- 382:	9f 87       	std	Y+15, r25	; 0x0f
- 384:	a8 8b       	std	Y+16, r26	; 0x10
- 386:	b9 8b       	std	Y+17, r27	; 0x11
+ 3f8:	20 e0       	ldi	r18, 0x00	; 0
+ 3fa:	30 e0       	ldi	r19, 0x00	; 0
+ 3fc:	4a e7       	ldi	r20, 0x7A	; 122
+ 3fe:	54 e4       	ldi	r21, 0x44	; 68
+ 400:	69 81       	ldd	r22, Y+1	; 0x01
+ 402:	7a 81       	ldd	r23, Y+2	; 0x02
+ 404:	8b 81       	ldd	r24, Y+3	; 0x03
+ 406:	9c 81       	ldd	r25, Y+4	; 0x04
+ 408:	0e 94 2f 06 	call	0xc5e	; 0xc5e <__divsf3>
+ 40c:	dc 01       	movw	r26, r24
+ 40e:	cb 01       	movw	r24, r22
+ 410:	8e 87       	std	Y+14, r24	; 0x0e
+ 412:	9f 87       	std	Y+15, r25	; 0x0f
+ 414:	a8 8b       	std	Y+16, r26	; 0x10
+ 416:	b9 8b       	std	Y+17, r27	; 0x11
 
 	__builtin_avr_delay_cycles(__ticks_dc);
 
 #else
 	uint16_t __ticks;
 	__tmp = ((F_CPU) / 4e3) * __ms;
- 388:	2d ec       	ldi	r18, 0xCD	; 205
- 38a:	3c ec       	ldi	r19, 0xCC	; 204
- 38c:	4c e2       	ldi	r20, 0x2C	; 44
- 38e:	55 e4       	ldi	r21, 0x45	; 69
- 390:	6e 85       	ldd	r22, Y+14	; 0x0e
- 392:	7f 85       	ldd	r23, Y+15	; 0x0f
- 394:	88 89       	ldd	r24, Y+16	; 0x10
- 396:	99 89       	ldd	r25, Y+17	; 0x11
- 398:	0e 94 4f 07 	call	0xe9e	; 0xe9e <__mulsf3>
- 39c:	dc 01       	movw	r26, r24
- 39e:	cb 01       	movw	r24, r22
- 3a0:	8a 8b       	std	Y+18, r24	; 0x12
- 3a2:	9b 8b       	std	Y+19, r25	; 0x13
- 3a4:	ac 8b       	std	Y+20, r26	; 0x14
- 3a6:	bd 8b       	std	Y+21, r27	; 0x15
+ 418:	2d ec       	ldi	r18, 0xCD	; 205
+ 41a:	3c ec       	ldi	r19, 0xCC	; 204
+ 41c:	4c e2       	ldi	r20, 0x2C	; 44
+ 41e:	55 e4       	ldi	r21, 0x45	; 69
+ 420:	6e 85       	ldd	r22, Y+14	; 0x0e
+ 422:	7f 85       	ldd	r23, Y+15	; 0x0f
+ 424:	88 89       	ldd	r24, Y+16	; 0x10
+ 426:	99 89       	ldd	r25, Y+17	; 0x11
+ 428:	0e 94 4a 07 	call	0xe94	; 0xe94 <__mulsf3>
+ 42c:	dc 01       	movw	r26, r24
+ 42e:	cb 01       	movw	r24, r22
+ 430:	8a 8b       	std	Y+18, r24	; 0x12
+ 432:	9b 8b       	std	Y+19, r25	; 0x13
+ 434:	ac 8b       	std	Y+20, r26	; 0x14
+ 436:	bd 8b       	std	Y+21, r27	; 0x15
 	if (__tmp < 1.0)
- 3a8:	20 e0       	ldi	r18, 0x00	; 0
- 3aa:	30 e0       	ldi	r19, 0x00	; 0
- 3ac:	40 e8       	ldi	r20, 0x80	; 128
- 3ae:	5f e3       	ldi	r21, 0x3F	; 63
- 3b0:	6a 89       	ldd	r22, Y+18	; 0x12
- 3b2:	7b 89       	ldd	r23, Y+19	; 0x13
- 3b4:	8c 89       	ldd	r24, Y+20	; 0x14
- 3b6:	9d 89       	ldd	r25, Y+21	; 0x15
- 3b8:	0e 94 2f 06 	call	0xc5e	; 0xc5e <__cmpsf2>
- 3bc:	88 23       	and	r24, r24
- 3be:	2c f4       	brge	.+10     	; 0x3ca <dynamixel_setrx+0x114>
+ 438:	20 e0       	ldi	r18, 0x00	; 0
+ 43a:	30 e0       	ldi	r19, 0x00	; 0
+ 43c:	40 e8       	ldi	r20, 0x80	; 128
+ 43e:	5f e3       	ldi	r21, 0x3F	; 63
+ 440:	6a 89       	ldd	r22, Y+18	; 0x12
+ 442:	7b 89       	ldd	r23, Y+19	; 0x13
+ 444:	8c 89       	ldd	r24, Y+20	; 0x14
+ 446:	9d 89       	ldd	r25, Y+21	; 0x15
+ 448:	0e 94 2a 06 	call	0xc54	; 0xc54 <__cmpsf2>
+ 44c:	88 23       	and	r24, r24
+ 44e:	2c f4       	brge	.+10     	; 0x45a <dynamixel_setrx+0x114>
 		__ticks = 1;
- 3c0:	81 e0       	ldi	r24, 0x01	; 1
- 3c2:	90 e0       	ldi	r25, 0x00	; 0
- 3c4:	9f 8b       	std	Y+23, r25	; 0x17
- 3c6:	8e 8b       	std	Y+22, r24	; 0x16
- 3c8:	3f c0       	rjmp	.+126    	; 0x448 <dynamixel_setrx+0x192>
+ 450:	81 e0       	ldi	r24, 0x01	; 1
+ 452:	90 e0       	ldi	r25, 0x00	; 0
+ 454:	9f 8b       	std	Y+23, r25	; 0x17
+ 456:	8e 8b       	std	Y+22, r24	; 0x16
+ 458:	3f c0       	rjmp	.+126    	; 0x4d8 <dynamixel_setrx+0x192>
 	else if (__tmp > 65535)
- 3ca:	20 e0       	ldi	r18, 0x00	; 0
- 3cc:	3f ef       	ldi	r19, 0xFF	; 255
- 3ce:	4f e7       	ldi	r20, 0x7F	; 127
- 3d0:	57 e4       	ldi	r21, 0x47	; 71
- 3d2:	6a 89       	ldd	r22, Y+18	; 0x12
- 3d4:	7b 89       	ldd	r23, Y+19	; 0x13
- 3d6:	8c 89       	ldd	r24, Y+20	; 0x14
- 3d8:	9d 89       	ldd	r25, Y+21	; 0x15
- 3da:	0e 94 4a 07 	call	0xe94	; 0xe94 <__gesf2>
- 3de:	18 16       	cp	r1, r24
- 3e0:	4c f5       	brge	.+82     	; 0x434 <dynamixel_setrx+0x17e>
+ 45a:	20 e0       	ldi	r18, 0x00	; 0
+ 45c:	3f ef       	ldi	r19, 0xFF	; 255
+ 45e:	4f e7       	ldi	r20, 0x7F	; 127
+ 460:	57 e4       	ldi	r21, 0x47	; 71
+ 462:	6a 89       	ldd	r22, Y+18	; 0x12
+ 464:	7b 89       	ldd	r23, Y+19	; 0x13
+ 466:	8c 89       	ldd	r24, Y+20	; 0x14
+ 468:	9d 89       	ldd	r25, Y+21	; 0x15
+ 46a:	0e 94 45 07 	call	0xe8a	; 0xe8a <__gesf2>
+ 46e:	18 16       	cp	r1, r24
+ 470:	4c f5       	brge	.+82     	; 0x4c4 <dynamixel_setrx+0x17e>
 	{
 		//	__ticks = requested delay in 1/10 ms
 		__ticks = (uint16_t) (__ms * 10.0);
- 3e2:	20 e0       	ldi	r18, 0x00	; 0
- 3e4:	30 e0       	ldi	r19, 0x00	; 0
- 3e6:	40 e2       	ldi	r20, 0x20	; 32
- 3e8:	51 e4       	ldi	r21, 0x41	; 65
- 3ea:	6e 85       	ldd	r22, Y+14	; 0x0e
- 3ec:	7f 85       	ldd	r23, Y+15	; 0x0f
- 3ee:	88 89       	ldd	r24, Y+16	; 0x10
- 3f0:	99 89       	ldd	r25, Y+17	; 0x11
- 3f2:	0e 94 4f 07 	call	0xe9e	; 0xe9e <__mulsf3>
- 3f6:	dc 01       	movw	r26, r24
- 3f8:	cb 01       	movw	r24, r22
- 3fa:	bc 01       	movw	r22, r24
- 3fc:	cd 01       	movw	r24, r26
- 3fe:	0e 94 a6 06 	call	0xd4c	; 0xd4c <__fixunssfsi>
- 402:	dc 01       	movw	r26, r24
- 404:	cb 01       	movw	r24, r22
- 406:	9f 8b       	std	Y+23, r25	; 0x17
- 408:	8e 8b       	std	Y+22, r24	; 0x16
- 40a:	0f c0       	rjmp	.+30     	; 0x42a <dynamixel_setrx+0x174>
- 40c:	84 e1       	ldi	r24, 0x14	; 20
- 40e:	91 e0       	ldi	r25, 0x01	; 1
- 410:	99 8f       	std	Y+25, r25	; 0x19
- 412:	88 8f       	std	Y+24, r24	; 0x18
+ 472:	20 e0       	ldi	r18, 0x00	; 0
+ 474:	30 e0       	ldi	r19, 0x00	; 0
+ 476:	40 e2       	ldi	r20, 0x20	; 32
+ 478:	51 e4       	ldi	r21, 0x41	; 65
+ 47a:	6e 85       	ldd	r22, Y+14	; 0x0e
+ 47c:	7f 85       	ldd	r23, Y+15	; 0x0f
+ 47e:	88 89       	ldd	r24, Y+16	; 0x10
+ 480:	99 89       	ldd	r25, Y+17	; 0x11
+ 482:	0e 94 4a 07 	call	0xe94	; 0xe94 <__mulsf3>
+ 486:	dc 01       	movw	r26, r24
+ 488:	cb 01       	movw	r24, r22
+ 48a:	bc 01       	movw	r22, r24
+ 48c:	cd 01       	movw	r24, r26
+ 48e:	0e 94 a1 06 	call	0xd42	; 0xd42 <__fixunssfsi>
+ 492:	dc 01       	movw	r26, r24
+ 494:	cb 01       	movw	r24, r22
+ 496:	9f 8b       	std	Y+23, r25	; 0x17
+ 498:	8e 8b       	std	Y+22, r24	; 0x16
+ 49a:	0f c0       	rjmp	.+30     	; 0x4ba <dynamixel_setrx+0x174>
+ 49c:	84 e1       	ldi	r24, 0x14	; 20
+ 49e:	91 e0       	ldi	r25, 0x01	; 1
+ 4a0:	99 8f       	std	Y+25, r25	; 0x19
+ 4a2:	88 8f       	std	Y+24, r24	; 0x18
     milliseconds can be achieved.
  */
 void
 _delay_loop_2(uint16_t __count)
 {
 	__asm__ volatile (
- 414:	88 8d       	ldd	r24, Y+24	; 0x18
- 416:	99 8d       	ldd	r25, Y+25	; 0x19
- 418:	01 97       	sbiw	r24, 0x01	; 1
- 41a:	f1 f7       	brne	.-4      	; 0x418 <dynamixel_setrx+0x162>
- 41c:	99 8f       	std	Y+25, r25	; 0x19
- 41e:	88 8f       	std	Y+24, r24	; 0x18
+ 4a4:	88 8d       	ldd	r24, Y+24	; 0x18
+ 4a6:	99 8d       	ldd	r25, Y+25	; 0x19
+ 4a8:	01 97       	sbiw	r24, 0x01	; 1
+ 4aa:	f1 f7       	brne	.-4      	; 0x4a8 <dynamixel_setrx+0x162>
+ 4ac:	99 8f       	std	Y+25, r25	; 0x19
+ 4ae:	88 8f       	std	Y+24, r24	; 0x18
 		while(__ticks)
 		{
 			// wait 1/10 ms
 			_delay_loop_2(((F_CPU) / 4e3) / 10);
 			__ticks --;
- 420:	8e 89       	ldd	r24, Y+22	; 0x16
- 422:	9f 89       	ldd	r25, Y+23	; 0x17
- 424:	01 97       	sbiw	r24, 0x01	; 1
- 426:	9f 8b       	std	Y+23, r25	; 0x17
- 428:	8e 8b       	std	Y+22, r24	; 0x16
+ 4b0:	8e 89       	ldd	r24, Y+22	; 0x16
+ 4b2:	9f 89       	ldd	r25, Y+23	; 0x17
+ 4b4:	01 97       	sbiw	r24, 0x01	; 1
+ 4b6:	9f 8b       	std	Y+23, r25	; 0x17
+ 4b8:	8e 8b       	std	Y+22, r24	; 0x16
 		__ticks = 1;
 	else if (__tmp > 65535)
 	{
 		//	__ticks = requested delay in 1/10 ms
 		__ticks = (uint16_t) (__ms * 10.0);
 		while(__ticks)
- 42a:	8e 89       	ldd	r24, Y+22	; 0x16
- 42c:	9f 89       	ldd	r25, Y+23	; 0x17
- 42e:	89 2b       	or	r24, r25
- 430:	69 f7       	brne	.-38     	; 0x40c <dynamixel_setrx+0x156>
- 432:	3f c0       	rjmp	.+126    	; 0x4b2 <dynamixel_setrx+0x1fc>
+ 4ba:	8e 89       	ldd	r24, Y+22	; 0x16
+ 4bc:	9f 89       	ldd	r25, Y+23	; 0x17
+ 4be:	89 2b       	or	r24, r25
+ 4c0:	69 f7       	brne	.-38     	; 0x49c <dynamixel_setrx+0x156>
+ 4c2:	3f c0       	rjmp	.+126    	; 0x542 <dynamixel_setrx+0x1fc>
 			__ticks --;
 		}
 		return;
 	}
 	else
 		__ticks = (uint16_t)__tmp;
- 434:	6a 89       	ldd	r22, Y+18	; 0x12
- 436:	7b 89       	ldd	r23, Y+19	; 0x13
- 438:	8c 89       	ldd	r24, Y+20	; 0x14
- 43a:	9d 89       	ldd	r25, Y+21	; 0x15
- 43c:	0e 94 a6 06 	call	0xd4c	; 0xd4c <__fixunssfsi>
- 440:	dc 01       	movw	r26, r24
- 442:	cb 01       	movw	r24, r22
- 444:	9f 8b       	std	Y+23, r25	; 0x17
- 446:	8e 8b       	std	Y+22, r24	; 0x16
- 448:	8e 89       	ldd	r24, Y+22	; 0x16
- 44a:	9f 89       	ldd	r25, Y+23	; 0x17
- 44c:	9b 8f       	std	Y+27, r25	; 0x1b
- 44e:	8a 8f       	std	Y+26, r24	; 0x1a
- 450:	8a 8d       	ldd	r24, Y+26	; 0x1a
- 452:	9b 8d       	ldd	r25, Y+27	; 0x1b
- 454:	01 97       	sbiw	r24, 0x01	; 1
- 456:	f1 f7       	brne	.-4      	; 0x454 <dynamixel_setrx+0x19e>
- 458:	9b 8f       	std	Y+27, r25	; 0x1b
- 45a:	8a 8f       	std	Y+26, r24	; 0x1a
- 45c:	2a c0       	rjmp	.+84     	; 0x4b2 <dynamixel_setrx+0x1fc>
+ 4c4:	6a 89       	ldd	r22, Y+18	; 0x12
+ 4c6:	7b 89       	ldd	r23, Y+19	; 0x13
+ 4c8:	8c 89       	ldd	r24, Y+20	; 0x14
+ 4ca:	9d 89       	ldd	r25, Y+21	; 0x15
+ 4cc:	0e 94 a1 06 	call	0xd42	; 0xd42 <__fixunssfsi>
+ 4d0:	dc 01       	movw	r26, r24
+ 4d2:	cb 01       	movw	r24, r22
+ 4d4:	9f 8b       	std	Y+23, r25	; 0x17
+ 4d6:	8e 8b       	std	Y+22, r24	; 0x16
+ 4d8:	8e 89       	ldd	r24, Y+22	; 0x16
+ 4da:	9f 89       	ldd	r25, Y+23	; 0x17
+ 4dc:	9b 8f       	std	Y+27, r25	; 0x1b
+ 4de:	8a 8f       	std	Y+26, r24	; 0x1a
+ 4e0:	8a 8d       	ldd	r24, Y+26	; 0x1a
+ 4e2:	9b 8d       	ldd	r25, Y+27	; 0x1b
+ 4e4:	01 97       	sbiw	r24, 0x01	; 1
+ 4e6:	f1 f7       	brne	.-4      	; 0x4e4 <dynamixel_setrx+0x19e>
+ 4e8:	9b 8f       	std	Y+27, r25	; 0x1b
+ 4ea:	8a 8f       	std	Y+26, r24	; 0x1a
+ 4ec:	2a c0       	rjmp	.+84     	; 0x542 <dynamixel_setrx+0x1fc>
 		__ticks = 1;
 	else if (__tmp2 > 65535)
 	{
 		_delay_ms(__us / 1000.0);
 	}
 	else if (__tmp > 255)
- 45e:	20 e0       	ldi	r18, 0x00	; 0
- 460:	30 e0       	ldi	r19, 0x00	; 0
- 462:	4f e7       	ldi	r20, 0x7F	; 127
- 464:	53 e4       	ldi	r21, 0x43	; 67
- 466:	6d 81       	ldd	r22, Y+5	; 0x05
- 468:	7e 81       	ldd	r23, Y+6	; 0x06
- 46a:	8f 81       	ldd	r24, Y+7	; 0x07
- 46c:	98 85       	ldd	r25, Y+8	; 0x08
- 46e:	0e 94 4a 07 	call	0xe94	; 0xe94 <__gesf2>
- 472:	18 16       	cp	r1, r24
- 474:	ac f4       	brge	.+42     	; 0x4a0 <dynamixel_setrx+0x1ea>
+ 4ee:	20 e0       	ldi	r18, 0x00	; 0
+ 4f0:	30 e0       	ldi	r19, 0x00	; 0
+ 4f2:	4f e7       	ldi	r20, 0x7F	; 127
+ 4f4:	53 e4       	ldi	r21, 0x43	; 67
+ 4f6:	6d 81       	ldd	r22, Y+5	; 0x05
+ 4f8:	7e 81       	ldd	r23, Y+6	; 0x06
+ 4fa:	8f 81       	ldd	r24, Y+7	; 0x07
+ 4fc:	98 85       	ldd	r25, Y+8	; 0x08
+ 4fe:	0e 94 45 07 	call	0xe8a	; 0xe8a <__gesf2>
+ 502:	18 16       	cp	r1, r24
+ 504:	ac f4       	brge	.+42     	; 0x530 <dynamixel_setrx+0x1ea>
 	{
 		uint16_t __ticks=(uint16_t)__tmp2;
- 476:	69 85       	ldd	r22, Y+9	; 0x09
- 478:	7a 85       	ldd	r23, Y+10	; 0x0a
- 47a:	8b 85       	ldd	r24, Y+11	; 0x0b
- 47c:	9c 85       	ldd	r25, Y+12	; 0x0c
- 47e:	0e 94 a6 06 	call	0xd4c	; 0xd4c <__fixunssfsi>
- 482:	dc 01       	movw	r26, r24
- 484:	cb 01       	movw	r24, r22
- 486:	9d 8f       	std	Y+29, r25	; 0x1d
- 488:	8c 8f       	std	Y+28, r24	; 0x1c
- 48a:	8c 8d       	ldd	r24, Y+28	; 0x1c
- 48c:	9d 8d       	ldd	r25, Y+29	; 0x1d
- 48e:	9f 8f       	std	Y+31, r25	; 0x1f
- 490:	8e 8f       	std	Y+30, r24	; 0x1e
- 492:	8e 8d       	ldd	r24, Y+30	; 0x1e
- 494:	9f 8d       	ldd	r25, Y+31	; 0x1f
- 496:	01 97       	sbiw	r24, 0x01	; 1
- 498:	f1 f7       	brne	.-4      	; 0x496 <dynamixel_setrx+0x1e0>
- 49a:	9f 8f       	std	Y+31, r25	; 0x1f
- 49c:	8e 8f       	std	Y+30, r24	; 0x1e
- 49e:	0f c0       	rjmp	.+30     	; 0x4be <dynamixel_setrx+0x208>
+ 506:	69 85       	ldd	r22, Y+9	; 0x09
+ 508:	7a 85       	ldd	r23, Y+10	; 0x0a
+ 50a:	8b 85       	ldd	r24, Y+11	; 0x0b
+ 50c:	9c 85       	ldd	r25, Y+12	; 0x0c
+ 50e:	0e 94 a1 06 	call	0xd42	; 0xd42 <__fixunssfsi>
+ 512:	dc 01       	movw	r26, r24
+ 514:	cb 01       	movw	r24, r22
+ 516:	9d 8f       	std	Y+29, r25	; 0x1d
+ 518:	8c 8f       	std	Y+28, r24	; 0x1c
+ 51a:	8c 8d       	ldd	r24, Y+28	; 0x1c
+ 51c:	9d 8d       	ldd	r25, Y+29	; 0x1d
+ 51e:	9f 8f       	std	Y+31, r25	; 0x1f
+ 520:	8e 8f       	std	Y+30, r24	; 0x1e
+ 522:	8e 8d       	ldd	r24, Y+30	; 0x1e
+ 524:	9f 8d       	ldd	r25, Y+31	; 0x1f
+ 526:	01 97       	sbiw	r24, 0x01	; 1
+ 528:	f1 f7       	brne	.-4      	; 0x526 <dynamixel_setrx+0x1e0>
+ 52a:	9f 8f       	std	Y+31, r25	; 0x1f
+ 52c:	8e 8f       	std	Y+30, r24	; 0x1e
+ 52e:	0f c0       	rjmp	.+30     	; 0x54e <dynamixel_setrx+0x208>
 		_delay_loop_2(__ticks);
 		return;
 	}
 	else
 		__ticks = (uint8_t)__tmp;
- 4a0:	6d 81       	ldd	r22, Y+5	; 0x05
- 4a2:	7e 81       	ldd	r23, Y+6	; 0x06
- 4a4:	8f 81       	ldd	r24, Y+7	; 0x07
- 4a6:	98 85       	ldd	r25, Y+8	; 0x08
- 4a8:	0e 94 a6 06 	call	0xd4c	; 0xd4c <__fixunssfsi>
- 4ac:	dc 01       	movw	r26, r24
- 4ae:	cb 01       	movw	r24, r22
- 4b0:	8d 87       	std	Y+13, r24	; 0x0d
- 4b2:	8d 85       	ldd	r24, Y+13	; 0x0d
- 4b4:	88 a3       	std	Y+32, r24	; 0x20
+ 530:	6d 81       	ldd	r22, Y+5	; 0x05
+ 532:	7e 81       	ldd	r23, Y+6	; 0x06
+ 534:	8f 81       	ldd	r24, Y+7	; 0x07
+ 536:	98 85       	ldd	r25, Y+8	; 0x08
+ 538:	0e 94 a1 06 	call	0xd42	; 0xd42 <__fixunssfsi>
+ 53c:	dc 01       	movw	r26, r24
+ 53e:	cb 01       	movw	r24, r22
+ 540:	8d 87       	std	Y+13, r24	; 0x0d
+ 542:	8d 85       	ldd	r24, Y+13	; 0x0d
+ 544:	88 a3       	std	Y+32, r24	; 0x20
     can be achieved.
 */
 void
 _delay_loop_1(uint8_t __count)
 {
 	__asm__ volatile (
- 4b6:	88 a1       	ldd	r24, Y+32	; 0x20
- 4b8:	8a 95       	dec	r24
- 4ba:	f1 f7       	brne	.-4      	; 0x4b8 <dynamixel_setrx+0x202>
- 4bc:	88 a3       	std	Y+32, r24	; 0x20
+ 546:	88 a1       	ldd	r24, Y+32	; 0x20
+ 548:	8a 95       	dec	r24
+ 54a:	f1 f7       	brne	.-4      	; 0x548 <dynamixel_setrx+0x202>
+ 54c:	88 a3       	std	Y+32, r24	; 0x20
 
 	_delay_us(1);
 
 	// Set UART direction pins
 	PORTD &= ~(1 << PD2);
- 4be:	8b e2       	ldi	r24, 0x2B	; 43
- 4c0:	90 e0       	ldi	r25, 0x00	; 0
- 4c2:	2b e2       	ldi	r18, 0x2B	; 43
- 4c4:	30 e0       	ldi	r19, 0x00	; 0
- 4c6:	f9 01       	movw	r30, r18
- 4c8:	20 81       	ld	r18, Z
- 4ca:	2b 7f       	andi	r18, 0xFB	; 251
- 4cc:	fc 01       	movw	r30, r24
- 4ce:	20 83       	st	Z, r18
+ 54e:	8b e2       	ldi	r24, 0x2B	; 43
+ 550:	90 e0       	ldi	r25, 0x00	; 0
+ 552:	2b e2       	ldi	r18, 0x2B	; 43
+ 554:	30 e0       	ldi	r19, 0x00	; 0
+ 556:	f9 01       	movw	r30, r18
+ 558:	20 81       	ld	r18, Z
+ 55a:	2b 7f       	andi	r18, 0xFB	; 251
+ 55c:	fc 01       	movw	r30, r24
+ 55e:	20 83       	st	Z, r18
 	PORTD |= (1 << PD3);
- 4d0:	8b e2       	ldi	r24, 0x2B	; 43
- 4d2:	90 e0       	ldi	r25, 0x00	; 0
- 4d4:	2b e2       	ldi	r18, 0x2B	; 43
- 4d6:	30 e0       	ldi	r19, 0x00	; 0
- 4d8:	f9 01       	movw	r30, r18
- 4da:	20 81       	ld	r18, Z
- 4dc:	28 60       	ori	r18, 0x08	; 8
- 4de:	fc 01       	movw	r30, r24
- 4e0:	20 83       	st	Z, r18
+ 560:	8b e2       	ldi	r24, 0x2B	; 43
+ 562:	90 e0       	ldi	r25, 0x00	; 0
+ 564:	2b e2       	ldi	r18, 0x2B	; 43
+ 566:	30 e0       	ldi	r19, 0x00	; 0
+ 568:	f9 01       	movw	r30, r18
+ 56a:	20 81       	ld	r18, Z
+ 56c:	28 60       	ori	r18, 0x08	; 8
+ 56e:	fc 01       	movw	r30, r24
+ 570:	20 83       	st	Z, r18
 	//UCSR0B &= ~(1 << TXEN0);
 	//UCSR0B |= (1 << RXEN0);
 	//UCSR0B |= (1 << RXCIE0);
 
 	// Reset rx index
 	dynamixel_rxindex = 0;
- 4e2:	10 92 24 01 	sts	0x0124, r1
+ 572:	10 92 00 01 	sts	0x0100, r1
 }
- 4e6:	a0 96       	adiw	r28, 0x20	; 32
- 4e8:	0f b6       	in	r0, 0x3f	; 63
- 4ea:	f8 94       	cli
- 4ec:	de bf       	out	0x3e, r29	; 62
- 4ee:	0f be       	out	0x3f, r0	; 63
- 4f0:	cd bf       	out	0x3d, r28	; 61
- 4f2:	df 91       	pop	r29
- 4f4:	cf 91       	pop	r28
- 4f6:	08 95       	ret
+ 576:	a0 96       	adiw	r28, 0x20	; 32
+ 578:	0f b6       	in	r0, 0x3f	; 63
+ 57a:	f8 94       	cli
+ 57c:	de bf       	out	0x3e, r29	; 62
+ 57e:	0f be       	out	0x3f, r0	; 63
+ 580:	cd bf       	out	0x3d, r28	; 61
+ 582:	df 91       	pop	r29
+ 584:	cf 91       	pop	r28
+ 586:	08 95       	ret
 
-000004f8 <dynamixel_write>:
+00000588 <dynamixel_write>:
 
 void dynamixel_write(uint8_t c)
 {
- 4f8:	cf 93       	push	r28
- 4fa:	df 93       	push	r29
- 4fc:	1f 92       	push	r1
- 4fe:	cd b7       	in	r28, 0x3d	; 61
- 500:	de b7       	in	r29, 0x3e	; 62
- 502:	89 83       	std	Y+1, r24	; 0x01
+ 588:	cf 93       	push	r28
+ 58a:	df 93       	push	r29
+ 58c:	1f 92       	push	r1
+ 58e:	cd b7       	in	r28, 0x3d	; 61
+ 590:	de b7       	in	r29, 0x3e	; 62
+ 592:	89 83       	std	Y+1, r24	; 0x01
 	while(bit_is_clear(UCSR0A, UDRE0));
- 504:	00 00       	nop
- 506:	80 ec       	ldi	r24, 0xC0	; 192
- 508:	90 e0       	ldi	r25, 0x00	; 0
- 50a:	fc 01       	movw	r30, r24
- 50c:	80 81       	ld	r24, Z
- 50e:	88 2f       	mov	r24, r24
- 510:	90 e0       	ldi	r25, 0x00	; 0
- 512:	80 72       	andi	r24, 0x20	; 32
- 514:	99 27       	eor	r25, r25
- 516:	89 2b       	or	r24, r25
- 518:	b1 f3       	breq	.-20     	; 0x506 <dynamixel_write+0xe>
+ 594:	00 00       	nop
+ 596:	80 ec       	ldi	r24, 0xC0	; 192
+ 598:	90 e0       	ldi	r25, 0x00	; 0
+ 59a:	fc 01       	movw	r30, r24
+ 59c:	80 81       	ld	r24, Z
+ 59e:	88 2f       	mov	r24, r24
+ 5a0:	90 e0       	ldi	r25, 0x00	; 0
+ 5a2:	80 72       	andi	r24, 0x20	; 32
+ 5a4:	99 27       	eor	r25, r25
+ 5a6:	89 2b       	or	r24, r25
+ 5a8:	b1 f3       	breq	.-20     	; 0x596 <dynamixel_write+0xe>
 	UDR0 = c;
- 51a:	86 ec       	ldi	r24, 0xC6	; 198
- 51c:	90 e0       	ldi	r25, 0x00	; 0
- 51e:	29 81       	ldd	r18, Y+1	; 0x01
- 520:	fc 01       	movw	r30, r24
- 522:	20 83       	st	Z, r18
+ 5aa:	86 ec       	ldi	r24, 0xC6	; 198
+ 5ac:	90 e0       	ldi	r25, 0x00	; 0
+ 5ae:	29 81       	ldd	r18, Y+1	; 0x01
+ 5b0:	fc 01       	movw	r30, r24
+ 5b2:	20 83       	st	Z, r18
 }
- 524:	0f 90       	pop	r0
- 526:	df 91       	pop	r29
- 528:	cf 91       	pop	r28
- 52a:	08 95       	ret
+ 5b4:	0f 90       	pop	r0
+ 5b6:	df 91       	pop	r29
+ 5b8:	cf 91       	pop	r28
+ 5ba:	08 95       	ret
 
-0000052c <dynamixel_calculatechecksum>:
+000005bc <dynamixel_calculatechecksum>:
 
 uint8_t dynamixel_calculatechecksum(volatile uint8_t* packet)
 {
- 52c:	cf 93       	push	r28
- 52e:	df 93       	push	r29
- 530:	00 d0       	rcall	.+0      	; 0x532 <dynamixel_calculatechecksum+0x6>
- 532:	00 d0       	rcall	.+0      	; 0x534 <dynamixel_calculatechecksum+0x8>
- 534:	1f 92       	push	r1
- 536:	cd b7       	in	r28, 0x3d	; 61
- 538:	de b7       	in	r29, 0x3e	; 62
- 53a:	9d 83       	std	Y+5, r25	; 0x05
- 53c:	8c 83       	std	Y+4, r24	; 0x04
+ 5bc:	cf 93       	push	r28
+ 5be:	df 93       	push	r29
+ 5c0:	00 d0       	rcall	.+0      	; 0x5c2 <dynamixel_calculatechecksum+0x6>
+ 5c2:	00 d0       	rcall	.+0      	; 0x5c4 <dynamixel_calculatechecksum+0x8>
+ 5c4:	1f 92       	push	r1
+ 5c6:	cd b7       	in	r28, 0x3d	; 61
+ 5c8:	de b7       	in	r29, 0x3e	; 62
+ 5ca:	9d 83       	std	Y+5, r25	; 0x05
+ 5cc:	8c 83       	std	Y+4, r24	; 0x04
 	uint16_t checksum = 0;
- 53e:	1a 82       	std	Y+2, r1	; 0x02
- 540:	19 82       	std	Y+1, r1	; 0x01
+ 5ce:	1a 82       	std	Y+2, r1	; 0x02
+ 5d0:	19 82       	std	Y+1, r1	; 0x01
 
 	for(uint8_t i = DYNAMIXEL_ID; i <= (packet[DYNAMIXEL_LENGTH] + 2); i++)
- 542:	82 e0       	ldi	r24, 0x02	; 2
- 544:	8b 83       	std	Y+3, r24	; 0x03
- 546:	14 c0       	rjmp	.+40     	; 0x570 <dynamixel_calculatechecksum+0x44>
+ 5d2:	82 e0       	ldi	r24, 0x02	; 2
+ 5d4:	8b 83       	std	Y+3, r24	; 0x03
+ 5d6:	14 c0       	rjmp	.+40     	; 0x600 <dynamixel_calculatechecksum+0x44>
 		checksum += packet[i];
- 548:	8b 81       	ldd	r24, Y+3	; 0x03
- 54a:	88 2f       	mov	r24, r24
- 54c:	90 e0       	ldi	r25, 0x00	; 0
- 54e:	2c 81       	ldd	r18, Y+4	; 0x04
- 550:	3d 81       	ldd	r19, Y+5	; 0x05
- 552:	82 0f       	add	r24, r18
- 554:	93 1f       	adc	r25, r19
- 556:	fc 01       	movw	r30, r24
- 558:	80 81       	ld	r24, Z
- 55a:	88 2f       	mov	r24, r24
- 55c:	90 e0       	ldi	r25, 0x00	; 0
- 55e:	29 81       	ldd	r18, Y+1	; 0x01
- 560:	3a 81       	ldd	r19, Y+2	; 0x02
- 562:	82 0f       	add	r24, r18
- 564:	93 1f       	adc	r25, r19
- 566:	9a 83       	std	Y+2, r25	; 0x02
- 568:	89 83       	std	Y+1, r24	; 0x01
+ 5d8:	8b 81       	ldd	r24, Y+3	; 0x03
+ 5da:	88 2f       	mov	r24, r24
+ 5dc:	90 e0       	ldi	r25, 0x00	; 0
+ 5de:	2c 81       	ldd	r18, Y+4	; 0x04
+ 5e0:	3d 81       	ldd	r19, Y+5	; 0x05
+ 5e2:	82 0f       	add	r24, r18
+ 5e4:	93 1f       	adc	r25, r19
+ 5e6:	fc 01       	movw	r30, r24
+ 5e8:	80 81       	ld	r24, Z
+ 5ea:	88 2f       	mov	r24, r24
+ 5ec:	90 e0       	ldi	r25, 0x00	; 0
+ 5ee:	29 81       	ldd	r18, Y+1	; 0x01
+ 5f0:	3a 81       	ldd	r19, Y+2	; 0x02
+ 5f2:	82 0f       	add	r24, r18
+ 5f4:	93 1f       	adc	r25, r19
+ 5f6:	9a 83       	std	Y+2, r25	; 0x02
+ 5f8:	89 83       	std	Y+1, r24	; 0x01
 
 uint8_t dynamixel_calculatechecksum(volatile uint8_t* packet)
 {
 	uint16_t checksum = 0;
 
 	for(uint8_t i = DYNAMIXEL_ID; i <= (packet[DYNAMIXEL_LENGTH] + 2); i++)
- 56a:	8b 81       	ldd	r24, Y+3	; 0x03
- 56c:	8f 5f       	subi	r24, 0xFF	; 255
- 56e:	8b 83       	std	Y+3, r24	; 0x03
- 570:	8b 81       	ldd	r24, Y+3	; 0x03
- 572:	28 2f       	mov	r18, r24
- 574:	30 e0       	ldi	r19, 0x00	; 0
- 576:	8c 81       	ldd	r24, Y+4	; 0x04
- 578:	9d 81       	ldd	r25, Y+5	; 0x05
- 57a:	03 96       	adiw	r24, 0x03	; 3
- 57c:	fc 01       	movw	r30, r24
- 57e:	80 81       	ld	r24, Z
- 580:	88 2f       	mov	r24, r24
- 582:	90 e0       	ldi	r25, 0x00	; 0
- 584:	02 96       	adiw	r24, 0x02	; 2
- 586:	82 17       	cp	r24, r18
- 588:	93 07       	cpc	r25, r19
- 58a:	f4 f6       	brge	.-68     	; 0x548 <dynamixel_calculatechecksum+0x1c>
+ 5fa:	8b 81       	ldd	r24, Y+3	; 0x03
+ 5fc:	8f 5f       	subi	r24, 0xFF	; 255
+ 5fe:	8b 83       	std	Y+3, r24	; 0x03
+ 600:	8b 81       	ldd	r24, Y+3	; 0x03
+ 602:	28 2f       	mov	r18, r24
+ 604:	30 e0       	ldi	r19, 0x00	; 0
+ 606:	8c 81       	ldd	r24, Y+4	; 0x04
+ 608:	9d 81       	ldd	r25, Y+5	; 0x05
+ 60a:	03 96       	adiw	r24, 0x03	; 3
+ 60c:	fc 01       	movw	r30, r24
+ 60e:	80 81       	ld	r24, Z
+ 610:	88 2f       	mov	r24, r24
+ 612:	90 e0       	ldi	r25, 0x00	; 0
+ 614:	02 96       	adiw	r24, 0x02	; 2
+ 616:	82 17       	cp	r24, r18
+ 618:	93 07       	cpc	r25, r19
+ 61a:	f4 f6       	brge	.-68     	; 0x5d8 <dynamixel_calculatechecksum+0x1c>
 		checksum += packet[i];
 
 	return ~(checksum % 256);
- 58c:	89 81       	ldd	r24, Y+1	; 0x01
- 58e:	80 95       	com	r24
+ 61c:	89 81       	ldd	r24, Y+1	; 0x01
+ 61e:	80 95       	com	r24
 }
- 590:	0f 90       	pop	r0
- 592:	0f 90       	pop	r0
- 594:	0f 90       	pop	r0
- 596:	0f 90       	pop	r0
- 598:	0f 90       	pop	r0
- 59a:	df 91       	pop	r29
- 59c:	cf 91       	pop	r28
- 59e:	08 95       	ret
+ 620:	0f 90       	pop	r0
+ 622:	0f 90       	pop	r0
+ 624:	0f 90       	pop	r0
+ 626:	0f 90       	pop	r0
+ 628:	0f 90       	pop	r0
+ 62a:	df 91       	pop	r29
+ 62c:	cf 91       	pop	r28
+ 62e:	08 95       	ret
 
-000005a0 <dynamixel_writepacket>:
+00000630 <dynamixel_writepacket>:
 
 uint8_t dynamixel_writepacket(volatile uint8_t* txpacket, uint8_t packetlength)
 {
- 5a0:	cf 93       	push	r28
- 5a2:	df 93       	push	r29
- 5a4:	00 d0       	rcall	.+0      	; 0x5a6 <dynamixel_writepacket+0x6>
- 5a6:	00 d0       	rcall	.+0      	; 0x5a8 <dynamixel_writepacket+0x8>
- 5a8:	cd b7       	in	r28, 0x3d	; 61
- 5aa:	de b7       	in	r29, 0x3e	; 62
- 5ac:	9b 83       	std	Y+3, r25	; 0x03
- 5ae:	8a 83       	std	Y+2, r24	; 0x02
- 5b0:	6c 83       	std	Y+4, r22	; 0x04
+ 630:	cf 93       	push	r28
+ 632:	df 93       	push	r29
+ 634:	00 d0       	rcall	.+0      	; 0x636 <dynamixel_writepacket+0x6>
+ 636:	00 d0       	rcall	.+0      	; 0x638 <dynamixel_writepacket+0x8>
+ 638:	cd b7       	in	r28, 0x3d	; 61
+ 63a:	de b7       	in	r29, 0x3e	; 62
+ 63c:	9b 83       	std	Y+3, r25	; 0x03
+ 63e:	8a 83       	std	Y+2, r24	; 0x02
+ 640:	6c 83       	std	Y+4, r22	; 0x04
 	for(uint8_t i = 0; i < packetlength; i++)
- 5b2:	19 82       	std	Y+1, r1	; 0x01
- 5b4:	0e c0       	rjmp	.+28     	; 0x5d2 <dynamixel_writepacket+0x32>
+ 642:	19 82       	std	Y+1, r1	; 0x01
+ 644:	0e c0       	rjmp	.+28     	; 0x662 <dynamixel_writepacket+0x32>
 		dynamixel_write(txpacket[i]);
- 5b6:	89 81       	ldd	r24, Y+1	; 0x01
- 5b8:	88 2f       	mov	r24, r24
- 5ba:	90 e0       	ldi	r25, 0x00	; 0
- 5bc:	2a 81       	ldd	r18, Y+2	; 0x02
- 5be:	3b 81       	ldd	r19, Y+3	; 0x03
- 5c0:	82 0f       	add	r24, r18
- 5c2:	93 1f       	adc	r25, r19
- 5c4:	fc 01       	movw	r30, r24
- 5c6:	80 81       	ld	r24, Z
- 5c8:	0e 94 7c 02 	call	0x4f8	; 0x4f8 <dynamixel_write>
-	return ~(checksum % 256);
-}
-
-uint8_t dynamixel_writepacket(volatile uint8_t* txpacket, uint8_t packetlength)
-{
-	for(uint8_t i = 0; i < packetlength; i++)
- 5cc:	89 81       	ldd	r24, Y+1	; 0x01
- 5ce:	8f 5f       	subi	r24, 0xFF	; 255
- 5d0:	89 83       	std	Y+1, r24	; 0x01
- 5d2:	99 81       	ldd	r25, Y+1	; 0x01
- 5d4:	8c 81       	ldd	r24, Y+4	; 0x04
- 5d6:	98 17       	cp	r25, r24
- 5d8:	70 f3       	brcs	.-36     	; 0x5b6 <dynamixel_writepacket+0x16>
-		dynamixel_write(txpacket[i]);
-
-	return DYNAMIXEL_SUCCESS;
- 5da:	81 e0       	ldi	r24, 0x01	; 1
-}
- 5dc:	0f 90       	pop	r0
- 5de:	0f 90       	pop	r0
- 5e0:	0f 90       	pop	r0
- 5e2:	0f 90       	pop	r0
- 5e4:	df 91       	pop	r29
- 5e6:	cf 91       	pop	r28
- 5e8:	08 95       	ret
-
-000005ea <dynamixel_readpacket>:
-
-uint8_t dynamixel_readpacket(volatile uint8_t* rxpacket, uint8_t packetlength)
-{
- 5ea:	1f 93       	push	r17
- 5ec:	cf 93       	push	r28
- 5ee:	df 93       	push	r29
- 5f0:	00 d0       	rcall	.+0      	; 0x5f2 <dynamixel_readpacket+0x8>
- 5f2:	00 d0       	rcall	.+0      	; 0x5f4 <dynamixel_readpacket+0xa>
- 5f4:	1f 92       	push	r1
- 5f6:	cd b7       	in	r28, 0x3d	; 61
- 5f8:	de b7       	in	r29, 0x3e	; 62
- 5fa:	9c 83       	std	Y+4, r25	; 0x04
- 5fc:	8b 83       	std	Y+3, r24	; 0x03
- 5fe:	6d 83       	std	Y+5, r22	; 0x05
-	uint16_t ulcounter = 0;
- 600:	1a 82       	std	Y+2, r1	; 0x02
- 602:	19 82       	std	Y+1, r1	; 0x01
-
-	while(dynamixel_rxindex < packetlength)
- 604:	0c c0       	rjmp	.+24     	; 0x61e <dynamixel_readpacket+0x34>
-	{
-		if(ulcounter++ > 10000)
- 606:	89 81       	ldd	r24, Y+1	; 0x01
- 608:	9a 81       	ldd	r25, Y+2	; 0x02
- 60a:	9c 01       	movw	r18, r24
- 60c:	2f 5f       	subi	r18, 0xFF	; 255
- 60e:	3f 4f       	sbci	r19, 0xFF	; 255
- 610:	3a 83       	std	Y+2, r19	; 0x02
- 612:	29 83       	std	Y+1, r18	; 0x01
- 614:	81 31       	cpi	r24, 0x11	; 17
- 616:	97 42       	sbci	r25, 0x27	; 39
- 618:	10 f0       	brcs	.+4      	; 0x61e <dynamixel_readpacket+0x34>
-			return DYNAMIXEL_RX_TIMEOUT;
- 61a:	83 e0       	ldi	r24, 0x03	; 3
- 61c:	27 c0       	rjmp	.+78     	; 0x66c <dynamixel_readpacket+0x82>
-
-uint8_t dynamixel_readpacket(volatile uint8_t* rxpacket, uint8_t packetlength)
-{
-	uint16_t ulcounter = 0;
-
-	while(dynamixel_rxindex < packetlength)
- 61e:	90 91 24 01 	lds	r25, 0x0124
- 622:	8d 81       	ldd	r24, Y+5	; 0x05
- 624:	98 17       	cp	r25, r24
- 626:	78 f3       	brcs	.-34     	; 0x606 <dynamixel_readpacket+0x1c>
-	{
-		if(ulcounter++ > 10000)
-			return DYNAMIXEL_RX_TIMEOUT;
-	}
-
-	if((rxpacket[0] != 255) || (rxpacket[1] != 255))
- 628:	8b 81       	ldd	r24, Y+3	; 0x03
- 62a:	9c 81       	ldd	r25, Y+4	; 0x04
- 62c:	fc 01       	movw	r30, r24
- 62e:	80 81       	ld	r24, Z
- 630:	8f 3f       	cpi	r24, 0xFF	; 255
- 632:	39 f4       	brne	.+14     	; 0x642 <dynamixel_readpacket+0x58>
- 634:	8b 81       	ldd	r24, Y+3	; 0x03
- 636:	9c 81       	ldd	r25, Y+4	; 0x04
- 638:	01 96       	adiw	r24, 0x01	; 1
- 63a:	fc 01       	movw	r30, r24
- 63c:	80 81       	ld	r24, Z
- 63e:	8f 3f       	cpi	r24, 0xFF	; 255
- 640:	11 f0       	breq	.+4      	; 0x646 <dynamixel_readpacket+0x5c>
-		return DYNAMIXEL_RX_CORRUPT;
- 642:	82 e0       	ldi	r24, 0x02	; 2
- 644:	13 c0       	rjmp	.+38     	; 0x66c <dynamixel_readpacket+0x82>
-
-	if(rxpacket[packetlength - 1] != dynamixel_calculatechecksum(rxpacket))
- 646:	8d 81       	ldd	r24, Y+5	; 0x05
+ 646:	89 81       	ldd	r24, Y+1	; 0x01
  648:	88 2f       	mov	r24, r24
  64a:	90 e0       	ldi	r25, 0x00	; 0
- 64c:	01 97       	sbiw	r24, 0x01	; 1
- 64e:	2b 81       	ldd	r18, Y+3	; 0x03
- 650:	3c 81       	ldd	r19, Y+4	; 0x04
- 652:	82 0f       	add	r24, r18
- 654:	93 1f       	adc	r25, r19
- 656:	fc 01       	movw	r30, r24
- 658:	10 81       	ld	r17, Z
- 65a:	8b 81       	ldd	r24, Y+3	; 0x03
- 65c:	9c 81       	ldd	r25, Y+4	; 0x04
- 65e:	0e 94 96 02 	call	0x52c	; 0x52c <dynamixel_calculatechecksum>
- 662:	18 17       	cp	r17, r24
- 664:	11 f0       	breq	.+4      	; 0x66a <dynamixel_readpacket+0x80>
-		return DYNAMIXEL_RX_CORRUPT;
- 666:	82 e0       	ldi	r24, 0x02	; 2
- 668:	01 c0       	rjmp	.+2      	; 0x66c <dynamixel_readpacket+0x82>
+ 64c:	2a 81       	ldd	r18, Y+2	; 0x02
+ 64e:	3b 81       	ldd	r19, Y+3	; 0x03
+ 650:	82 0f       	add	r24, r18
+ 652:	93 1f       	adc	r25, r19
+ 654:	fc 01       	movw	r30, r24
+ 656:	80 81       	ld	r24, Z
+ 658:	0e 94 c4 02 	call	0x588	; 0x588 <dynamixel_write>
+	return ~(checksum % 256);
+}
+
+uint8_t dynamixel_writepacket(volatile uint8_t* txpacket, uint8_t packetlength)
+{
+	for(uint8_t i = 0; i < packetlength; i++)
+ 65c:	89 81       	ldd	r24, Y+1	; 0x01
+ 65e:	8f 5f       	subi	r24, 0xFF	; 255
+ 660:	89 83       	std	Y+1, r24	; 0x01
+ 662:	99 81       	ldd	r25, Y+1	; 0x01
+ 664:	8c 81       	ldd	r24, Y+4	; 0x04
+ 666:	98 17       	cp	r25, r24
+ 668:	70 f3       	brcs	.-36     	; 0x646 <dynamixel_writepacket+0x16>
+		dynamixel_write(txpacket[i]);
 
 	return DYNAMIXEL_SUCCESS;
  66a:	81 e0       	ldi	r24, 0x01	; 1
@@ -1027,1364 +1001,1361 @@ uint8_t dynamixel_readpacket(volatile uint8_t* rxpacket, uint8_t packetlength)
  66e:	0f 90       	pop	r0
  670:	0f 90       	pop	r0
  672:	0f 90       	pop	r0
- 674:	0f 90       	pop	r0
- 676:	df 91       	pop	r29
- 678:	cf 91       	pop	r28
- 67a:	1f 91       	pop	r17
- 67c:	08 95       	ret
+ 674:	df 91       	pop	r29
+ 676:	cf 91       	pop	r28
+ 678:	08 95       	ret
 
-0000067e <dynamixel_txrx>:
+0000067a <dynamixel_readpacket>:
+
+uint8_t dynamixel_readpacket(volatile uint8_t* rxpacket, uint8_t packetlength)
+{
+ 67a:	1f 93       	push	r17
+ 67c:	cf 93       	push	r28
+ 67e:	df 93       	push	r29
+ 680:	00 d0       	rcall	.+0      	; 0x682 <dynamixel_readpacket+0x8>
+ 682:	00 d0       	rcall	.+0      	; 0x684 <dynamixel_readpacket+0xa>
+ 684:	1f 92       	push	r1
+ 686:	cd b7       	in	r28, 0x3d	; 61
+ 688:	de b7       	in	r29, 0x3e	; 62
+ 68a:	9c 83       	std	Y+4, r25	; 0x04
+ 68c:	8b 83       	std	Y+3, r24	; 0x03
+ 68e:	6d 83       	std	Y+5, r22	; 0x05
+	uint16_t ulcounter = 0;
+ 690:	1a 82       	std	Y+2, r1	; 0x02
+ 692:	19 82       	std	Y+1, r1	; 0x01
+
+	while(dynamixel_rxindex < packetlength)
+ 694:	0c c0       	rjmp	.+24     	; 0x6ae <dynamixel_readpacket+0x34>
+	{
+		if(ulcounter++ > 10000)
+ 696:	89 81       	ldd	r24, Y+1	; 0x01
+ 698:	9a 81       	ldd	r25, Y+2	; 0x02
+ 69a:	9c 01       	movw	r18, r24
+ 69c:	2f 5f       	subi	r18, 0xFF	; 255
+ 69e:	3f 4f       	sbci	r19, 0xFF	; 255
+ 6a0:	3a 83       	std	Y+2, r19	; 0x02
+ 6a2:	29 83       	std	Y+1, r18	; 0x01
+ 6a4:	81 31       	cpi	r24, 0x11	; 17
+ 6a6:	97 42       	sbci	r25, 0x27	; 39
+ 6a8:	10 f0       	brcs	.+4      	; 0x6ae <dynamixel_readpacket+0x34>
+			return DYNAMIXEL_RX_TIMEOUT;
+ 6aa:	83 e0       	ldi	r24, 0x03	; 3
+ 6ac:	27 c0       	rjmp	.+78     	; 0x6fc <dynamixel_readpacket+0x82>
+
+uint8_t dynamixel_readpacket(volatile uint8_t* rxpacket, uint8_t packetlength)
+{
+	uint16_t ulcounter = 0;
+
+	while(dynamixel_rxindex < packetlength)
+ 6ae:	90 91 00 01 	lds	r25, 0x0100
+ 6b2:	8d 81       	ldd	r24, Y+5	; 0x05
+ 6b4:	98 17       	cp	r25, r24
+ 6b6:	78 f3       	brcs	.-34     	; 0x696 <dynamixel_readpacket+0x1c>
+	{
+		if(ulcounter++ > 10000)
+			return DYNAMIXEL_RX_TIMEOUT;
+	}
+
+	if((rxpacket[0] != 255) || (rxpacket[1] != 255))
+ 6b8:	8b 81       	ldd	r24, Y+3	; 0x03
+ 6ba:	9c 81       	ldd	r25, Y+4	; 0x04
+ 6bc:	fc 01       	movw	r30, r24
+ 6be:	80 81       	ld	r24, Z
+ 6c0:	8f 3f       	cpi	r24, 0xFF	; 255
+ 6c2:	39 f4       	brne	.+14     	; 0x6d2 <dynamixel_readpacket+0x58>
+ 6c4:	8b 81       	ldd	r24, Y+3	; 0x03
+ 6c6:	9c 81       	ldd	r25, Y+4	; 0x04
+ 6c8:	01 96       	adiw	r24, 0x01	; 1
+ 6ca:	fc 01       	movw	r30, r24
+ 6cc:	80 81       	ld	r24, Z
+ 6ce:	8f 3f       	cpi	r24, 0xFF	; 255
+ 6d0:	11 f0       	breq	.+4      	; 0x6d6 <dynamixel_readpacket+0x5c>
+		return DYNAMIXEL_RX_CORRUPT;
+ 6d2:	82 e0       	ldi	r24, 0x02	; 2
+ 6d4:	13 c0       	rjmp	.+38     	; 0x6fc <dynamixel_readpacket+0x82>
+
+	if(rxpacket[packetlength - 1] != dynamixel_calculatechecksum(rxpacket))
+ 6d6:	8d 81       	ldd	r24, Y+5	; 0x05
+ 6d8:	88 2f       	mov	r24, r24
+ 6da:	90 e0       	ldi	r25, 0x00	; 0
+ 6dc:	01 97       	sbiw	r24, 0x01	; 1
+ 6de:	2b 81       	ldd	r18, Y+3	; 0x03
+ 6e0:	3c 81       	ldd	r19, Y+4	; 0x04
+ 6e2:	82 0f       	add	r24, r18
+ 6e4:	93 1f       	adc	r25, r19
+ 6e6:	fc 01       	movw	r30, r24
+ 6e8:	10 81       	ld	r17, Z
+ 6ea:	8b 81       	ldd	r24, Y+3	; 0x03
+ 6ec:	9c 81       	ldd	r25, Y+4	; 0x04
+ 6ee:	0e 94 de 02 	call	0x5bc	; 0x5bc <dynamixel_calculatechecksum>
+ 6f2:	18 17       	cp	r17, r24
+ 6f4:	11 f0       	breq	.+4      	; 0x6fa <dynamixel_readpacket+0x80>
+		return DYNAMIXEL_RX_CORRUPT;
+ 6f6:	82 e0       	ldi	r24, 0x02	; 2
+ 6f8:	01 c0       	rjmp	.+2      	; 0x6fc <dynamixel_readpacket+0x82>
+
+	return DYNAMIXEL_SUCCESS;
+ 6fa:	81 e0       	ldi	r24, 0x01	; 1
+}
+ 6fc:	0f 90       	pop	r0
+ 6fe:	0f 90       	pop	r0
+ 700:	0f 90       	pop	r0
+ 702:	0f 90       	pop	r0
+ 704:	0f 90       	pop	r0
+ 706:	df 91       	pop	r29
+ 708:	cf 91       	pop	r28
+ 70a:	1f 91       	pop	r17
+ 70c:	08 95       	ret
+
+0000070e <dynamixel_txrx>:
 
 uint8_t dynamixel_txrx(volatile uint8_t* txpacket, volatile uint8_t* rxpacket)
 {
- 67e:	0f 93       	push	r16
- 680:	1f 93       	push	r17
- 682:	cf 93       	push	r28
- 684:	df 93       	push	r29
- 686:	00 d0       	rcall	.+0      	; 0x688 <dynamixel_txrx+0xa>
- 688:	00 d0       	rcall	.+0      	; 0x68a <dynamixel_txrx+0xc>
- 68a:	00 d0       	rcall	.+0      	; 0x68c <dynamixel_txrx+0xe>
- 68c:	cd b7       	in	r28, 0x3d	; 61
- 68e:	de b7       	in	r29, 0x3e	; 62
- 690:	9c 83       	std	Y+4, r25	; 0x04
- 692:	8b 83       	std	Y+3, r24	; 0x03
- 694:	7e 83       	std	Y+6, r23	; 0x06
- 696:	6d 83       	std	Y+5, r22	; 0x05
+ 70e:	0f 93       	push	r16
+ 710:	1f 93       	push	r17
+ 712:	cf 93       	push	r28
+ 714:	df 93       	push	r29
+ 716:	00 d0       	rcall	.+0      	; 0x718 <dynamixel_txrx+0xa>
+ 718:	00 d0       	rcall	.+0      	; 0x71a <dynamixel_txrx+0xc>
+ 71a:	00 d0       	rcall	.+0      	; 0x71c <dynamixel_txrx+0xe>
+ 71c:	cd b7       	in	r28, 0x3d	; 61
+ 71e:	de b7       	in	r29, 0x3e	; 62
+ 720:	9c 83       	std	Y+4, r25	; 0x04
+ 722:	8b 83       	std	Y+3, r24	; 0x03
+ 724:	7e 83       	std	Y+6, r23	; 0x06
+ 726:	6d 83       	std	Y+5, r22	; 0x05
 	uint8_t rxlength = 0;
- 698:	19 82       	std	Y+1, r1	; 0x01
+ 728:	19 82       	std	Y+1, r1	; 0x01
 	uint8_t txlength = dynamixel_txpacket[DYNAMIXEL_LENGTH] + 4;
- 69a:	80 91 28 01 	lds	r24, 0x0128
- 69e:	8c 5f       	subi	r24, 0xFC	; 252
- 6a0:	8a 83       	std	Y+2, r24	; 0x02
+ 72a:	80 91 04 01 	lds	r24, 0x0104
+ 72e:	8c 5f       	subi	r24, 0xFC	; 252
+ 730:	8a 83       	std	Y+2, r24	; 0x02
 
 	txpacket[0] = (uint8_t) 0xff;
- 6a2:	8b 81       	ldd	r24, Y+3	; 0x03
- 6a4:	9c 81       	ldd	r25, Y+4	; 0x04
- 6a6:	2f ef       	ldi	r18, 0xFF	; 255
- 6a8:	fc 01       	movw	r30, r24
- 6aa:	20 83       	st	Z, r18
+ 732:	8b 81       	ldd	r24, Y+3	; 0x03
+ 734:	9c 81       	ldd	r25, Y+4	; 0x04
+ 736:	2f ef       	ldi	r18, 0xFF	; 255
+ 738:	fc 01       	movw	r30, r24
+ 73a:	20 83       	st	Z, r18
 	txpacket[1] = (uint8_t) 0xff;
- 6ac:	8b 81       	ldd	r24, Y+3	; 0x03
- 6ae:	9c 81       	ldd	r25, Y+4	; 0x04
- 6b0:	01 96       	adiw	r24, 0x01	; 1
- 6b2:	2f ef       	ldi	r18, 0xFF	; 255
- 6b4:	fc 01       	movw	r30, r24
- 6b6:	20 83       	st	Z, r18
+ 73c:	8b 81       	ldd	r24, Y+3	; 0x03
+ 73e:	9c 81       	ldd	r25, Y+4	; 0x04
+ 740:	01 96       	adiw	r24, 0x01	; 1
+ 742:	2f ef       	ldi	r18, 0xFF	; 255
+ 744:	fc 01       	movw	r30, r24
+ 746:	20 83       	st	Z, r18
 	txpacket[txlength - 1] = (uint8_t) dynamixel_calculatechecksum(txpacket);
- 6b8:	8a 81       	ldd	r24, Y+2	; 0x02
- 6ba:	88 2f       	mov	r24, r24
- 6bc:	90 e0       	ldi	r25, 0x00	; 0
- 6be:	01 97       	sbiw	r24, 0x01	; 1
- 6c0:	2b 81       	ldd	r18, Y+3	; 0x03
- 6c2:	3c 81       	ldd	r19, Y+4	; 0x04
- 6c4:	89 01       	movw	r16, r18
- 6c6:	08 0f       	add	r16, r24
- 6c8:	19 1f       	adc	r17, r25
- 6ca:	8b 81       	ldd	r24, Y+3	; 0x03
- 6cc:	9c 81       	ldd	r25, Y+4	; 0x04
- 6ce:	0e 94 96 02 	call	0x52c	; 0x52c <dynamixel_calculatechecksum>
- 6d2:	f8 01       	movw	r30, r16
- 6d4:	80 83       	st	Z, r24
+ 748:	8a 81       	ldd	r24, Y+2	; 0x02
+ 74a:	88 2f       	mov	r24, r24
+ 74c:	90 e0       	ldi	r25, 0x00	; 0
+ 74e:	01 97       	sbiw	r24, 0x01	; 1
+ 750:	2b 81       	ldd	r18, Y+3	; 0x03
+ 752:	3c 81       	ldd	r19, Y+4	; 0x04
+ 754:	89 01       	movw	r16, r18
+ 756:	08 0f       	add	r16, r24
+ 758:	19 1f       	adc	r17, r25
+ 75a:	8b 81       	ldd	r24, Y+3	; 0x03
+ 75c:	9c 81       	ldd	r25, Y+4	; 0x04
+ 75e:	0e 94 de 02 	call	0x5bc	; 0x5bc <dynamixel_calculatechecksum>
+ 762:	f8 01       	movw	r30, r16
+ 764:	80 83       	st	Z, r24
 
 	dynamixel_settx();
- 6d6:	0e 94 42 01 	call	0x284	; 0x284 <dynamixel_settx>
+ 766:	0e 94 8a 01 	call	0x314	; 0x314 <dynamixel_settx>
 	dynamixel_writepacket(txpacket, txlength);
- 6da:	8b 81       	ldd	r24, Y+3	; 0x03
- 6dc:	9c 81       	ldd	r25, Y+4	; 0x04
- 6de:	6a 81       	ldd	r22, Y+2	; 0x02
- 6e0:	0e 94 d0 02 	call	0x5a0	; 0x5a0 <dynamixel_writepacket>
+ 76a:	8b 81       	ldd	r24, Y+3	; 0x03
+ 76c:	9c 81       	ldd	r25, Y+4	; 0x04
+ 76e:	6a 81       	ldd	r22, Y+2	; 0x02
+ 770:	0e 94 18 03 	call	0x630	; 0x630 <dynamixel_writepacket>
 	dynamixel_setrx();
- 6e4:	0e 94 5b 01 	call	0x2b6	; 0x2b6 <dynamixel_setrx>
+ 774:	0e 94 a3 01 	call	0x346	; 0x346 <dynamixel_setrx>
 
 	if(txpacket[DYNAMIXEL_ID] != DYNAMIXEL_BROADCAST_ID)
- 6e8:	8b 81       	ldd	r24, Y+3	; 0x03
- 6ea:	9c 81       	ldd	r25, Y+4	; 0x04
- 6ec:	02 96       	adiw	r24, 0x02	; 2
- 6ee:	fc 01       	movw	r30, r24
- 6f0:	80 81       	ld	r24, Z
- 6f2:	8e 3f       	cpi	r24, 0xFE	; 254
- 6f4:	b9 f0       	breq	.+46     	; 0x724 <dynamixel_txrx+0xa6>
+ 778:	8b 81       	ldd	r24, Y+3	; 0x03
+ 77a:	9c 81       	ldd	r25, Y+4	; 0x04
+ 77c:	02 96       	adiw	r24, 0x02	; 2
+ 77e:	fc 01       	movw	r30, r24
+ 780:	80 81       	ld	r24, Z
+ 782:	8e 3f       	cpi	r24, 0xFE	; 254
+ 784:	b9 f0       	breq	.+46     	; 0x7b4 <dynamixel_txrx+0xa6>
 	{
 		if(txpacket[DYNAMIXEL_INSTRUCTION] == DYNAMIXEL_READ)
- 6f6:	8b 81       	ldd	r24, Y+3	; 0x03
- 6f8:	9c 81       	ldd	r25, Y+4	; 0x04
- 6fa:	04 96       	adiw	r24, 0x04	; 4
- 6fc:	fc 01       	movw	r30, r24
- 6fe:	80 81       	ld	r24, Z
- 700:	82 30       	cpi	r24, 0x02	; 2
- 702:	41 f4       	brne	.+16     	; 0x714 <dynamixel_txrx+0x96>
+ 786:	8b 81       	ldd	r24, Y+3	; 0x03
+ 788:	9c 81       	ldd	r25, Y+4	; 0x04
+ 78a:	04 96       	adiw	r24, 0x04	; 4
+ 78c:	fc 01       	movw	r30, r24
+ 78e:	80 81       	ld	r24, Z
+ 790:	82 30       	cpi	r24, 0x02	; 2
+ 792:	41 f4       	brne	.+16     	; 0x7a4 <dynamixel_txrx+0x96>
 			rxlength = txpacket[DYNAMIXEL_PARAMETER + 1] + 6;
- 704:	8b 81       	ldd	r24, Y+3	; 0x03
- 706:	9c 81       	ldd	r25, Y+4	; 0x04
- 708:	06 96       	adiw	r24, 0x06	; 6
- 70a:	fc 01       	movw	r30, r24
- 70c:	80 81       	ld	r24, Z
- 70e:	8a 5f       	subi	r24, 0xFA	; 250
- 710:	89 83       	std	Y+1, r24	; 0x01
- 712:	02 c0       	rjmp	.+4      	; 0x718 <dynamixel_txrx+0x9a>
+ 794:	8b 81       	ldd	r24, Y+3	; 0x03
+ 796:	9c 81       	ldd	r25, Y+4	; 0x04
+ 798:	06 96       	adiw	r24, 0x06	; 6
+ 79a:	fc 01       	movw	r30, r24
+ 79c:	80 81       	ld	r24, Z
+ 79e:	8a 5f       	subi	r24, 0xFA	; 250
+ 7a0:	89 83       	std	Y+1, r24	; 0x01
+ 7a2:	02 c0       	rjmp	.+4      	; 0x7a8 <dynamixel_txrx+0x9a>
 		else
 			rxlength = 6;
- 714:	86 e0       	ldi	r24, 0x06	; 6
- 716:	89 83       	std	Y+1, r24	; 0x01
+ 7a4:	86 e0       	ldi	r24, 0x06	; 6
+ 7a6:	89 83       	std	Y+1, r24	; 0x01
 
 		return dynamixel_readpacket(rxpacket, rxlength);
- 718:	8d 81       	ldd	r24, Y+5	; 0x05
- 71a:	9e 81       	ldd	r25, Y+6	; 0x06
- 71c:	69 81       	ldd	r22, Y+1	; 0x01
- 71e:	0e 94 f5 02 	call	0x5ea	; 0x5ea <dynamixel_readpacket>
- 722:	03 c0       	rjmp	.+6      	; 0x72a <dynamixel_txrx+0xac>
+ 7a8:	8d 81       	ldd	r24, Y+5	; 0x05
+ 7aa:	9e 81       	ldd	r25, Y+6	; 0x06
+ 7ac:	69 81       	ldd	r22, Y+1	; 0x01
+ 7ae:	0e 94 3d 03 	call	0x67a	; 0x67a <dynamixel_readpacket>
+ 7b2:	03 c0       	rjmp	.+6      	; 0x7ba <dynamixel_txrx+0xac>
 	}
 
 	dynamixel_settx();
- 724:	0e 94 42 01 	call	0x284	; 0x284 <dynamixel_settx>
+ 7b4:	0e 94 8a 01 	call	0x314	; 0x314 <dynamixel_settx>
 
 	return DYNAMIXEL_SUCCESS;
- 728:	81 e0       	ldi	r24, 0x01	; 1
+ 7b8:	81 e0       	ldi	r24, 0x01	; 1
 }
- 72a:	26 96       	adiw	r28, 0x06	; 6
- 72c:	0f b6       	in	r0, 0x3f	; 63
- 72e:	f8 94       	cli
- 730:	de bf       	out	0x3e, r29	; 62
- 732:	0f be       	out	0x3f, r0	; 63
- 734:	cd bf       	out	0x3d, r28	; 61
- 736:	df 91       	pop	r29
- 738:	cf 91       	pop	r28
- 73a:	1f 91       	pop	r17
- 73c:	0f 91       	pop	r16
- 73e:	08 95       	ret
+ 7ba:	26 96       	adiw	r28, 0x06	; 6
+ 7bc:	0f b6       	in	r0, 0x3f	; 63
+ 7be:	f8 94       	cli
+ 7c0:	de bf       	out	0x3e, r29	; 62
+ 7c2:	0f be       	out	0x3f, r0	; 63
+ 7c4:	cd bf       	out	0x3d, r28	; 61
+ 7c6:	df 91       	pop	r29
+ 7c8:	cf 91       	pop	r28
+ 7ca:	1f 91       	pop	r17
+ 7cc:	0f 91       	pop	r16
+ 7ce:	08 95       	ret
 
-00000740 <dynamixel_ping>:
+000007d0 <dynamixel_ping>:
 
 uint8_t dynamixel_ping(uint8_t id)
 {
- 740:	cf 93       	push	r28
- 742:	df 93       	push	r29
- 744:	1f 92       	push	r1
- 746:	cd b7       	in	r28, 0x3d	; 61
- 748:	de b7       	in	r29, 0x3e	; 62
- 74a:	89 83       	std	Y+1, r24	; 0x01
+ 7d0:	cf 93       	push	r28
+ 7d2:	df 93       	push	r29
+ 7d4:	1f 92       	push	r1
+ 7d6:	cd b7       	in	r28, 0x3d	; 61
+ 7d8:	de b7       	in	r29, 0x3e	; 62
+ 7da:	89 83       	std	Y+1, r24	; 0x01
 	dynamixel_txpacket[DYNAMIXEL_ID]          = (uint8_t) id;
- 74c:	89 81       	ldd	r24, Y+1	; 0x01
- 74e:	80 93 27 01 	sts	0x0127, r24
+ 7dc:	89 81       	ldd	r24, Y+1	; 0x01
+ 7de:	80 93 03 01 	sts	0x0103, r24
 	dynamixel_txpacket[DYNAMIXEL_LENGTH]      = (uint8_t) 2;
- 752:	82 e0       	ldi	r24, 0x02	; 2
- 754:	80 93 28 01 	sts	0x0128, r24
+ 7e2:	82 e0       	ldi	r24, 0x02	; 2
+ 7e4:	80 93 04 01 	sts	0x0104, r24
 	dynamixel_txpacket[DYNAMIXEL_INSTRUCTION] = (uint8_t) DYNAMIXEL_PING;
- 758:	81 e0       	ldi	r24, 0x01	; 1
- 75a:	80 93 29 01 	sts	0x0129, r24
+ 7e8:	81 e0       	ldi	r24, 0x01	; 1
+ 7ea:	80 93 05 01 	sts	0x0105, r24
 
 	return dynamixel_txrx(dynamixel_txpacket, dynamixel_rxpacket);
- 75e:	65 ea       	ldi	r22, 0xA5	; 165
- 760:	71 e0       	ldi	r23, 0x01	; 1
- 762:	85 e2       	ldi	r24, 0x25	; 37
- 764:	91 e0       	ldi	r25, 0x01	; 1
- 766:	0e 94 3f 03 	call	0x67e	; 0x67e <dynamixel_txrx>
+ 7ee:	61 e8       	ldi	r22, 0x81	; 129
+ 7f0:	71 e0       	ldi	r23, 0x01	; 1
+ 7f2:	81 e0       	ldi	r24, 0x01	; 1
+ 7f4:	91 e0       	ldi	r25, 0x01	; 1
+ 7f6:	0e 94 87 03 	call	0x70e	; 0x70e <dynamixel_txrx>
 }
- 76a:	0f 90       	pop	r0
- 76c:	df 91       	pop	r29
- 76e:	cf 91       	pop	r28
- 770:	08 95       	ret
+ 7fa:	0f 90       	pop	r0
+ 7fc:	df 91       	pop	r29
+ 7fe:	cf 91       	pop	r28
+ 800:	08 95       	ret
 
-00000772 <dynamixel_readbyte>:
+00000802 <dynamixel_readbyte>:
 
 uint8_t dynamixel_readbyte(uint8_t id, uint8_t address, uint8_t* value)
 {
- 772:	cf 93       	push	r28
- 774:	df 93       	push	r29
- 776:	00 d0       	rcall	.+0      	; 0x778 <dynamixel_readbyte+0x6>
- 778:	00 d0       	rcall	.+0      	; 0x77a <dynamixel_readbyte+0x8>
- 77a:	1f 92       	push	r1
- 77c:	cd b7       	in	r28, 0x3d	; 61
- 77e:	de b7       	in	r29, 0x3e	; 62
- 780:	8a 83       	std	Y+2, r24	; 0x02
- 782:	6b 83       	std	Y+3, r22	; 0x03
- 784:	5d 83       	std	Y+5, r21	; 0x05
- 786:	4c 83       	std	Y+4, r20	; 0x04
+ 802:	cf 93       	push	r28
+ 804:	df 93       	push	r29
+ 806:	00 d0       	rcall	.+0      	; 0x808 <dynamixel_readbyte+0x6>
+ 808:	00 d0       	rcall	.+0      	; 0x80a <dynamixel_readbyte+0x8>
+ 80a:	1f 92       	push	r1
+ 80c:	cd b7       	in	r28, 0x3d	; 61
+ 80e:	de b7       	in	r29, 0x3e	; 62
+ 810:	8a 83       	std	Y+2, r24	; 0x02
+ 812:	6b 83       	std	Y+3, r22	; 0x03
+ 814:	5d 83       	std	Y+5, r21	; 0x05
+ 816:	4c 83       	std	Y+4, r20	; 0x04
 	uint8_t result;
 
 	dynamixel_txpacket[DYNAMIXEL_ID]          = (uint8_t) id;
- 788:	8a 81       	ldd	r24, Y+2	; 0x02
- 78a:	80 93 27 01 	sts	0x0127, r24
+ 818:	8a 81       	ldd	r24, Y+2	; 0x02
+ 81a:	80 93 03 01 	sts	0x0103, r24
 	dynamixel_txpacket[DYNAMIXEL_LENGTH]      = (uint8_t) 4;
- 78e:	84 e0       	ldi	r24, 0x04	; 4
- 790:	80 93 28 01 	sts	0x0128, r24
+ 81e:	84 e0       	ldi	r24, 0x04	; 4
+ 820:	80 93 04 01 	sts	0x0104, r24
 	dynamixel_txpacket[DYNAMIXEL_INSTRUCTION] = (uint8_t) DYNAMIXEL_READ;
- 794:	82 e0       	ldi	r24, 0x02	; 2
- 796:	80 93 29 01 	sts	0x0129, r24
+ 824:	82 e0       	ldi	r24, 0x02	; 2
+ 826:	80 93 05 01 	sts	0x0105, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER]   = (uint8_t) address;
- 79a:	8b 81       	ldd	r24, Y+3	; 0x03
- 79c:	80 93 2a 01 	sts	0x012A, r24
+ 82a:	8b 81       	ldd	r24, Y+3	; 0x03
+ 82c:	80 93 06 01 	sts	0x0106, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER+1] = (uint8_t) 1;
- 7a0:	81 e0       	ldi	r24, 0x01	; 1
- 7a2:	80 93 2b 01 	sts	0x012B, r24
+ 830:	81 e0       	ldi	r24, 0x01	; 1
+ 832:	80 93 07 01 	sts	0x0107, r24
 
 	result = dynamixel_txrx(dynamixel_txpacket, dynamixel_rxpacket);
- 7a6:	65 ea       	ldi	r22, 0xA5	; 165
- 7a8:	71 e0       	ldi	r23, 0x01	; 1
- 7aa:	85 e2       	ldi	r24, 0x25	; 37
- 7ac:	91 e0       	ldi	r25, 0x01	; 1
- 7ae:	0e 94 3f 03 	call	0x67e	; 0x67e <dynamixel_txrx>
- 7b2:	89 83       	std	Y+1, r24	; 0x01
+ 836:	61 e8       	ldi	r22, 0x81	; 129
+ 838:	71 e0       	ldi	r23, 0x01	; 1
+ 83a:	81 e0       	ldi	r24, 0x01	; 1
+ 83c:	91 e0       	ldi	r25, 0x01	; 1
+ 83e:	0e 94 87 03 	call	0x70e	; 0x70e <dynamixel_txrx>
+ 842:	89 83       	std	Y+1, r24	; 0x01
 
 	if(result == DYNAMIXEL_SUCCESS)
- 7b4:	89 81       	ldd	r24, Y+1	; 0x01
- 7b6:	81 30       	cpi	r24, 0x01	; 1
- 7b8:	31 f4       	brne	.+12     	; 0x7c6 <dynamixel_readbyte+0x54>
+ 844:	89 81       	ldd	r24, Y+1	; 0x01
+ 846:	81 30       	cpi	r24, 0x01	; 1
+ 848:	31 f4       	brne	.+12     	; 0x856 <dynamixel_readbyte+0x54>
 		*value = dynamixel_rxpacket[DYNAMIXEL_PARAMETER];
- 7ba:	20 91 aa 01 	lds	r18, 0x01AA
- 7be:	8c 81       	ldd	r24, Y+4	; 0x04
- 7c0:	9d 81       	ldd	r25, Y+5	; 0x05
- 7c2:	fc 01       	movw	r30, r24
- 7c4:	20 83       	st	Z, r18
+ 84a:	20 91 86 01 	lds	r18, 0x0186
+ 84e:	8c 81       	ldd	r24, Y+4	; 0x04
+ 850:	9d 81       	ldd	r25, Y+5	; 0x05
+ 852:	fc 01       	movw	r30, r24
+ 854:	20 83       	st	Z, r18
 
 	return result;
- 7c6:	89 81       	ldd	r24, Y+1	; 0x01
+ 856:	89 81       	ldd	r24, Y+1	; 0x01
 }
- 7c8:	0f 90       	pop	r0
- 7ca:	0f 90       	pop	r0
- 7cc:	0f 90       	pop	r0
- 7ce:	0f 90       	pop	r0
- 7d0:	0f 90       	pop	r0
- 7d2:	df 91       	pop	r29
- 7d4:	cf 91       	pop	r28
- 7d6:	08 95       	ret
+ 858:	0f 90       	pop	r0
+ 85a:	0f 90       	pop	r0
+ 85c:	0f 90       	pop	r0
+ 85e:	0f 90       	pop	r0
+ 860:	0f 90       	pop	r0
+ 862:	df 91       	pop	r29
+ 864:	cf 91       	pop	r28
+ 866:	08 95       	ret
 
-000007d8 <dynamixel_readword>:
+00000868 <dynamixel_readword>:
 
 uint8_t dynamixel_readword(uint8_t id, uint8_t address, uint16_t* value)
 {
- 7d8:	cf 93       	push	r28
- 7da:	df 93       	push	r29
- 7dc:	00 d0       	rcall	.+0      	; 0x7de <dynamixel_readword+0x6>
- 7de:	00 d0       	rcall	.+0      	; 0x7e0 <dynamixel_readword+0x8>
- 7e0:	1f 92       	push	r1
- 7e2:	cd b7       	in	r28, 0x3d	; 61
- 7e4:	de b7       	in	r29, 0x3e	; 62
- 7e6:	8a 83       	std	Y+2, r24	; 0x02
- 7e8:	6b 83       	std	Y+3, r22	; 0x03
- 7ea:	5d 83       	std	Y+5, r21	; 0x05
- 7ec:	4c 83       	std	Y+4, r20	; 0x04
+ 868:	cf 93       	push	r28
+ 86a:	df 93       	push	r29
+ 86c:	00 d0       	rcall	.+0      	; 0x86e <dynamixel_readword+0x6>
+ 86e:	00 d0       	rcall	.+0      	; 0x870 <dynamixel_readword+0x8>
+ 870:	1f 92       	push	r1
+ 872:	cd b7       	in	r28, 0x3d	; 61
+ 874:	de b7       	in	r29, 0x3e	; 62
+ 876:	8a 83       	std	Y+2, r24	; 0x02
+ 878:	6b 83       	std	Y+3, r22	; 0x03
+ 87a:	5d 83       	std	Y+5, r21	; 0x05
+ 87c:	4c 83       	std	Y+4, r20	; 0x04
 	uint8_t result;
 
 	dynamixel_txpacket[DYNAMIXEL_ID]          = (uint8_t) id;
- 7ee:	8a 81       	ldd	r24, Y+2	; 0x02
- 7f0:	80 93 27 01 	sts	0x0127, r24
+ 87e:	8a 81       	ldd	r24, Y+2	; 0x02
+ 880:	80 93 03 01 	sts	0x0103, r24
 	dynamixel_txpacket[DYNAMIXEL_LENGTH]      = (uint8_t) 4;
- 7f4:	84 e0       	ldi	r24, 0x04	; 4
- 7f6:	80 93 28 01 	sts	0x0128, r24
+ 884:	84 e0       	ldi	r24, 0x04	; 4
+ 886:	80 93 04 01 	sts	0x0104, r24
 	dynamixel_txpacket[DYNAMIXEL_INSTRUCTION] = (uint8_t) DYNAMIXEL_READ;
- 7fa:	82 e0       	ldi	r24, 0x02	; 2
- 7fc:	80 93 29 01 	sts	0x0129, r24
+ 88a:	82 e0       	ldi	r24, 0x02	; 2
+ 88c:	80 93 05 01 	sts	0x0105, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER]   = (uint8_t) address;
- 800:	8b 81       	ldd	r24, Y+3	; 0x03
- 802:	80 93 2a 01 	sts	0x012A, r24
+ 890:	8b 81       	ldd	r24, Y+3	; 0x03
+ 892:	80 93 06 01 	sts	0x0106, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER+1] = (uint8_t) 2;
- 806:	82 e0       	ldi	r24, 0x02	; 2
- 808:	80 93 2b 01 	sts	0x012B, r24
+ 896:	82 e0       	ldi	r24, 0x02	; 2
+ 898:	80 93 07 01 	sts	0x0107, r24
 
 	result = dynamixel_txrx(dynamixel_txpacket, dynamixel_rxpacket);
- 80c:	65 ea       	ldi	r22, 0xA5	; 165
- 80e:	71 e0       	ldi	r23, 0x01	; 1
- 810:	85 e2       	ldi	r24, 0x25	; 37
- 812:	91 e0       	ldi	r25, 0x01	; 1
- 814:	0e 94 3f 03 	call	0x67e	; 0x67e <dynamixel_txrx>
- 818:	89 83       	std	Y+1, r24	; 0x01
+ 89c:	61 e8       	ldi	r22, 0x81	; 129
+ 89e:	71 e0       	ldi	r23, 0x01	; 1
+ 8a0:	81 e0       	ldi	r24, 0x01	; 1
+ 8a2:	91 e0       	ldi	r25, 0x01	; 1
+ 8a4:	0e 94 87 03 	call	0x70e	; 0x70e <dynamixel_txrx>
+ 8a8:	89 83       	std	Y+1, r24	; 0x01
 
 	if(result == DYNAMIXEL_SUCCESS)
- 81a:	89 81       	ldd	r24, Y+1	; 0x01
- 81c:	81 30       	cpi	r24, 0x01	; 1
- 81e:	69 f4       	brne	.+26     	; 0x83a <dynamixel_readword+0x62>
+ 8aa:	89 81       	ldd	r24, Y+1	; 0x01
+ 8ac:	81 30       	cpi	r24, 0x01	; 1
+ 8ae:	69 f4       	brne	.+26     	; 0x8ca <dynamixel_readword+0x62>
 		*value = (uint16_t) dynamixel_makeword(dynamixel_rxpacket[DYNAMIXEL_PARAMETER], dynamixel_rxpacket[DYNAMIXEL_PARAMETER+1]);
- 820:	90 91 ab 01 	lds	r25, 0x01AB
- 824:	80 91 aa 01 	lds	r24, 0x01AA
- 828:	69 2f       	mov	r22, r25
- 82a:	0e 94 4b 05 	call	0xa96	; 0xa96 <dynamixel_makeword>
- 82e:	9c 01       	movw	r18, r24
- 830:	8c 81       	ldd	r24, Y+4	; 0x04
- 832:	9d 81       	ldd	r25, Y+5	; 0x05
- 834:	fc 01       	movw	r30, r24
- 836:	31 83       	std	Z+1, r19	; 0x01
- 838:	20 83       	st	Z, r18
+ 8b0:	90 91 87 01 	lds	r25, 0x0187
+ 8b4:	80 91 86 01 	lds	r24, 0x0186
+ 8b8:	69 2f       	mov	r22, r25
+ 8ba:	0e 94 93 05 	call	0xb26	; 0xb26 <dynamixel_makeword>
+ 8be:	9c 01       	movw	r18, r24
+ 8c0:	8c 81       	ldd	r24, Y+4	; 0x04
+ 8c2:	9d 81       	ldd	r25, Y+5	; 0x05
+ 8c4:	fc 01       	movw	r30, r24
+ 8c6:	31 83       	std	Z+1, r19	; 0x01
+ 8c8:	20 83       	st	Z, r18
 
 	return result;
- 83a:	89 81       	ldd	r24, Y+1	; 0x01
+ 8ca:	89 81       	ldd	r24, Y+1	; 0x01
 }
- 83c:	0f 90       	pop	r0
- 83e:	0f 90       	pop	r0
- 840:	0f 90       	pop	r0
- 842:	0f 90       	pop	r0
- 844:	0f 90       	pop	r0
- 846:	df 91       	pop	r29
- 848:	cf 91       	pop	r28
- 84a:	08 95       	ret
+ 8cc:	0f 90       	pop	r0
+ 8ce:	0f 90       	pop	r0
+ 8d0:	0f 90       	pop	r0
+ 8d2:	0f 90       	pop	r0
+ 8d4:	0f 90       	pop	r0
+ 8d6:	df 91       	pop	r29
+ 8d8:	cf 91       	pop	r28
+ 8da:	08 95       	ret
 
-0000084c <dynamixel_readtable>:
+000008dc <dynamixel_readtable>:
 
 uint8_t dynamixel_readtable(uint8_t id, uint8_t start_address, uint8_t end_address, uint8_t* table)
 {
- 84c:	cf 93       	push	r28
- 84e:	df 93       	push	r29
- 850:	cd b7       	in	r28, 0x3d	; 61
- 852:	de b7       	in	r29, 0x3e	; 62
- 854:	28 97       	sbiw	r28, 0x08	; 8
- 856:	0f b6       	in	r0, 0x3f	; 63
- 858:	f8 94       	cli
- 85a:	de bf       	out	0x3e, r29	; 62
- 85c:	0f be       	out	0x3f, r0	; 63
- 85e:	cd bf       	out	0x3d, r28	; 61
- 860:	8c 83       	std	Y+4, r24	; 0x04
- 862:	6d 83       	std	Y+5, r22	; 0x05
- 864:	4e 83       	std	Y+6, r20	; 0x06
- 866:	38 87       	std	Y+8, r19	; 0x08
- 868:	2f 83       	std	Y+7, r18	; 0x07
+ 8dc:	cf 93       	push	r28
+ 8de:	df 93       	push	r29
+ 8e0:	cd b7       	in	r28, 0x3d	; 61
+ 8e2:	de b7       	in	r29, 0x3e	; 62
+ 8e4:	28 97       	sbiw	r28, 0x08	; 8
+ 8e6:	0f b6       	in	r0, 0x3f	; 63
+ 8e8:	f8 94       	cli
+ 8ea:	de bf       	out	0x3e, r29	; 62
+ 8ec:	0f be       	out	0x3f, r0	; 63
+ 8ee:	cd bf       	out	0x3d, r28	; 61
+ 8f0:	8c 83       	std	Y+4, r24	; 0x04
+ 8f2:	6d 83       	std	Y+5, r22	; 0x05
+ 8f4:	4e 83       	std	Y+6, r20	; 0x06
+ 8f6:	38 87       	std	Y+8, r19	; 0x08
+ 8f8:	2f 83       	std	Y+7, r18	; 0x07
 	uint8_t result;
 	uint8_t length = end_address - start_address + 1;
- 86a:	9e 81       	ldd	r25, Y+6	; 0x06
- 86c:	8d 81       	ldd	r24, Y+5	; 0x05
- 86e:	29 2f       	mov	r18, r25
- 870:	28 1b       	sub	r18, r24
- 872:	82 2f       	mov	r24, r18
- 874:	8f 5f       	subi	r24, 0xFF	; 255
- 876:	8a 83       	std	Y+2, r24	; 0x02
+ 8fa:	9e 81       	ldd	r25, Y+6	; 0x06
+ 8fc:	8d 81       	ldd	r24, Y+5	; 0x05
+ 8fe:	29 2f       	mov	r18, r25
+ 900:	28 1b       	sub	r18, r24
+ 902:	82 2f       	mov	r24, r18
+ 904:	8f 5f       	subi	r24, 0xFF	; 255
+ 906:	8a 83       	std	Y+2, r24	; 0x02
 
 	dynamixel_txpacket[DYNAMIXEL_ID]          = (uint8_t) id;
- 878:	8c 81       	ldd	r24, Y+4	; 0x04
- 87a:	80 93 27 01 	sts	0x0127, r24
+ 908:	8c 81       	ldd	r24, Y+4	; 0x04
+ 90a:	80 93 03 01 	sts	0x0103, r24
 	dynamixel_txpacket[DYNAMIXEL_LENGTH]      = (uint8_t) 4;
- 87e:	84 e0       	ldi	r24, 0x04	; 4
- 880:	80 93 28 01 	sts	0x0128, r24
+ 90e:	84 e0       	ldi	r24, 0x04	; 4
+ 910:	80 93 04 01 	sts	0x0104, r24
 	dynamixel_txpacket[DYNAMIXEL_INSTRUCTION] = (uint8_t) DYNAMIXEL_READ;
- 884:	82 e0       	ldi	r24, 0x02	; 2
- 886:	80 93 29 01 	sts	0x0129, r24
+ 914:	82 e0       	ldi	r24, 0x02	; 2
+ 916:	80 93 05 01 	sts	0x0105, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER]   = (uint8_t) start_address;
- 88a:	8d 81       	ldd	r24, Y+5	; 0x05
- 88c:	80 93 2a 01 	sts	0x012A, r24
+ 91a:	8d 81       	ldd	r24, Y+5	; 0x05
+ 91c:	80 93 06 01 	sts	0x0106, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER+1] = (uint8_t) length;
- 890:	8a 81       	ldd	r24, Y+2	; 0x02
- 892:	80 93 2b 01 	sts	0x012B, r24
+ 920:	8a 81       	ldd	r24, Y+2	; 0x02
+ 922:	80 93 07 01 	sts	0x0107, r24
 
 	result = dynamixel_txrx(dynamixel_txpacket, dynamixel_rxpacket);
- 896:	65 ea       	ldi	r22, 0xA5	; 165
- 898:	71 e0       	ldi	r23, 0x01	; 1
- 89a:	85 e2       	ldi	r24, 0x25	; 37
- 89c:	91 e0       	ldi	r25, 0x01	; 1
- 89e:	0e 94 3f 03 	call	0x67e	; 0x67e <dynamixel_txrx>
- 8a2:	8b 83       	std	Y+3, r24	; 0x03
+ 926:	61 e8       	ldi	r22, 0x81	; 129
+ 928:	71 e0       	ldi	r23, 0x01	; 1
+ 92a:	81 e0       	ldi	r24, 0x01	; 1
+ 92c:	91 e0       	ldi	r25, 0x01	; 1
+ 92e:	0e 94 87 03 	call	0x70e	; 0x70e <dynamixel_txrx>
+ 932:	8b 83       	std	Y+3, r24	; 0x03
 
 	if(result == DYNAMIXEL_SUCCESS)
- 8a4:	8b 81       	ldd	r24, Y+3	; 0x03
- 8a6:	81 30       	cpi	r24, 0x01	; 1
- 8a8:	09 f5       	brne	.+66     	; 0x8ec <dynamixel_readtable+0xa0>
+ 934:	8b 81       	ldd	r24, Y+3	; 0x03
+ 936:	81 30       	cpi	r24, 0x01	; 1
+ 938:	09 f5       	brne	.+66     	; 0x97c <dynamixel_readtable+0xa0>
 	{
 		for(uint8_t i = 0; i < length; i++)
- 8aa:	19 82       	std	Y+1, r1	; 0x01
- 8ac:	1b c0       	rjmp	.+54     	; 0x8e4 <dynamixel_readtable+0x98>
+ 93a:	19 82       	std	Y+1, r1	; 0x01
+ 93c:	1b c0       	rjmp	.+54     	; 0x974 <dynamixel_readtable+0x98>
 			table[start_address + i] = dynamixel_rxpacket[DYNAMIXEL_PARAMETER + i];
- 8ae:	8d 81       	ldd	r24, Y+5	; 0x05
- 8b0:	28 2f       	mov	r18, r24
- 8b2:	30 e0       	ldi	r19, 0x00	; 0
- 8b4:	89 81       	ldd	r24, Y+1	; 0x01
- 8b6:	88 2f       	mov	r24, r24
- 8b8:	90 e0       	ldi	r25, 0x00	; 0
- 8ba:	82 0f       	add	r24, r18
- 8bc:	93 1f       	adc	r25, r19
- 8be:	9c 01       	movw	r18, r24
- 8c0:	8f 81       	ldd	r24, Y+7	; 0x07
- 8c2:	98 85       	ldd	r25, Y+8	; 0x08
- 8c4:	82 0f       	add	r24, r18
- 8c6:	93 1f       	adc	r25, r19
- 8c8:	29 81       	ldd	r18, Y+1	; 0x01
- 8ca:	22 2f       	mov	r18, r18
- 8cc:	30 e0       	ldi	r19, 0x00	; 0
- 8ce:	2b 5f       	subi	r18, 0xFB	; 251
- 8d0:	3f 4f       	sbci	r19, 0xFF	; 255
- 8d2:	2b 55       	subi	r18, 0x5B	; 91
- 8d4:	3e 4f       	sbci	r19, 0xFE	; 254
- 8d6:	f9 01       	movw	r30, r18
- 8d8:	20 81       	ld	r18, Z
- 8da:	fc 01       	movw	r30, r24
- 8dc:	20 83       	st	Z, r18
+ 93e:	8d 81       	ldd	r24, Y+5	; 0x05
+ 940:	28 2f       	mov	r18, r24
+ 942:	30 e0       	ldi	r19, 0x00	; 0
+ 944:	89 81       	ldd	r24, Y+1	; 0x01
+ 946:	88 2f       	mov	r24, r24
+ 948:	90 e0       	ldi	r25, 0x00	; 0
+ 94a:	82 0f       	add	r24, r18
+ 94c:	93 1f       	adc	r25, r19
+ 94e:	9c 01       	movw	r18, r24
+ 950:	8f 81       	ldd	r24, Y+7	; 0x07
+ 952:	98 85       	ldd	r25, Y+8	; 0x08
+ 954:	82 0f       	add	r24, r18
+ 956:	93 1f       	adc	r25, r19
+ 958:	29 81       	ldd	r18, Y+1	; 0x01
+ 95a:	22 2f       	mov	r18, r18
+ 95c:	30 e0       	ldi	r19, 0x00	; 0
+ 95e:	2b 5f       	subi	r18, 0xFB	; 251
+ 960:	3f 4f       	sbci	r19, 0xFF	; 255
+ 962:	2f 57       	subi	r18, 0x7F	; 127
+ 964:	3e 4f       	sbci	r19, 0xFE	; 254
+ 966:	f9 01       	movw	r30, r18
+ 968:	20 81       	ld	r18, Z
+ 96a:	fc 01       	movw	r30, r24
+ 96c:	20 83       	st	Z, r18
 
 	result = dynamixel_txrx(dynamixel_txpacket, dynamixel_rxpacket);
 
 	if(result == DYNAMIXEL_SUCCESS)
 	{
 		for(uint8_t i = 0; i < length; i++)
- 8de:	89 81       	ldd	r24, Y+1	; 0x01
- 8e0:	8f 5f       	subi	r24, 0xFF	; 255
- 8e2:	89 83       	std	Y+1, r24	; 0x01
- 8e4:	99 81       	ldd	r25, Y+1	; 0x01
- 8e6:	8a 81       	ldd	r24, Y+2	; 0x02
- 8e8:	98 17       	cp	r25, r24
- 8ea:	08 f3       	brcs	.-62     	; 0x8ae <dynamixel_readtable+0x62>
+ 96e:	89 81       	ldd	r24, Y+1	; 0x01
+ 970:	8f 5f       	subi	r24, 0xFF	; 255
+ 972:	89 83       	std	Y+1, r24	; 0x01
+ 974:	99 81       	ldd	r25, Y+1	; 0x01
+ 976:	8a 81       	ldd	r24, Y+2	; 0x02
+ 978:	98 17       	cp	r25, r24
+ 97a:	08 f3       	brcs	.-62     	; 0x93e <dynamixel_readtable+0x62>
 			table[start_address + i] = dynamixel_rxpacket[DYNAMIXEL_PARAMETER + i];
 	}
 
 	return result;
- 8ec:	8b 81       	ldd	r24, Y+3	; 0x03
+ 97c:	8b 81       	ldd	r24, Y+3	; 0x03
 }
- 8ee:	28 96       	adiw	r28, 0x08	; 8
- 8f0:	0f b6       	in	r0, 0x3f	; 63
- 8f2:	f8 94       	cli
- 8f4:	de bf       	out	0x3e, r29	; 62
- 8f6:	0f be       	out	0x3f, r0	; 63
- 8f8:	cd bf       	out	0x3d, r28	; 61
- 8fa:	df 91       	pop	r29
- 8fc:	cf 91       	pop	r28
- 8fe:	08 95       	ret
+ 97e:	28 96       	adiw	r28, 0x08	; 8
+ 980:	0f b6       	in	r0, 0x3f	; 63
+ 982:	f8 94       	cli
+ 984:	de bf       	out	0x3e, r29	; 62
+ 986:	0f be       	out	0x3f, r0	; 63
+ 988:	cd bf       	out	0x3d, r28	; 61
+ 98a:	df 91       	pop	r29
+ 98c:	cf 91       	pop	r28
+ 98e:	08 95       	ret
 
-00000900 <dynamixel_writebyte>:
+00000990 <dynamixel_writebyte>:
 
 uint8_t dynamixel_writebyte(uint8_t id, uint8_t address, uint8_t value)
 {
- 900:	cf 93       	push	r28
- 902:	df 93       	push	r29
- 904:	00 d0       	rcall	.+0      	; 0x906 <dynamixel_writebyte+0x6>
- 906:	1f 92       	push	r1
- 908:	cd b7       	in	r28, 0x3d	; 61
- 90a:	de b7       	in	r29, 0x3e	; 62
- 90c:	89 83       	std	Y+1, r24	; 0x01
- 90e:	6a 83       	std	Y+2, r22	; 0x02
- 910:	4b 83       	std	Y+3, r20	; 0x03
+ 990:	cf 93       	push	r28
+ 992:	df 93       	push	r29
+ 994:	00 d0       	rcall	.+0      	; 0x996 <dynamixel_writebyte+0x6>
+ 996:	1f 92       	push	r1
+ 998:	cd b7       	in	r28, 0x3d	; 61
+ 99a:	de b7       	in	r29, 0x3e	; 62
+ 99c:	89 83       	std	Y+1, r24	; 0x01
+ 99e:	6a 83       	std	Y+2, r22	; 0x02
+ 9a0:	4b 83       	std	Y+3, r20	; 0x03
 	dynamixel_txpacket[DYNAMIXEL_ID]          = (uint8_t) id;
- 912:	89 81       	ldd	r24, Y+1	; 0x01
- 914:	80 93 27 01 	sts	0x0127, r24
+ 9a2:	89 81       	ldd	r24, Y+1	; 0x01
+ 9a4:	80 93 03 01 	sts	0x0103, r24
 	dynamixel_txpacket[DYNAMIXEL_LENGTH]      = (uint8_t) 4;
- 918:	84 e0       	ldi	r24, 0x04	; 4
- 91a:	80 93 28 01 	sts	0x0128, r24
+ 9a8:	84 e0       	ldi	r24, 0x04	; 4
+ 9aa:	80 93 04 01 	sts	0x0104, r24
 	dynamixel_txpacket[DYNAMIXEL_INSTRUCTION] = (uint8_t) DYNAMIXEL_WRITE;
- 91e:	83 e0       	ldi	r24, 0x03	; 3
- 920:	80 93 29 01 	sts	0x0129, r24
+ 9ae:	83 e0       	ldi	r24, 0x03	; 3
+ 9b0:	80 93 05 01 	sts	0x0105, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER]   = (uint8_t) address;
- 924:	8a 81       	ldd	r24, Y+2	; 0x02
- 926:	80 93 2a 01 	sts	0x012A, r24
+ 9b4:	8a 81       	ldd	r24, Y+2	; 0x02
+ 9b6:	80 93 06 01 	sts	0x0106, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER+1] = (uint8_t) value;
- 92a:	8b 81       	ldd	r24, Y+3	; 0x03
- 92c:	80 93 2b 01 	sts	0x012B, r24
+ 9ba:	8b 81       	ldd	r24, Y+3	; 0x03
+ 9bc:	80 93 07 01 	sts	0x0107, r24
 
 	return dynamixel_txrx(dynamixel_txpacket, dynamixel_rxpacket);
- 930:	65 ea       	ldi	r22, 0xA5	; 165
- 932:	71 e0       	ldi	r23, 0x01	; 1
- 934:	85 e2       	ldi	r24, 0x25	; 37
- 936:	91 e0       	ldi	r25, 0x01	; 1
- 938:	0e 94 3f 03 	call	0x67e	; 0x67e <dynamixel_txrx>
+ 9c0:	61 e8       	ldi	r22, 0x81	; 129
+ 9c2:	71 e0       	ldi	r23, 0x01	; 1
+ 9c4:	81 e0       	ldi	r24, 0x01	; 1
+ 9c6:	91 e0       	ldi	r25, 0x01	; 1
+ 9c8:	0e 94 87 03 	call	0x70e	; 0x70e <dynamixel_txrx>
 }
- 93c:	0f 90       	pop	r0
- 93e:	0f 90       	pop	r0
- 940:	0f 90       	pop	r0
- 942:	df 91       	pop	r29
- 944:	cf 91       	pop	r28
- 946:	08 95       	ret
+ 9cc:	0f 90       	pop	r0
+ 9ce:	0f 90       	pop	r0
+ 9d0:	0f 90       	pop	r0
+ 9d2:	df 91       	pop	r29
+ 9d4:	cf 91       	pop	r28
+ 9d6:	08 95       	ret
 
-00000948 <dynamixel_writeword>:
+000009d8 <dynamixel_writeword>:
 
 uint8_t dynamixel_writeword(uint8_t id, uint8_t address, uint16_t value)
 {
- 948:	cf 93       	push	r28
- 94a:	df 93       	push	r29
- 94c:	00 d0       	rcall	.+0      	; 0x94e <dynamixel_writeword+0x6>
- 94e:	00 d0       	rcall	.+0      	; 0x950 <dynamixel_writeword+0x8>
- 950:	cd b7       	in	r28, 0x3d	; 61
- 952:	de b7       	in	r29, 0x3e	; 62
- 954:	89 83       	std	Y+1, r24	; 0x01
- 956:	6a 83       	std	Y+2, r22	; 0x02
- 958:	5c 83       	std	Y+4, r21	; 0x04
- 95a:	4b 83       	std	Y+3, r20	; 0x03
+ 9d8:	cf 93       	push	r28
+ 9da:	df 93       	push	r29
+ 9dc:	00 d0       	rcall	.+0      	; 0x9de <dynamixel_writeword+0x6>
+ 9de:	00 d0       	rcall	.+0      	; 0x9e0 <dynamixel_writeword+0x8>
+ 9e0:	cd b7       	in	r28, 0x3d	; 61
+ 9e2:	de b7       	in	r29, 0x3e	; 62
+ 9e4:	89 83       	std	Y+1, r24	; 0x01
+ 9e6:	6a 83       	std	Y+2, r22	; 0x02
+ 9e8:	5c 83       	std	Y+4, r21	; 0x04
+ 9ea:	4b 83       	std	Y+3, r20	; 0x03
 	dynamixel_txpacket[DYNAMIXEL_ID]          = (uint8_t) id;
- 95c:	89 81       	ldd	r24, Y+1	; 0x01
- 95e:	80 93 27 01 	sts	0x0127, r24
+ 9ec:	89 81       	ldd	r24, Y+1	; 0x01
+ 9ee:	80 93 03 01 	sts	0x0103, r24
 	dynamixel_txpacket[DYNAMIXEL_LENGTH]      = (uint8_t) 5;
- 962:	85 e0       	ldi	r24, 0x05	; 5
- 964:	80 93 28 01 	sts	0x0128, r24
+ 9f2:	85 e0       	ldi	r24, 0x05	; 5
+ 9f4:	80 93 04 01 	sts	0x0104, r24
 	dynamixel_txpacket[DYNAMIXEL_INSTRUCTION] = (uint8_t) DYNAMIXEL_WRITE;
- 968:	83 e0       	ldi	r24, 0x03	; 3
- 96a:	80 93 29 01 	sts	0x0129, r24
+ 9f8:	83 e0       	ldi	r24, 0x03	; 3
+ 9fa:	80 93 05 01 	sts	0x0105, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER]   = (uint8_t) address;
- 96e:	8a 81       	ldd	r24, Y+2	; 0x02
- 970:	80 93 2a 01 	sts	0x012A, r24
+ 9fe:	8a 81       	ldd	r24, Y+2	; 0x02
+ a00:	80 93 06 01 	sts	0x0106, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER+1] = (uint8_t) dynamixel_getlowbyte(value);
- 974:	8b 81       	ldd	r24, Y+3	; 0x03
- 976:	9c 81       	ldd	r25, Y+4	; 0x04
- 978:	0e 94 61 05 	call	0xac2	; 0xac2 <dynamixel_getlowbyte>
- 97c:	80 93 2b 01 	sts	0x012B, r24
+ a04:	8b 81       	ldd	r24, Y+3	; 0x03
+ a06:	9c 81       	ldd	r25, Y+4	; 0x04
+ a08:	0e 94 a9 05 	call	0xb52	; 0xb52 <dynamixel_getlowbyte>
+ a0c:	80 93 07 01 	sts	0x0107, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER+2] = (uint8_t) dynamixel_gethighbyte(value);
- 980:	8b 81       	ldd	r24, Y+3	; 0x03
- 982:	9c 81       	ldd	r25, Y+4	; 0x04
- 984:	0e 94 6e 05 	call	0xadc	; 0xadc <dynamixel_gethighbyte>
- 988:	80 93 2c 01 	sts	0x012C, r24
+ a10:	8b 81       	ldd	r24, Y+3	; 0x03
+ a12:	9c 81       	ldd	r25, Y+4	; 0x04
+ a14:	0e 94 b6 05 	call	0xb6c	; 0xb6c <dynamixel_gethighbyte>
+ a18:	80 93 08 01 	sts	0x0108, r24
 
 	return dynamixel_txrx(dynamixel_txpacket, dynamixel_rxpacket);
- 98c:	65 ea       	ldi	r22, 0xA5	; 165
- 98e:	71 e0       	ldi	r23, 0x01	; 1
- 990:	85 e2       	ldi	r24, 0x25	; 37
- 992:	91 e0       	ldi	r25, 0x01	; 1
- 994:	0e 94 3f 03 	call	0x67e	; 0x67e <dynamixel_txrx>
+ a1c:	61 e8       	ldi	r22, 0x81	; 129
+ a1e:	71 e0       	ldi	r23, 0x01	; 1
+ a20:	81 e0       	ldi	r24, 0x01	; 1
+ a22:	91 e0       	ldi	r25, 0x01	; 1
+ a24:	0e 94 87 03 	call	0x70e	; 0x70e <dynamixel_txrx>
 }
- 998:	0f 90       	pop	r0
- 99a:	0f 90       	pop	r0
- 99c:	0f 90       	pop	r0
- 99e:	0f 90       	pop	r0
- 9a0:	df 91       	pop	r29
- 9a2:	cf 91       	pop	r28
- 9a4:	08 95       	ret
+ a28:	0f 90       	pop	r0
+ a2a:	0f 90       	pop	r0
+ a2c:	0f 90       	pop	r0
+ a2e:	0f 90       	pop	r0
+ a30:	df 91       	pop	r29
+ a32:	cf 91       	pop	r28
+ a34:	08 95       	ret
 
-000009a6 <dynamixel_syncwrite>:
+00000a36 <dynamixel_syncwrite>:
 
 uint8_t dynamixel_syncwrite(uint8_t address, uint8_t length, uint8_t number, uint8_t* param)
 {
- 9a6:	cf 93       	push	r28
- 9a8:	df 93       	push	r29
- 9aa:	00 d0       	rcall	.+0      	; 0x9ac <dynamixel_syncwrite+0x6>
- 9ac:	00 d0       	rcall	.+0      	; 0x9ae <dynamixel_syncwrite+0x8>
- 9ae:	00 d0       	rcall	.+0      	; 0x9b0 <dynamixel_syncwrite+0xa>
- 9b0:	cd b7       	in	r28, 0x3d	; 61
- 9b2:	de b7       	in	r29, 0x3e	; 62
- 9b4:	8a 83       	std	Y+2, r24	; 0x02
- 9b6:	6b 83       	std	Y+3, r22	; 0x03
- 9b8:	4c 83       	std	Y+4, r20	; 0x04
- 9ba:	3e 83       	std	Y+6, r19	; 0x06
- 9bc:	2d 83       	std	Y+5, r18	; 0x05
+ a36:	cf 93       	push	r28
+ a38:	df 93       	push	r29
+ a3a:	00 d0       	rcall	.+0      	; 0xa3c <dynamixel_syncwrite+0x6>
+ a3c:	00 d0       	rcall	.+0      	; 0xa3e <dynamixel_syncwrite+0x8>
+ a3e:	00 d0       	rcall	.+0      	; 0xa40 <dynamixel_syncwrite+0xa>
+ a40:	cd b7       	in	r28, 0x3d	; 61
+ a42:	de b7       	in	r29, 0x3e	; 62
+ a44:	8a 83       	std	Y+2, r24	; 0x02
+ a46:	6b 83       	std	Y+3, r22	; 0x03
+ a48:	4c 83       	std	Y+4, r20	; 0x04
+ a4a:	3e 83       	std	Y+6, r19	; 0x06
+ a4c:	2d 83       	std	Y+5, r18	; 0x05
 	dynamixel_txpacket[DYNAMIXEL_ID]          = (uint8_t) DYNAMIXEL_BROADCAST_ID;
- 9be:	8e ef       	ldi	r24, 0xFE	; 254
- 9c0:	80 93 27 01 	sts	0x0127, r24
+ a4e:	8e ef       	ldi	r24, 0xFE	; 254
+ a50:	80 93 03 01 	sts	0x0103, r24
 	dynamixel_txpacket[DYNAMIXEL_INSTRUCTION] = (uint8_t) DYNAMIXEL_SYNC_WRITE;
- 9c4:	83 e8       	ldi	r24, 0x83	; 131
- 9c6:	80 93 29 01 	sts	0x0129, r24
+ a54:	83 e8       	ldi	r24, 0x83	; 131
+ a56:	80 93 05 01 	sts	0x0105, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER]   = (uint8_t) address;
- 9ca:	8a 81       	ldd	r24, Y+2	; 0x02
- 9cc:	80 93 2a 01 	sts	0x012A, r24
+ a5a:	8a 81       	ldd	r24, Y+2	; 0x02
+ a5c:	80 93 06 01 	sts	0x0106, r24
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER+1] = (uint8_t) length;
- 9d0:	8b 81       	ldd	r24, Y+3	; 0x03
- 9d2:	80 93 2b 01 	sts	0x012B, r24
+ a60:	8b 81       	ldd	r24, Y+3	; 0x03
+ a62:	80 93 07 01 	sts	0x0107, r24
 	dynamixel_txpacket[DYNAMIXEL_LENGTH]      = (uint8_t) ((length + 1) * number + 4);
- 9d6:	8b 81       	ldd	r24, Y+3	; 0x03
- 9d8:	88 2f       	mov	r24, r24
- 9da:	90 e0       	ldi	r25, 0x00	; 0
- 9dc:	01 96       	adiw	r24, 0x01	; 1
- 9de:	98 2f       	mov	r25, r24
- 9e0:	8c 81       	ldd	r24, Y+4	; 0x04
- 9e2:	98 9f       	mul	r25, r24
- 9e4:	80 2d       	mov	r24, r0
- 9e6:	11 24       	eor	r1, r1
- 9e8:	8c 5f       	subi	r24, 0xFC	; 252
- 9ea:	80 93 28 01 	sts	0x0128, r24
+ a66:	8b 81       	ldd	r24, Y+3	; 0x03
+ a68:	88 2f       	mov	r24, r24
+ a6a:	90 e0       	ldi	r25, 0x00	; 0
+ a6c:	01 96       	adiw	r24, 0x01	; 1
+ a6e:	98 2f       	mov	r25, r24
+ a70:	8c 81       	ldd	r24, Y+4	; 0x04
+ a72:	98 9f       	mul	r25, r24
+ a74:	80 2d       	mov	r24, r0
+ a76:	11 24       	eor	r1, r1
+ a78:	8c 5f       	subi	r24, 0xFC	; 252
+ a7a:	80 93 04 01 	sts	0x0104, r24
 
 	for(uint8_t i = 0; i < ((length + 1) * number); i++)
- 9ee:	19 82       	std	Y+1, r1	; 0x01
- 9f0:	14 c0       	rjmp	.+40     	; 0xa1a <dynamixel_syncwrite+0x74>
+ a7e:	19 82       	std	Y+1, r1	; 0x01
+ a80:	14 c0       	rjmp	.+40     	; 0xaaa <dynamixel_syncwrite+0x74>
 		dynamixel_txpacket[DYNAMIXEL_PARAMETER + 2 + i] = (uint8_t) param[i];
- 9f2:	89 81       	ldd	r24, Y+1	; 0x01
- 9f4:	88 2f       	mov	r24, r24
- 9f6:	90 e0       	ldi	r25, 0x00	; 0
- 9f8:	07 96       	adiw	r24, 0x07	; 7
- 9fa:	29 81       	ldd	r18, Y+1	; 0x01
- 9fc:	22 2f       	mov	r18, r18
- 9fe:	30 e0       	ldi	r19, 0x00	; 0
- a00:	4d 81       	ldd	r20, Y+5	; 0x05
- a02:	5e 81       	ldd	r21, Y+6	; 0x06
- a04:	24 0f       	add	r18, r20
- a06:	35 1f       	adc	r19, r21
- a08:	f9 01       	movw	r30, r18
- a0a:	20 81       	ld	r18, Z
- a0c:	8b 5d       	subi	r24, 0xDB	; 219
- a0e:	9e 4f       	sbci	r25, 0xFE	; 254
- a10:	fc 01       	movw	r30, r24
- a12:	20 83       	st	Z, r18
+ a82:	89 81       	ldd	r24, Y+1	; 0x01
+ a84:	88 2f       	mov	r24, r24
+ a86:	90 e0       	ldi	r25, 0x00	; 0
+ a88:	07 96       	adiw	r24, 0x07	; 7
+ a8a:	29 81       	ldd	r18, Y+1	; 0x01
+ a8c:	22 2f       	mov	r18, r18
+ a8e:	30 e0       	ldi	r19, 0x00	; 0
+ a90:	4d 81       	ldd	r20, Y+5	; 0x05
+ a92:	5e 81       	ldd	r21, Y+6	; 0x06
+ a94:	24 0f       	add	r18, r20
+ a96:	35 1f       	adc	r19, r21
+ a98:	f9 01       	movw	r30, r18
+ a9a:	20 81       	ld	r18, Z
+ a9c:	8f 5f       	subi	r24, 0xFF	; 255
+ a9e:	9e 4f       	sbci	r25, 0xFE	; 254
+ aa0:	fc 01       	movw	r30, r24
+ aa2:	20 83       	st	Z, r18
 	dynamixel_txpacket[DYNAMIXEL_INSTRUCTION] = (uint8_t) DYNAMIXEL_SYNC_WRITE;
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER]   = (uint8_t) address;
 	dynamixel_txpacket[DYNAMIXEL_PARAMETER+1] = (uint8_t) length;
 	dynamixel_txpacket[DYNAMIXEL_LENGTH]      = (uint8_t) ((length + 1) * number + 4);
 
 	for(uint8_t i = 0; i < ((length + 1) * number); i++)
- a14:	89 81       	ldd	r24, Y+1	; 0x01
- a16:	8f 5f       	subi	r24, 0xFF	; 255
- a18:	89 83       	std	Y+1, r24	; 0x01
- a1a:	89 81       	ldd	r24, Y+1	; 0x01
- a1c:	28 2f       	mov	r18, r24
- a1e:	30 e0       	ldi	r19, 0x00	; 0
- a20:	8b 81       	ldd	r24, Y+3	; 0x03
- a22:	88 2f       	mov	r24, r24
- a24:	90 e0       	ldi	r25, 0x00	; 0
- a26:	bc 01       	movw	r22, r24
- a28:	6f 5f       	subi	r22, 0xFF	; 255
- a2a:	7f 4f       	sbci	r23, 0xFF	; 255
- a2c:	8c 81       	ldd	r24, Y+4	; 0x04
- a2e:	48 2f       	mov	r20, r24
- a30:	50 e0       	ldi	r21, 0x00	; 0
- a32:	64 9f       	mul	r22, r20
- a34:	c0 01       	movw	r24, r0
- a36:	65 9f       	mul	r22, r21
- a38:	90 0d       	add	r25, r0
- a3a:	74 9f       	mul	r23, r20
- a3c:	90 0d       	add	r25, r0
- a3e:	11 24       	eor	r1, r1
- a40:	28 17       	cp	r18, r24
- a42:	39 07       	cpc	r19, r25
- a44:	b4 f2       	brlt	.-84     	; 0x9f2 <dynamixel_syncwrite+0x4c>
+ aa4:	89 81       	ldd	r24, Y+1	; 0x01
+ aa6:	8f 5f       	subi	r24, 0xFF	; 255
+ aa8:	89 83       	std	Y+1, r24	; 0x01
+ aaa:	89 81       	ldd	r24, Y+1	; 0x01
+ aac:	28 2f       	mov	r18, r24
+ aae:	30 e0       	ldi	r19, 0x00	; 0
+ ab0:	8b 81       	ldd	r24, Y+3	; 0x03
+ ab2:	88 2f       	mov	r24, r24
+ ab4:	90 e0       	ldi	r25, 0x00	; 0
+ ab6:	bc 01       	movw	r22, r24
+ ab8:	6f 5f       	subi	r22, 0xFF	; 255
+ aba:	7f 4f       	sbci	r23, 0xFF	; 255
+ abc:	8c 81       	ldd	r24, Y+4	; 0x04
+ abe:	48 2f       	mov	r20, r24
+ ac0:	50 e0       	ldi	r21, 0x00	; 0
+ ac2:	64 9f       	mul	r22, r20
+ ac4:	c0 01       	movw	r24, r0
+ ac6:	65 9f       	mul	r22, r21
+ ac8:	90 0d       	add	r25, r0
+ aca:	74 9f       	mul	r23, r20
+ acc:	90 0d       	add	r25, r0
+ ace:	11 24       	eor	r1, r1
+ ad0:	28 17       	cp	r18, r24
+ ad2:	39 07       	cpc	r19, r25
+ ad4:	b4 f2       	brlt	.-84     	; 0xa82 <dynamixel_syncwrite+0x4c>
 		dynamixel_txpacket[DYNAMIXEL_PARAMETER + 2 + i] = (uint8_t) param[i];
 
 	return dynamixel_txrx(dynamixel_txpacket, dynamixel_rxpacket);
- a46:	65 ea       	ldi	r22, 0xA5	; 165
- a48:	71 e0       	ldi	r23, 0x01	; 1
- a4a:	85 e2       	ldi	r24, 0x25	; 37
- a4c:	91 e0       	ldi	r25, 0x01	; 1
- a4e:	0e 94 3f 03 	call	0x67e	; 0x67e <dynamixel_txrx>
+ ad6:	61 e8       	ldi	r22, 0x81	; 129
+ ad8:	71 e0       	ldi	r23, 0x01	; 1
+ ada:	81 e0       	ldi	r24, 0x01	; 1
+ adc:	91 e0       	ldi	r25, 0x01	; 1
+ ade:	0e 94 87 03 	call	0x70e	; 0x70e <dynamixel_txrx>
 }
- a52:	26 96       	adiw	r28, 0x06	; 6
- a54:	0f b6       	in	r0, 0x3f	; 63
- a56:	f8 94       	cli
- a58:	de bf       	out	0x3e, r29	; 62
- a5a:	0f be       	out	0x3f, r0	; 63
- a5c:	cd bf       	out	0x3d, r28	; 61
- a5e:	df 91       	pop	r29
- a60:	cf 91       	pop	r28
- a62:	08 95       	ret
+ ae2:	26 96       	adiw	r28, 0x06	; 6
+ ae4:	0f b6       	in	r0, 0x3f	; 63
+ ae6:	f8 94       	cli
+ ae8:	de bf       	out	0x3e, r29	; 62
+ aea:	0f be       	out	0x3f, r0	; 63
+ aec:	cd bf       	out	0x3d, r28	; 61
+ aee:	df 91       	pop	r29
+ af0:	cf 91       	pop	r28
+ af2:	08 95       	ret
 
-00000a64 <dynamixel_reset>:
+00000af4 <dynamixel_reset>:
 
 uint8_t dynamixel_reset(uint8_t id)
 {
- a64:	cf 93       	push	r28
- a66:	df 93       	push	r29
- a68:	1f 92       	push	r1
- a6a:	cd b7       	in	r28, 0x3d	; 61
- a6c:	de b7       	in	r29, 0x3e	; 62
- a6e:	89 83       	std	Y+1, r24	; 0x01
+ af4:	cf 93       	push	r28
+ af6:	df 93       	push	r29
+ af8:	1f 92       	push	r1
+ afa:	cd b7       	in	r28, 0x3d	; 61
+ afc:	de b7       	in	r29, 0x3e	; 62
+ afe:	89 83       	std	Y+1, r24	; 0x01
 	dynamixel_txpacket[DYNAMIXEL_ID]          = (uint8_t) id;
- a70:	89 81       	ldd	r24, Y+1	; 0x01
- a72:	80 93 27 01 	sts	0x0127, r24
+ b00:	89 81       	ldd	r24, Y+1	; 0x01
+ b02:	80 93 03 01 	sts	0x0103, r24
 	dynamixel_txpacket[DYNAMIXEL_LENGTH]      = (uint8_t) 2;
- a76:	82 e0       	ldi	r24, 0x02	; 2
- a78:	80 93 28 01 	sts	0x0128, r24
+ b06:	82 e0       	ldi	r24, 0x02	; 2
+ b08:	80 93 04 01 	sts	0x0104, r24
 	dynamixel_txpacket[DYNAMIXEL_INSTRUCTION] = (uint8_t) DYNAMIXEL_RESET;
- a7c:	86 e0       	ldi	r24, 0x06	; 6
- a7e:	80 93 29 01 	sts	0x0129, r24
+ b0c:	86 e0       	ldi	r24, 0x06	; 6
+ b0e:	80 93 05 01 	sts	0x0105, r24
 
 	return dynamixel_txrx(dynamixel_txpacket, dynamixel_rxpacket);
- a82:	65 ea       	ldi	r22, 0xA5	; 165
- a84:	71 e0       	ldi	r23, 0x01	; 1
- a86:	85 e2       	ldi	r24, 0x25	; 37
- a88:	91 e0       	ldi	r25, 0x01	; 1
- a8a:	0e 94 3f 03 	call	0x67e	; 0x67e <dynamixel_txrx>
+ b12:	61 e8       	ldi	r22, 0x81	; 129
+ b14:	71 e0       	ldi	r23, 0x01	; 1
+ b16:	81 e0       	ldi	r24, 0x01	; 1
+ b18:	91 e0       	ldi	r25, 0x01	; 1
+ b1a:	0e 94 87 03 	call	0x70e	; 0x70e <dynamixel_txrx>
 }
- a8e:	0f 90       	pop	r0
- a90:	df 91       	pop	r29
- a92:	cf 91       	pop	r28
- a94:	08 95       	ret
+ b1e:	0f 90       	pop	r0
+ b20:	df 91       	pop	r29
+ b22:	cf 91       	pop	r28
+ b24:	08 95       	ret
 
-00000a96 <dynamixel_makeword>:
+00000b26 <dynamixel_makeword>:
 
 uint16_t dynamixel_makeword(uint8_t lowbyte, uint8_t highbyte)
 {
- a96:	cf 93       	push	r28
- a98:	df 93       	push	r29
- a9a:	00 d0       	rcall	.+0      	; 0xa9c <dynamixel_makeword+0x6>
- a9c:	cd b7       	in	r28, 0x3d	; 61
- a9e:	de b7       	in	r29, 0x3e	; 62
- aa0:	89 83       	std	Y+1, r24	; 0x01
- aa2:	6a 83       	std	Y+2, r22	; 0x02
+ b26:	cf 93       	push	r28
+ b28:	df 93       	push	r29
+ b2a:	00 d0       	rcall	.+0      	; 0xb2c <dynamixel_makeword+0x6>
+ b2c:	cd b7       	in	r28, 0x3d	; 61
+ b2e:	de b7       	in	r29, 0x3e	; 62
+ b30:	89 83       	std	Y+1, r24	; 0x01
+ b32:	6a 83       	std	Y+2, r22	; 0x02
 	return ((highbyte << 8) + lowbyte);
- aa4:	8a 81       	ldd	r24, Y+2	; 0x02
- aa6:	88 2f       	mov	r24, r24
- aa8:	90 e0       	ldi	r25, 0x00	; 0
- aaa:	38 2f       	mov	r19, r24
- aac:	22 27       	eor	r18, r18
- aae:	89 81       	ldd	r24, Y+1	; 0x01
- ab0:	88 2f       	mov	r24, r24
- ab2:	90 e0       	ldi	r25, 0x00	; 0
- ab4:	82 0f       	add	r24, r18
- ab6:	93 1f       	adc	r25, r19
+ b34:	8a 81       	ldd	r24, Y+2	; 0x02
+ b36:	88 2f       	mov	r24, r24
+ b38:	90 e0       	ldi	r25, 0x00	; 0
+ b3a:	38 2f       	mov	r19, r24
+ b3c:	22 27       	eor	r18, r18
+ b3e:	89 81       	ldd	r24, Y+1	; 0x01
+ b40:	88 2f       	mov	r24, r24
+ b42:	90 e0       	ldi	r25, 0x00	; 0
+ b44:	82 0f       	add	r24, r18
+ b46:	93 1f       	adc	r25, r19
 }
- ab8:	0f 90       	pop	r0
- aba:	0f 90       	pop	r0
- abc:	df 91       	pop	r29
- abe:	cf 91       	pop	r28
- ac0:	08 95       	ret
+ b48:	0f 90       	pop	r0
+ b4a:	0f 90       	pop	r0
+ b4c:	df 91       	pop	r29
+ b4e:	cf 91       	pop	r28
+ b50:	08 95       	ret
 
-00000ac2 <dynamixel_getlowbyte>:
+00000b52 <dynamixel_getlowbyte>:
 
 uint8_t dynamixel_getlowbyte(uint16_t word)
 {
- ac2:	cf 93       	push	r28
- ac4:	df 93       	push	r29
- ac6:	00 d0       	rcall	.+0      	; 0xac8 <dynamixel_getlowbyte+0x6>
- ac8:	cd b7       	in	r28, 0x3d	; 61
- aca:	de b7       	in	r29, 0x3e	; 62
- acc:	9a 83       	std	Y+2, r25	; 0x02
- ace:	89 83       	std	Y+1, r24	; 0x01
+ b52:	cf 93       	push	r28
+ b54:	df 93       	push	r29
+ b56:	00 d0       	rcall	.+0      	; 0xb58 <dynamixel_getlowbyte+0x6>
+ b58:	cd b7       	in	r28, 0x3d	; 61
+ b5a:	de b7       	in	r29, 0x3e	; 62
+ b5c:	9a 83       	std	Y+2, r25	; 0x02
+ b5e:	89 83       	std	Y+1, r24	; 0x01
 	return (word & 0xff);
- ad0:	89 81       	ldd	r24, Y+1	; 0x01
+ b60:	89 81       	ldd	r24, Y+1	; 0x01
 }
- ad2:	0f 90       	pop	r0
- ad4:	0f 90       	pop	r0
- ad6:	df 91       	pop	r29
- ad8:	cf 91       	pop	r28
- ada:	08 95       	ret
+ b62:	0f 90       	pop	r0
+ b64:	0f 90       	pop	r0
+ b66:	df 91       	pop	r29
+ b68:	cf 91       	pop	r28
+ b6a:	08 95       	ret
 
-00000adc <dynamixel_gethighbyte>:
+00000b6c <dynamixel_gethighbyte>:
 
 uint8_t dynamixel_gethighbyte(uint16_t word)
 {
- adc:	cf 93       	push	r28
- ade:	df 93       	push	r29
- ae0:	00 d0       	rcall	.+0      	; 0xae2 <dynamixel_gethighbyte+0x6>
- ae2:	cd b7       	in	r28, 0x3d	; 61
- ae4:	de b7       	in	r29, 0x3e	; 62
- ae6:	9a 83       	std	Y+2, r25	; 0x02
- ae8:	89 83       	std	Y+1, r24	; 0x01
+ b6c:	cf 93       	push	r28
+ b6e:	df 93       	push	r29
+ b70:	00 d0       	rcall	.+0      	; 0xb72 <dynamixel_gethighbyte+0x6>
+ b72:	cd b7       	in	r28, 0x3d	; 61
+ b74:	de b7       	in	r29, 0x3e	; 62
+ b76:	9a 83       	std	Y+2, r25	; 0x02
+ b78:	89 83       	std	Y+1, r24	; 0x01
 	return ((word & 0xff00) >> 8);
- aea:	89 81       	ldd	r24, Y+1	; 0x01
- aec:	9a 81       	ldd	r25, Y+2	; 0x02
- aee:	89 2f       	mov	r24, r25
- af0:	99 27       	eor	r25, r25
+ b7a:	89 81       	ldd	r24, Y+1	; 0x01
+ b7c:	9a 81       	ldd	r25, Y+2	; 0x02
+ b7e:	89 2f       	mov	r24, r25
+ b80:	99 27       	eor	r25, r25
 }
- af2:	0f 90       	pop	r0
- af4:	0f 90       	pop	r0
- af6:	df 91       	pop	r29
- af8:	cf 91       	pop	r28
- afa:	08 95       	ret
+ b82:	0f 90       	pop	r0
+ b84:	0f 90       	pop	r0
+ b86:	df 91       	pop	r29
+ b88:	cf 91       	pop	r28
+ b8a:	08 95       	ret
 
-00000afc <main>:
-		   57600,
-		   19200,
-		   9600
-};
-
-int main() {
- afc:	cf 93       	push	r28
- afe:	df 93       	push	r29
- b00:	cd b7       	in	r28, 0x3d	; 61
- b02:	de b7       	in	r29, 0x3e	; 62
- b04:	60 97       	sbiw	r28, 0x10	; 16
- b06:	0f b6       	in	r0, 0x3f	; 63
- b08:	f8 94       	cli
- b0a:	de bf       	out	0x3e, r29	; 62
- b0c:	0f be       	out	0x3f, r0	; 63
- b0e:	cd bf       	out	0x3d, r28	; 61
-	for(int i=0; i<9; i++) {
- b10:	1a 82       	std	Y+2, r1	; 0x02
- b12:	19 82       	std	Y+1, r1	; 0x01
- b14:	94 c0       	rjmp	.+296    	; 0xc3e <main+0x142>
-		dynamixel_init(bauds[i]);
- b16:	89 81       	ldd	r24, Y+1	; 0x01
- b18:	9a 81       	ldd	r25, Y+2	; 0x02
- b1a:	88 0f       	add	r24, r24
- b1c:	99 1f       	adc	r25, r25
- b1e:	88 0f       	add	r24, r24
- b20:	99 1f       	adc	r25, r25
- b22:	80 50       	subi	r24, 0x00	; 0
- b24:	9f 4f       	sbci	r25, 0xFF	; 255
- b26:	fc 01       	movw	r30, r24
- b28:	80 81       	ld	r24, Z
- b2a:	91 81       	ldd	r25, Z+1	; 0x01
- b2c:	a2 81       	ldd	r26, Z+2	; 0x02
- b2e:	b3 81       	ldd	r27, Z+3	; 0x03
- b30:	bc 01       	movw	r22, r24
- b32:	cd 01       	movw	r24, r26
- b34:	0e 94 fa 00 	call	0x1f4	; 0x1f4 <dynamixel_init>
-
-		dynamixel_writeword(2, AX_GOAL_SPEED_L, 150);
- b38:	46 e9       	ldi	r20, 0x96	; 150
- b3a:	50 e0       	ldi	r21, 0x00	; 0
- b3c:	60 e2       	ldi	r22, 0x20	; 32
- b3e:	82 e0       	ldi	r24, 0x02	; 2
- b40:	0e 94 a4 04 	call	0x948	; 0x948 <dynamixel_writeword>
-		dynamixel_writeword(2, AX_GOAL_POSITION_L, 400);
- b44:	40 e9       	ldi	r20, 0x90	; 144
- b46:	51 e0       	ldi	r21, 0x01	; 1
- b48:	6e e1       	ldi	r22, 0x1E	; 30
- b4a:	82 e0       	ldi	r24, 0x02	; 2
- b4c:	0e 94 a4 04 	call	0x948	; 0x948 <dynamixel_writeword>
- b50:	80 e0       	ldi	r24, 0x00	; 0
- b52:	90 e0       	ldi	r25, 0x00	; 0
- b54:	aa e7       	ldi	r26, 0x7A	; 122
- b56:	b4 e4       	ldi	r27, 0x44	; 68
- b58:	8b 83       	std	Y+3, r24	; 0x03
- b5a:	9c 83       	std	Y+4, r25	; 0x04
- b5c:	ad 83       	std	Y+5, r26	; 0x05
- b5e:	be 83       	std	Y+6, r27	; 0x06
-
-	__builtin_avr_delay_cycles(__ticks_dc);
-
-#else
-	uint16_t __ticks;
-	__tmp = ((F_CPU) / 4e3) * __ms;
- b60:	2d ec       	ldi	r18, 0xCD	; 205
- b62:	3c ec       	ldi	r19, 0xCC	; 204
- b64:	4c e2       	ldi	r20, 0x2C	; 44
- b66:	55 e4       	ldi	r21, 0x45	; 69
- b68:	6b 81       	ldd	r22, Y+3	; 0x03
- b6a:	7c 81       	ldd	r23, Y+4	; 0x04
- b6c:	8d 81       	ldd	r24, Y+5	; 0x05
- b6e:	9e 81       	ldd	r25, Y+6	; 0x06
- b70:	0e 94 4f 07 	call	0xe9e	; 0xe9e <__mulsf3>
- b74:	dc 01       	movw	r26, r24
- b76:	cb 01       	movw	r24, r22
- b78:	8f 83       	std	Y+7, r24	; 0x07
- b7a:	98 87       	std	Y+8, r25	; 0x08
- b7c:	a9 87       	std	Y+9, r26	; 0x09
- b7e:	ba 87       	std	Y+10, r27	; 0x0a
-	if (__tmp < 1.0)
- b80:	20 e0       	ldi	r18, 0x00	; 0
- b82:	30 e0       	ldi	r19, 0x00	; 0
- b84:	40 e8       	ldi	r20, 0x80	; 128
- b86:	5f e3       	ldi	r21, 0x3F	; 63
- b88:	6f 81       	ldd	r22, Y+7	; 0x07
- b8a:	78 85       	ldd	r23, Y+8	; 0x08
- b8c:	89 85       	ldd	r24, Y+9	; 0x09
- b8e:	9a 85       	ldd	r25, Y+10	; 0x0a
- b90:	0e 94 2f 06 	call	0xc5e	; 0xc5e <__cmpsf2>
- b94:	88 23       	and	r24, r24
- b96:	2c f4       	brge	.+10     	; 0xba2 <main+0xa6>
-		__ticks = 1;
- b98:	81 e0       	ldi	r24, 0x01	; 1
- b9a:	90 e0       	ldi	r25, 0x00	; 0
- b9c:	9c 87       	std	Y+12, r25	; 0x0c
- b9e:	8b 87       	std	Y+11, r24	; 0x0b
- ba0:	3f c0       	rjmp	.+126    	; 0xc20 <main+0x124>
-	else if (__tmp > 65535)
- ba2:	20 e0       	ldi	r18, 0x00	; 0
- ba4:	3f ef       	ldi	r19, 0xFF	; 255
- ba6:	4f e7       	ldi	r20, 0x7F	; 127
- ba8:	57 e4       	ldi	r21, 0x47	; 71
- baa:	6f 81       	ldd	r22, Y+7	; 0x07
- bac:	78 85       	ldd	r23, Y+8	; 0x08
- bae:	89 85       	ldd	r24, Y+9	; 0x09
- bb0:	9a 85       	ldd	r25, Y+10	; 0x0a
- bb2:	0e 94 4a 07 	call	0xe94	; 0xe94 <__gesf2>
- bb6:	18 16       	cp	r1, r24
- bb8:	4c f5       	brge	.+82     	; 0xc0c <main+0x110>
-	{
-		//	__ticks = requested delay in 1/10 ms
-		__ticks = (uint16_t) (__ms * 10.0);
- bba:	20 e0       	ldi	r18, 0x00	; 0
- bbc:	30 e0       	ldi	r19, 0x00	; 0
- bbe:	40 e2       	ldi	r20, 0x20	; 32
- bc0:	51 e4       	ldi	r21, 0x41	; 65
- bc2:	6b 81       	ldd	r22, Y+3	; 0x03
- bc4:	7c 81       	ldd	r23, Y+4	; 0x04
- bc6:	8d 81       	ldd	r24, Y+5	; 0x05
- bc8:	9e 81       	ldd	r25, Y+6	; 0x06
- bca:	0e 94 4f 07 	call	0xe9e	; 0xe9e <__mulsf3>
- bce:	dc 01       	movw	r26, r24
- bd0:	cb 01       	movw	r24, r22
- bd2:	bc 01       	movw	r22, r24
- bd4:	cd 01       	movw	r24, r26
- bd6:	0e 94 a6 06 	call	0xd4c	; 0xd4c <__fixunssfsi>
- bda:	dc 01       	movw	r26, r24
- bdc:	cb 01       	movw	r24, r22
- bde:	9c 87       	std	Y+12, r25	; 0x0c
- be0:	8b 87       	std	Y+11, r24	; 0x0b
- be2:	0f c0       	rjmp	.+30     	; 0xc02 <main+0x106>
- be4:	84 e1       	ldi	r24, 0x14	; 20
- be6:	91 e0       	ldi	r25, 0x01	; 1
- be8:	9e 87       	std	Y+14, r25	; 0x0e
- bea:	8d 87       	std	Y+13, r24	; 0x0d
-    milliseconds can be achieved.
- */
-void
-_delay_loop_2(uint16_t __count)
-{
-	__asm__ volatile (
- bec:	8d 85       	ldd	r24, Y+13	; 0x0d
- bee:	9e 85       	ldd	r25, Y+14	; 0x0e
- bf0:	01 97       	sbiw	r24, 0x01	; 1
- bf2:	f1 f7       	brne	.-4      	; 0xbf0 <main+0xf4>
- bf4:	9e 87       	std	Y+14, r25	; 0x0e
- bf6:	8d 87       	std	Y+13, r24	; 0x0d
-		while(__ticks)
-		{
-			// wait 1/10 ms
-			_delay_loop_2(((F_CPU) / 4e3) / 10);
-			__ticks --;
- bf8:	8b 85       	ldd	r24, Y+11	; 0x0b
- bfa:	9c 85       	ldd	r25, Y+12	; 0x0c
- bfc:	01 97       	sbiw	r24, 0x01	; 1
- bfe:	9c 87       	std	Y+12, r25	; 0x0c
- c00:	8b 87       	std	Y+11, r24	; 0x0b
-		__ticks = 1;
-	else if (__tmp > 65535)
-	{
-		//	__ticks = requested delay in 1/10 ms
-		__ticks = (uint16_t) (__ms * 10.0);
-		while(__ticks)
- c02:	8b 85       	ldd	r24, Y+11	; 0x0b
- c04:	9c 85       	ldd	r25, Y+12	; 0x0c
- c06:	89 2b       	or	r24, r25
- c08:	69 f7       	brne	.-38     	; 0xbe4 <main+0xe8>
- c0a:	14 c0       	rjmp	.+40     	; 0xc34 <main+0x138>
-			__ticks --;
-		}
-		return;
-	}
-	else
-		__ticks = (uint16_t)__tmp;
- c0c:	6f 81       	ldd	r22, Y+7	; 0x07
- c0e:	78 85       	ldd	r23, Y+8	; 0x08
- c10:	89 85       	ldd	r24, Y+9	; 0x09
- c12:	9a 85       	ldd	r25, Y+10	; 0x0a
- c14:	0e 94 a6 06 	call	0xd4c	; 0xd4c <__fixunssfsi>
- c18:	dc 01       	movw	r26, r24
- c1a:	cb 01       	movw	r24, r22
- c1c:	9c 87       	std	Y+12, r25	; 0x0c
- c1e:	8b 87       	std	Y+11, r24	; 0x0b
- c20:	8b 85       	ldd	r24, Y+11	; 0x0b
- c22:	9c 85       	ldd	r25, Y+12	; 0x0c
- c24:	98 8b       	std	Y+16, r25	; 0x10
- c26:	8f 87       	std	Y+15, r24	; 0x0f
- c28:	8f 85       	ldd	r24, Y+15	; 0x0f
- c2a:	98 89       	ldd	r25, Y+16	; 0x10
- c2c:	01 97       	sbiw	r24, 0x01	; 1
- c2e:	f1 f7       	brne	.-4      	; 0xc2c <main+0x130>
- c30:	98 8b       	std	Y+16, r25	; 0x10
- c32:	8f 87       	std	Y+15, r24	; 0x0f
-		   19200,
-		   9600
-};
+00000b8c <main>:
+#include <avr/interrupt.h>
+#include <util/delay.h>
+#include "dynamixel.h"
+#include "ax.h"
 
 int main() {
-	for(int i=0; i<9; i++) {
- c34:	89 81       	ldd	r24, Y+1	; 0x01
- c36:	9a 81       	ldd	r25, Y+2	; 0x02
- c38:	01 96       	adiw	r24, 0x01	; 1
- c3a:	9a 83       	std	Y+2, r25	; 0x02
- c3c:	89 83       	std	Y+1, r24	; 0x01
- c3e:	89 81       	ldd	r24, Y+1	; 0x01
- c40:	9a 81       	ldd	r25, Y+2	; 0x02
- c42:	09 97       	sbiw	r24, 0x09	; 9
- c44:	0c f4       	brge	.+2      	; 0xc48 <main+0x14c>
- c46:	67 cf       	rjmp	.-306    	; 0xb16 <main+0x1a>
-		dynamixel_writeword(2, AX_GOAL_SPEED_L, 150);
-		dynamixel_writeword(2, AX_GOAL_POSITION_L, 400);
-		_delay_ms(1000);
-	}
+ b8c:	cf 93       	push	r28
+ b8e:	df 93       	push	r29
+ b90:	cd b7       	in	r28, 0x3d	; 61
+ b92:	de b7       	in	r29, 0x3e	; 62
+
 
 	return 0;
- c48:	80 e0       	ldi	r24, 0x00	; 0
- c4a:	90 e0       	ldi	r25, 0x00	; 0
+ b94:	80 e0       	ldi	r24, 0x00	; 0
+ b96:	90 e0       	ldi	r25, 0x00	; 0
 }
- c4c:	60 96       	adiw	r28, 0x10	; 16
- c4e:	0f b6       	in	r0, 0x3f	; 63
- c50:	f8 94       	cli
- c52:	de bf       	out	0x3e, r29	; 62
- c54:	0f be       	out	0x3f, r0	; 63
- c56:	cd bf       	out	0x3d, r28	; 61
- c58:	df 91       	pop	r29
- c5a:	cf 91       	pop	r28
+ b98:	df 91       	pop	r29
+ b9a:	cf 91       	pop	r28
+ b9c:	08 95       	ret
+
+00000b9e <__divmodsi4>:
+ b9e:	05 2e       	mov	r0, r21
+ ba0:	97 fb       	bst	r25, 7
+ ba2:	1e f4       	brtc	.+6      	; 0xbaa <__divmodsi4+0xc>
+ ba4:	00 94       	com	r0
+ ba6:	0e 94 e6 05 	call	0xbcc	; 0xbcc <__negsi2>
+ baa:	57 fd       	sbrc	r21, 7
+ bac:	07 d0       	rcall	.+14     	; 0xbbc <__divmodsi4_neg2>
+ bae:	0e 94 f9 05 	call	0xbf2	; 0xbf2 <__udivmodsi4>
+ bb2:	07 fc       	sbrc	r0, 7
+ bb4:	03 d0       	rcall	.+6      	; 0xbbc <__divmodsi4_neg2>
+ bb6:	4e f4       	brtc	.+18     	; 0xbca <__divmodsi4_exit>
+ bb8:	0c 94 e6 05 	jmp	0xbcc	; 0xbcc <__negsi2>
+
+00000bbc <__divmodsi4_neg2>:
+ bbc:	50 95       	com	r21
+ bbe:	40 95       	com	r20
+ bc0:	30 95       	com	r19
+ bc2:	21 95       	neg	r18
+ bc4:	3f 4f       	sbci	r19, 0xFF	; 255
+ bc6:	4f 4f       	sbci	r20, 0xFF	; 255
+ bc8:	5f 4f       	sbci	r21, 0xFF	; 255
+
+00000bca <__divmodsi4_exit>:
+ bca:	08 95       	ret
+
+00000bcc <__negsi2>:
+ bcc:	90 95       	com	r25
+ bce:	80 95       	com	r24
+ bd0:	70 95       	com	r23
+ bd2:	61 95       	neg	r22
+ bd4:	7f 4f       	sbci	r23, 0xFF	; 255
+ bd6:	8f 4f       	sbci	r24, 0xFF	; 255
+ bd8:	9f 4f       	sbci	r25, 0xFF	; 255
+ bda:	08 95       	ret
+
+00000bdc <__muluhisi3>:
+ bdc:	0e 94 1b 06 	call	0xc36	; 0xc36 <__umulhisi3>
+ be0:	a5 9f       	mul	r26, r21
+ be2:	90 0d       	add	r25, r0
+ be4:	b4 9f       	mul	r27, r20
+ be6:	90 0d       	add	r25, r0
+ be8:	a4 9f       	mul	r26, r20
+ bea:	80 0d       	add	r24, r0
+ bec:	91 1d       	adc	r25, r1
+ bee:	11 24       	eor	r1, r1
+ bf0:	08 95       	ret
+
+00000bf2 <__udivmodsi4>:
+ bf2:	a1 e2       	ldi	r26, 0x21	; 33
+ bf4:	1a 2e       	mov	r1, r26
+ bf6:	aa 1b       	sub	r26, r26
+ bf8:	bb 1b       	sub	r27, r27
+ bfa:	fd 01       	movw	r30, r26
+ bfc:	0d c0       	rjmp	.+26     	; 0xc18 <__udivmodsi4_ep>
+
+00000bfe <__udivmodsi4_loop>:
+ bfe:	aa 1f       	adc	r26, r26
+ c00:	bb 1f       	adc	r27, r27
+ c02:	ee 1f       	adc	r30, r30
+ c04:	ff 1f       	adc	r31, r31
+ c06:	a2 17       	cp	r26, r18
+ c08:	b3 07       	cpc	r27, r19
+ c0a:	e4 07       	cpc	r30, r20
+ c0c:	f5 07       	cpc	r31, r21
+ c0e:	20 f0       	brcs	.+8      	; 0xc18 <__udivmodsi4_ep>
+ c10:	a2 1b       	sub	r26, r18
+ c12:	b3 0b       	sbc	r27, r19
+ c14:	e4 0b       	sbc	r30, r20
+ c16:	f5 0b       	sbc	r31, r21
+
+00000c18 <__udivmodsi4_ep>:
+ c18:	66 1f       	adc	r22, r22
+ c1a:	77 1f       	adc	r23, r23
+ c1c:	88 1f       	adc	r24, r24
+ c1e:	99 1f       	adc	r25, r25
+ c20:	1a 94       	dec	r1
+ c22:	69 f7       	brne	.-38     	; 0xbfe <__udivmodsi4_loop>
+ c24:	60 95       	com	r22
+ c26:	70 95       	com	r23
+ c28:	80 95       	com	r24
+ c2a:	90 95       	com	r25
+ c2c:	9b 01       	movw	r18, r22
+ c2e:	ac 01       	movw	r20, r24
+ c30:	bd 01       	movw	r22, r26
+ c32:	cf 01       	movw	r24, r30
+ c34:	08 95       	ret
+
+00000c36 <__umulhisi3>:
+ c36:	a2 9f       	mul	r26, r18
+ c38:	b0 01       	movw	r22, r0
+ c3a:	b3 9f       	mul	r27, r19
+ c3c:	c0 01       	movw	r24, r0
+ c3e:	a3 9f       	mul	r26, r19
+ c40:	70 0d       	add	r23, r0
+ c42:	81 1d       	adc	r24, r1
+ c44:	11 24       	eor	r1, r1
+ c46:	91 1d       	adc	r25, r1
+ c48:	b2 9f       	mul	r27, r18
+ c4a:	70 0d       	add	r23, r0
+ c4c:	81 1d       	adc	r24, r1
+ c4e:	11 24       	eor	r1, r1
+ c50:	91 1d       	adc	r25, r1
+ c52:	08 95       	ret
+
+00000c54 <__cmpsf2>:
+ c54:	0e 94 d0 06 	call	0xda0	; 0xda0 <__fp_cmp>
+ c58:	08 f4       	brcc	.+2      	; 0xc5c <__cmpsf2+0x8>
+ c5a:	81 e0       	ldi	r24, 0x01	; 1
  c5c:	08 95       	ret
 
-00000c5e <__cmpsf2>:
- c5e:	0e 94 d5 06 	call	0xdaa	; 0xdaa <__fp_cmp>
- c62:	08 f4       	brcc	.+2      	; 0xc66 <__cmpsf2+0x8>
- c64:	81 e0       	ldi	r24, 0x01	; 1
- c66:	08 95       	ret
+00000c5e <__divsf3>:
+ c5e:	0e 94 43 06 	call	0xc86	; 0xc86 <__divsf3x>
+ c62:	0c 94 0b 07 	jmp	0xe16	; 0xe16 <__fp_round>
+ c66:	0e 94 04 07 	call	0xe08	; 0xe08 <__fp_pscB>
+ c6a:	58 f0       	brcs	.+22     	; 0xc82 <__divsf3+0x24>
+ c6c:	0e 94 fd 06 	call	0xdfa	; 0xdfa <__fp_pscA>
+ c70:	40 f0       	brcs	.+16     	; 0xc82 <__divsf3+0x24>
+ c72:	29 f4       	brne	.+10     	; 0xc7e <__divsf3+0x20>
+ c74:	5f 3f       	cpi	r21, 0xFF	; 255
+ c76:	29 f0       	breq	.+10     	; 0xc82 <__divsf3+0x24>
+ c78:	0c 94 f4 06 	jmp	0xde8	; 0xde8 <__fp_inf>
+ c7c:	51 11       	cpse	r21, r1
+ c7e:	0c 94 3f 07 	jmp	0xe7e	; 0xe7e <__fp_szero>
+ c82:	0c 94 fa 06 	jmp	0xdf4	; 0xdf4 <__fp_nan>
 
-00000c68 <__divsf3>:
- c68:	0e 94 48 06 	call	0xc90	; 0xc90 <__divsf3x>
- c6c:	0c 94 10 07 	jmp	0xe20	; 0xe20 <__fp_round>
- c70:	0e 94 09 07 	call	0xe12	; 0xe12 <__fp_pscB>
- c74:	58 f0       	brcs	.+22     	; 0xc8c <__divsf3+0x24>
- c76:	0e 94 02 07 	call	0xe04	; 0xe04 <__fp_pscA>
- c7a:	40 f0       	brcs	.+16     	; 0xc8c <__divsf3+0x24>
- c7c:	29 f4       	brne	.+10     	; 0xc88 <__divsf3+0x20>
- c7e:	5f 3f       	cpi	r21, 0xFF	; 255
- c80:	29 f0       	breq	.+10     	; 0xc8c <__divsf3+0x24>
- c82:	0c 94 f9 06 	jmp	0xdf2	; 0xdf2 <__fp_inf>
- c86:	51 11       	cpse	r21, r1
- c88:	0c 94 44 07 	jmp	0xe88	; 0xe88 <__fp_szero>
- c8c:	0c 94 ff 06 	jmp	0xdfe	; 0xdfe <__fp_nan>
+00000c86 <__divsf3x>:
+ c86:	0e 94 1c 07 	call	0xe38	; 0xe38 <__fp_split3>
+ c8a:	68 f3       	brcs	.-38     	; 0xc66 <__divsf3+0x8>
 
-00000c90 <__divsf3x>:
- c90:	0e 94 21 07 	call	0xe42	; 0xe42 <__fp_split3>
- c94:	68 f3       	brcs	.-38     	; 0xc70 <__divsf3+0x8>
+00000c8c <__divsf3_pse>:
+ c8c:	99 23       	and	r25, r25
+ c8e:	b1 f3       	breq	.-20     	; 0xc7c <__divsf3+0x1e>
+ c90:	55 23       	and	r21, r21
+ c92:	91 f3       	breq	.-28     	; 0xc78 <__divsf3+0x1a>
+ c94:	95 1b       	sub	r25, r21
+ c96:	55 0b       	sbc	r21, r21
+ c98:	bb 27       	eor	r27, r27
+ c9a:	aa 27       	eor	r26, r26
+ c9c:	62 17       	cp	r22, r18
+ c9e:	73 07       	cpc	r23, r19
+ ca0:	84 07       	cpc	r24, r20
+ ca2:	38 f0       	brcs	.+14     	; 0xcb2 <__divsf3_pse+0x26>
+ ca4:	9f 5f       	subi	r25, 0xFF	; 255
+ ca6:	5f 4f       	sbci	r21, 0xFF	; 255
+ ca8:	22 0f       	add	r18, r18
+ caa:	33 1f       	adc	r19, r19
+ cac:	44 1f       	adc	r20, r20
+ cae:	aa 1f       	adc	r26, r26
+ cb0:	a9 f3       	breq	.-22     	; 0xc9c <__divsf3_pse+0x10>
+ cb2:	35 d0       	rcall	.+106    	; 0xd1e <__divsf3_pse+0x92>
+ cb4:	0e 2e       	mov	r0, r30
+ cb6:	3a f0       	brmi	.+14     	; 0xcc6 <__divsf3_pse+0x3a>
+ cb8:	e0 e8       	ldi	r30, 0x80	; 128
+ cba:	32 d0       	rcall	.+100    	; 0xd20 <__divsf3_pse+0x94>
+ cbc:	91 50       	subi	r25, 0x01	; 1
+ cbe:	50 40       	sbci	r21, 0x00	; 0
+ cc0:	e6 95       	lsr	r30
+ cc2:	00 1c       	adc	r0, r0
+ cc4:	ca f7       	brpl	.-14     	; 0xcb8 <__divsf3_pse+0x2c>
+ cc6:	2b d0       	rcall	.+86     	; 0xd1e <__divsf3_pse+0x92>
+ cc8:	fe 2f       	mov	r31, r30
+ cca:	29 d0       	rcall	.+82     	; 0xd1e <__divsf3_pse+0x92>
+ ccc:	66 0f       	add	r22, r22
+ cce:	77 1f       	adc	r23, r23
+ cd0:	88 1f       	adc	r24, r24
+ cd2:	bb 1f       	adc	r27, r27
+ cd4:	26 17       	cp	r18, r22
+ cd6:	37 07       	cpc	r19, r23
+ cd8:	48 07       	cpc	r20, r24
+ cda:	ab 07       	cpc	r26, r27
+ cdc:	b0 e8       	ldi	r27, 0x80	; 128
+ cde:	09 f0       	breq	.+2      	; 0xce2 <__divsf3_pse+0x56>
+ ce0:	bb 0b       	sbc	r27, r27
+ ce2:	80 2d       	mov	r24, r0
+ ce4:	bf 01       	movw	r22, r30
+ ce6:	ff 27       	eor	r31, r31
+ ce8:	93 58       	subi	r25, 0x83	; 131
+ cea:	5f 4f       	sbci	r21, 0xFF	; 255
+ cec:	3a f0       	brmi	.+14     	; 0xcfc <__divsf3_pse+0x70>
+ cee:	9e 3f       	cpi	r25, 0xFE	; 254
+ cf0:	51 05       	cpc	r21, r1
+ cf2:	78 f0       	brcs	.+30     	; 0xd12 <__divsf3_pse+0x86>
+ cf4:	0c 94 f4 06 	jmp	0xde8	; 0xde8 <__fp_inf>
+ cf8:	0c 94 3f 07 	jmp	0xe7e	; 0xe7e <__fp_szero>
+ cfc:	5f 3f       	cpi	r21, 0xFF	; 255
+ cfe:	e4 f3       	brlt	.-8      	; 0xcf8 <__divsf3_pse+0x6c>
+ d00:	98 3e       	cpi	r25, 0xE8	; 232
+ d02:	d4 f3       	brlt	.-12     	; 0xcf8 <__divsf3_pse+0x6c>
+ d04:	86 95       	lsr	r24
+ d06:	77 95       	ror	r23
+ d08:	67 95       	ror	r22
+ d0a:	b7 95       	ror	r27
+ d0c:	f7 95       	ror	r31
+ d0e:	9f 5f       	subi	r25, 0xFF	; 255
+ d10:	c9 f7       	brne	.-14     	; 0xd04 <__divsf3_pse+0x78>
+ d12:	88 0f       	add	r24, r24
+ d14:	91 1d       	adc	r25, r1
+ d16:	96 95       	lsr	r25
+ d18:	87 95       	ror	r24
+ d1a:	97 f9       	bld	r25, 7
+ d1c:	08 95       	ret
+ d1e:	e1 e0       	ldi	r30, 0x01	; 1
+ d20:	66 0f       	add	r22, r22
+ d22:	77 1f       	adc	r23, r23
+ d24:	88 1f       	adc	r24, r24
+ d26:	bb 1f       	adc	r27, r27
+ d28:	62 17       	cp	r22, r18
+ d2a:	73 07       	cpc	r23, r19
+ d2c:	84 07       	cpc	r24, r20
+ d2e:	ba 07       	cpc	r27, r26
+ d30:	20 f0       	brcs	.+8      	; 0xd3a <__divsf3_pse+0xae>
+ d32:	62 1b       	sub	r22, r18
+ d34:	73 0b       	sbc	r23, r19
+ d36:	84 0b       	sbc	r24, r20
+ d38:	ba 0b       	sbc	r27, r26
+ d3a:	ee 1f       	adc	r30, r30
+ d3c:	88 f7       	brcc	.-30     	; 0xd20 <__divsf3_pse+0x94>
+ d3e:	e0 95       	com	r30
+ d40:	08 95       	ret
 
-00000c96 <__divsf3_pse>:
- c96:	99 23       	and	r25, r25
- c98:	b1 f3       	breq	.-20     	; 0xc86 <__divsf3+0x1e>
- c9a:	55 23       	and	r21, r21
- c9c:	91 f3       	breq	.-28     	; 0xc82 <__divsf3+0x1a>
- c9e:	95 1b       	sub	r25, r21
- ca0:	55 0b       	sbc	r21, r21
- ca2:	bb 27       	eor	r27, r27
- ca4:	aa 27       	eor	r26, r26
- ca6:	62 17       	cp	r22, r18
- ca8:	73 07       	cpc	r23, r19
- caa:	84 07       	cpc	r24, r20
- cac:	38 f0       	brcs	.+14     	; 0xcbc <__divsf3_pse+0x26>
- cae:	9f 5f       	subi	r25, 0xFF	; 255
- cb0:	5f 4f       	sbci	r21, 0xFF	; 255
- cb2:	22 0f       	add	r18, r18
- cb4:	33 1f       	adc	r19, r19
- cb6:	44 1f       	adc	r20, r20
- cb8:	aa 1f       	adc	r26, r26
- cba:	a9 f3       	breq	.-22     	; 0xca6 <__divsf3_pse+0x10>
- cbc:	35 d0       	rcall	.+106    	; 0xd28 <__divsf3_pse+0x92>
- cbe:	0e 2e       	mov	r0, r30
- cc0:	3a f0       	brmi	.+14     	; 0xcd0 <__divsf3_pse+0x3a>
- cc2:	e0 e8       	ldi	r30, 0x80	; 128
- cc4:	32 d0       	rcall	.+100    	; 0xd2a <__divsf3_pse+0x94>
- cc6:	91 50       	subi	r25, 0x01	; 1
- cc8:	50 40       	sbci	r21, 0x00	; 0
- cca:	e6 95       	lsr	r30
- ccc:	00 1c       	adc	r0, r0
- cce:	ca f7       	brpl	.-14     	; 0xcc2 <__divsf3_pse+0x2c>
- cd0:	2b d0       	rcall	.+86     	; 0xd28 <__divsf3_pse+0x92>
- cd2:	fe 2f       	mov	r31, r30
- cd4:	29 d0       	rcall	.+82     	; 0xd28 <__divsf3_pse+0x92>
- cd6:	66 0f       	add	r22, r22
- cd8:	77 1f       	adc	r23, r23
- cda:	88 1f       	adc	r24, r24
- cdc:	bb 1f       	adc	r27, r27
- cde:	26 17       	cp	r18, r22
- ce0:	37 07       	cpc	r19, r23
- ce2:	48 07       	cpc	r20, r24
- ce4:	ab 07       	cpc	r26, r27
- ce6:	b0 e8       	ldi	r27, 0x80	; 128
- ce8:	09 f0       	breq	.+2      	; 0xcec <__divsf3_pse+0x56>
- cea:	bb 0b       	sbc	r27, r27
- cec:	80 2d       	mov	r24, r0
- cee:	bf 01       	movw	r22, r30
- cf0:	ff 27       	eor	r31, r31
- cf2:	93 58       	subi	r25, 0x83	; 131
- cf4:	5f 4f       	sbci	r21, 0xFF	; 255
- cf6:	3a f0       	brmi	.+14     	; 0xd06 <__divsf3_pse+0x70>
- cf8:	9e 3f       	cpi	r25, 0xFE	; 254
- cfa:	51 05       	cpc	r21, r1
- cfc:	78 f0       	brcs	.+30     	; 0xd1c <__divsf3_pse+0x86>
- cfe:	0c 94 f9 06 	jmp	0xdf2	; 0xdf2 <__fp_inf>
- d02:	0c 94 44 07 	jmp	0xe88	; 0xe88 <__fp_szero>
- d06:	5f 3f       	cpi	r21, 0xFF	; 255
- d08:	e4 f3       	brlt	.-8      	; 0xd02 <__divsf3_pse+0x6c>
- d0a:	98 3e       	cpi	r25, 0xE8	; 232
- d0c:	d4 f3       	brlt	.-12     	; 0xd02 <__divsf3_pse+0x6c>
- d0e:	86 95       	lsr	r24
- d10:	77 95       	ror	r23
- d12:	67 95       	ror	r22
- d14:	b7 95       	ror	r27
- d16:	f7 95       	ror	r31
- d18:	9f 5f       	subi	r25, 0xFF	; 255
- d1a:	c9 f7       	brne	.-14     	; 0xd0e <__divsf3_pse+0x78>
- d1c:	88 0f       	add	r24, r24
- d1e:	91 1d       	adc	r25, r1
- d20:	96 95       	lsr	r25
- d22:	87 95       	ror	r24
- d24:	97 f9       	bld	r25, 7
- d26:	08 95       	ret
- d28:	e1 e0       	ldi	r30, 0x01	; 1
- d2a:	66 0f       	add	r22, r22
- d2c:	77 1f       	adc	r23, r23
- d2e:	88 1f       	adc	r24, r24
- d30:	bb 1f       	adc	r27, r27
- d32:	62 17       	cp	r22, r18
- d34:	73 07       	cpc	r23, r19
- d36:	84 07       	cpc	r24, r20
- d38:	ba 07       	cpc	r27, r26
- d3a:	20 f0       	brcs	.+8      	; 0xd44 <__divsf3_pse+0xae>
- d3c:	62 1b       	sub	r22, r18
- d3e:	73 0b       	sbc	r23, r19
- d40:	84 0b       	sbc	r24, r20
- d42:	ba 0b       	sbc	r27, r26
- d44:	ee 1f       	adc	r30, r30
- d46:	88 f7       	brcc	.-30     	; 0xd2a <__divsf3_pse+0x94>
- d48:	e0 95       	com	r30
- d4a:	08 95       	ret
+00000d42 <__fixunssfsi>:
+ d42:	0e 94 24 07 	call	0xe48	; 0xe48 <__fp_splitA>
+ d46:	88 f0       	brcs	.+34     	; 0xd6a <__fixunssfsi+0x28>
+ d48:	9f 57       	subi	r25, 0x7F	; 127
+ d4a:	98 f0       	brcs	.+38     	; 0xd72 <__fixunssfsi+0x30>
+ d4c:	b9 2f       	mov	r27, r25
+ d4e:	99 27       	eor	r25, r25
+ d50:	b7 51       	subi	r27, 0x17	; 23
+ d52:	b0 f0       	brcs	.+44     	; 0xd80 <__fixunssfsi+0x3e>
+ d54:	e1 f0       	breq	.+56     	; 0xd8e <__fixunssfsi+0x4c>
+ d56:	66 0f       	add	r22, r22
+ d58:	77 1f       	adc	r23, r23
+ d5a:	88 1f       	adc	r24, r24
+ d5c:	99 1f       	adc	r25, r25
+ d5e:	1a f0       	brmi	.+6      	; 0xd66 <__fixunssfsi+0x24>
+ d60:	ba 95       	dec	r27
+ d62:	c9 f7       	brne	.-14     	; 0xd56 <__fixunssfsi+0x14>
+ d64:	14 c0       	rjmp	.+40     	; 0xd8e <__fixunssfsi+0x4c>
+ d66:	b1 30       	cpi	r27, 0x01	; 1
+ d68:	91 f0       	breq	.+36     	; 0xd8e <__fixunssfsi+0x4c>
+ d6a:	0e 94 3e 07 	call	0xe7c	; 0xe7c <__fp_zero>
+ d6e:	b1 e0       	ldi	r27, 0x01	; 1
+ d70:	08 95       	ret
+ d72:	0c 94 3e 07 	jmp	0xe7c	; 0xe7c <__fp_zero>
+ d76:	67 2f       	mov	r22, r23
+ d78:	78 2f       	mov	r23, r24
+ d7a:	88 27       	eor	r24, r24
+ d7c:	b8 5f       	subi	r27, 0xF8	; 248
+ d7e:	39 f0       	breq	.+14     	; 0xd8e <__fixunssfsi+0x4c>
+ d80:	b9 3f       	cpi	r27, 0xF9	; 249
+ d82:	cc f3       	brlt	.-14     	; 0xd76 <__fixunssfsi+0x34>
+ d84:	86 95       	lsr	r24
+ d86:	77 95       	ror	r23
+ d88:	67 95       	ror	r22
+ d8a:	b3 95       	inc	r27
+ d8c:	d9 f7       	brne	.-10     	; 0xd84 <__fixunssfsi+0x42>
+ d8e:	3e f4       	brtc	.+14     	; 0xd9e <__fixunssfsi+0x5c>
+ d90:	90 95       	com	r25
+ d92:	80 95       	com	r24
+ d94:	70 95       	com	r23
+ d96:	61 95       	neg	r22
+ d98:	7f 4f       	sbci	r23, 0xFF	; 255
+ d9a:	8f 4f       	sbci	r24, 0xFF	; 255
+ d9c:	9f 4f       	sbci	r25, 0xFF	; 255
+ d9e:	08 95       	ret
 
-00000d4c <__fixunssfsi>:
- d4c:	0e 94 29 07 	call	0xe52	; 0xe52 <__fp_splitA>
- d50:	88 f0       	brcs	.+34     	; 0xd74 <__fixunssfsi+0x28>
- d52:	9f 57       	subi	r25, 0x7F	; 127
- d54:	98 f0       	brcs	.+38     	; 0xd7c <__fixunssfsi+0x30>
- d56:	b9 2f       	mov	r27, r25
- d58:	99 27       	eor	r25, r25
- d5a:	b7 51       	subi	r27, 0x17	; 23
- d5c:	b0 f0       	brcs	.+44     	; 0xd8a <__fixunssfsi+0x3e>
- d5e:	e1 f0       	breq	.+56     	; 0xd98 <__fixunssfsi+0x4c>
- d60:	66 0f       	add	r22, r22
- d62:	77 1f       	adc	r23, r23
- d64:	88 1f       	adc	r24, r24
- d66:	99 1f       	adc	r25, r25
- d68:	1a f0       	brmi	.+6      	; 0xd70 <__fixunssfsi+0x24>
- d6a:	ba 95       	dec	r27
- d6c:	c9 f7       	brne	.-14     	; 0xd60 <__fixunssfsi+0x14>
- d6e:	14 c0       	rjmp	.+40     	; 0xd98 <__fixunssfsi+0x4c>
- d70:	b1 30       	cpi	r27, 0x01	; 1
- d72:	91 f0       	breq	.+36     	; 0xd98 <__fixunssfsi+0x4c>
- d74:	0e 94 43 07 	call	0xe86	; 0xe86 <__fp_zero>
- d78:	b1 e0       	ldi	r27, 0x01	; 1
- d7a:	08 95       	ret
- d7c:	0c 94 43 07 	jmp	0xe86	; 0xe86 <__fp_zero>
- d80:	67 2f       	mov	r22, r23
- d82:	78 2f       	mov	r23, r24
- d84:	88 27       	eor	r24, r24
- d86:	b8 5f       	subi	r27, 0xF8	; 248
- d88:	39 f0       	breq	.+14     	; 0xd98 <__fixunssfsi+0x4c>
- d8a:	b9 3f       	cpi	r27, 0xF9	; 249
- d8c:	cc f3       	brlt	.-14     	; 0xd80 <__fixunssfsi+0x34>
- d8e:	86 95       	lsr	r24
- d90:	77 95       	ror	r23
- d92:	67 95       	ror	r22
- d94:	b3 95       	inc	r27
- d96:	d9 f7       	brne	.-10     	; 0xd8e <__fixunssfsi+0x42>
- d98:	3e f4       	brtc	.+14     	; 0xda8 <__fixunssfsi+0x5c>
- d9a:	90 95       	com	r25
- d9c:	80 95       	com	r24
- d9e:	70 95       	com	r23
- da0:	61 95       	neg	r22
- da2:	7f 4f       	sbci	r23, 0xFF	; 255
- da4:	8f 4f       	sbci	r24, 0xFF	; 255
- da6:	9f 4f       	sbci	r25, 0xFF	; 255
- da8:	08 95       	ret
+00000da0 <__fp_cmp>:
+ da0:	99 0f       	add	r25, r25
+ da2:	00 08       	sbc	r0, r0
+ da4:	55 0f       	add	r21, r21
+ da6:	aa 0b       	sbc	r26, r26
+ da8:	e0 e8       	ldi	r30, 0x80	; 128
+ daa:	fe ef       	ldi	r31, 0xFE	; 254
+ dac:	16 16       	cp	r1, r22
+ dae:	17 06       	cpc	r1, r23
+ db0:	e8 07       	cpc	r30, r24
+ db2:	f9 07       	cpc	r31, r25
+ db4:	c0 f0       	brcs	.+48     	; 0xde6 <__fp_cmp+0x46>
+ db6:	12 16       	cp	r1, r18
+ db8:	13 06       	cpc	r1, r19
+ dba:	e4 07       	cpc	r30, r20
+ dbc:	f5 07       	cpc	r31, r21
+ dbe:	98 f0       	brcs	.+38     	; 0xde6 <__fp_cmp+0x46>
+ dc0:	62 1b       	sub	r22, r18
+ dc2:	73 0b       	sbc	r23, r19
+ dc4:	84 0b       	sbc	r24, r20
+ dc6:	95 0b       	sbc	r25, r21
+ dc8:	39 f4       	brne	.+14     	; 0xdd8 <__fp_cmp+0x38>
+ dca:	0a 26       	eor	r0, r26
+ dcc:	61 f0       	breq	.+24     	; 0xde6 <__fp_cmp+0x46>
+ dce:	23 2b       	or	r18, r19
+ dd0:	24 2b       	or	r18, r20
+ dd2:	25 2b       	or	r18, r21
+ dd4:	21 f4       	brne	.+8      	; 0xdde <__fp_cmp+0x3e>
+ dd6:	08 95       	ret
+ dd8:	0a 26       	eor	r0, r26
+ dda:	09 f4       	brne	.+2      	; 0xdde <__fp_cmp+0x3e>
+ ddc:	a1 40       	sbci	r26, 0x01	; 1
+ dde:	a6 95       	lsr	r26
+ de0:	8f ef       	ldi	r24, 0xFF	; 255
+ de2:	81 1d       	adc	r24, r1
+ de4:	81 1d       	adc	r24, r1
+ de6:	08 95       	ret
 
-00000daa <__fp_cmp>:
- daa:	99 0f       	add	r25, r25
- dac:	00 08       	sbc	r0, r0
- dae:	55 0f       	add	r21, r21
- db0:	aa 0b       	sbc	r26, r26
- db2:	e0 e8       	ldi	r30, 0x80	; 128
- db4:	fe ef       	ldi	r31, 0xFE	; 254
- db6:	16 16       	cp	r1, r22
- db8:	17 06       	cpc	r1, r23
- dba:	e8 07       	cpc	r30, r24
- dbc:	f9 07       	cpc	r31, r25
- dbe:	c0 f0       	brcs	.+48     	; 0xdf0 <__fp_cmp+0x46>
- dc0:	12 16       	cp	r1, r18
- dc2:	13 06       	cpc	r1, r19
- dc4:	e4 07       	cpc	r30, r20
- dc6:	f5 07       	cpc	r31, r21
- dc8:	98 f0       	brcs	.+38     	; 0xdf0 <__fp_cmp+0x46>
- dca:	62 1b       	sub	r22, r18
- dcc:	73 0b       	sbc	r23, r19
- dce:	84 0b       	sbc	r24, r20
- dd0:	95 0b       	sbc	r25, r21
- dd2:	39 f4       	brne	.+14     	; 0xde2 <__fp_cmp+0x38>
- dd4:	0a 26       	eor	r0, r26
- dd6:	61 f0       	breq	.+24     	; 0xdf0 <__fp_cmp+0x46>
- dd8:	23 2b       	or	r18, r19
- dda:	24 2b       	or	r18, r20
- ddc:	25 2b       	or	r18, r21
- dde:	21 f4       	brne	.+8      	; 0xde8 <__fp_cmp+0x3e>
- de0:	08 95       	ret
- de2:	0a 26       	eor	r0, r26
- de4:	09 f4       	brne	.+2      	; 0xde8 <__fp_cmp+0x3e>
- de6:	a1 40       	sbci	r26, 0x01	; 1
- de8:	a6 95       	lsr	r26
- dea:	8f ef       	ldi	r24, 0xFF	; 255
- dec:	81 1d       	adc	r24, r1
- dee:	81 1d       	adc	r24, r1
- df0:	08 95       	ret
+00000de8 <__fp_inf>:
+ de8:	97 f9       	bld	r25, 7
+ dea:	9f 67       	ori	r25, 0x7F	; 127
+ dec:	80 e8       	ldi	r24, 0x80	; 128
+ dee:	70 e0       	ldi	r23, 0x00	; 0
+ df0:	60 e0       	ldi	r22, 0x00	; 0
+ df2:	08 95       	ret
 
-00000df2 <__fp_inf>:
- df2:	97 f9       	bld	r25, 7
- df4:	9f 67       	ori	r25, 0x7F	; 127
- df6:	80 e8       	ldi	r24, 0x80	; 128
- df8:	70 e0       	ldi	r23, 0x00	; 0
- dfa:	60 e0       	ldi	r22, 0x00	; 0
- dfc:	08 95       	ret
+00000df4 <__fp_nan>:
+ df4:	9f ef       	ldi	r25, 0xFF	; 255
+ df6:	80 ec       	ldi	r24, 0xC0	; 192
+ df8:	08 95       	ret
 
-00000dfe <__fp_nan>:
- dfe:	9f ef       	ldi	r25, 0xFF	; 255
- e00:	80 ec       	ldi	r24, 0xC0	; 192
- e02:	08 95       	ret
+00000dfa <__fp_pscA>:
+ dfa:	00 24       	eor	r0, r0
+ dfc:	0a 94       	dec	r0
+ dfe:	16 16       	cp	r1, r22
+ e00:	17 06       	cpc	r1, r23
+ e02:	18 06       	cpc	r1, r24
+ e04:	09 06       	cpc	r0, r25
+ e06:	08 95       	ret
 
-00000e04 <__fp_pscA>:
- e04:	00 24       	eor	r0, r0
- e06:	0a 94       	dec	r0
- e08:	16 16       	cp	r1, r22
- e0a:	17 06       	cpc	r1, r23
- e0c:	18 06       	cpc	r1, r24
- e0e:	09 06       	cpc	r0, r25
- e10:	08 95       	ret
+00000e08 <__fp_pscB>:
+ e08:	00 24       	eor	r0, r0
+ e0a:	0a 94       	dec	r0
+ e0c:	12 16       	cp	r1, r18
+ e0e:	13 06       	cpc	r1, r19
+ e10:	14 06       	cpc	r1, r20
+ e12:	05 06       	cpc	r0, r21
+ e14:	08 95       	ret
 
-00000e12 <__fp_pscB>:
- e12:	00 24       	eor	r0, r0
- e14:	0a 94       	dec	r0
- e16:	12 16       	cp	r1, r18
- e18:	13 06       	cpc	r1, r19
- e1a:	14 06       	cpc	r1, r20
- e1c:	05 06       	cpc	r0, r21
- e1e:	08 95       	ret
+00000e16 <__fp_round>:
+ e16:	09 2e       	mov	r0, r25
+ e18:	03 94       	inc	r0
+ e1a:	00 0c       	add	r0, r0
+ e1c:	11 f4       	brne	.+4      	; 0xe22 <__fp_round+0xc>
+ e1e:	88 23       	and	r24, r24
+ e20:	52 f0       	brmi	.+20     	; 0xe36 <__fp_round+0x20>
+ e22:	bb 0f       	add	r27, r27
+ e24:	40 f4       	brcc	.+16     	; 0xe36 <__fp_round+0x20>
+ e26:	bf 2b       	or	r27, r31
+ e28:	11 f4       	brne	.+4      	; 0xe2e <__fp_round+0x18>
+ e2a:	60 ff       	sbrs	r22, 0
+ e2c:	04 c0       	rjmp	.+8      	; 0xe36 <__fp_round+0x20>
+ e2e:	6f 5f       	subi	r22, 0xFF	; 255
+ e30:	7f 4f       	sbci	r23, 0xFF	; 255
+ e32:	8f 4f       	sbci	r24, 0xFF	; 255
+ e34:	9f 4f       	sbci	r25, 0xFF	; 255
+ e36:	08 95       	ret
 
-00000e20 <__fp_round>:
- e20:	09 2e       	mov	r0, r25
- e22:	03 94       	inc	r0
- e24:	00 0c       	add	r0, r0
- e26:	11 f4       	brne	.+4      	; 0xe2c <__fp_round+0xc>
- e28:	88 23       	and	r24, r24
- e2a:	52 f0       	brmi	.+20     	; 0xe40 <__fp_round+0x20>
- e2c:	bb 0f       	add	r27, r27
- e2e:	40 f4       	brcc	.+16     	; 0xe40 <__fp_round+0x20>
- e30:	bf 2b       	or	r27, r31
- e32:	11 f4       	brne	.+4      	; 0xe38 <__fp_round+0x18>
- e34:	60 ff       	sbrs	r22, 0
- e36:	04 c0       	rjmp	.+8      	; 0xe40 <__fp_round+0x20>
- e38:	6f 5f       	subi	r22, 0xFF	; 255
- e3a:	7f 4f       	sbci	r23, 0xFF	; 255
- e3c:	8f 4f       	sbci	r24, 0xFF	; 255
- e3e:	9f 4f       	sbci	r25, 0xFF	; 255
- e40:	08 95       	ret
+00000e38 <__fp_split3>:
+ e38:	57 fd       	sbrc	r21, 7
+ e3a:	90 58       	subi	r25, 0x80	; 128
+ e3c:	44 0f       	add	r20, r20
+ e3e:	55 1f       	adc	r21, r21
+ e40:	59 f0       	breq	.+22     	; 0xe58 <__fp_splitA+0x10>
+ e42:	5f 3f       	cpi	r21, 0xFF	; 255
+ e44:	71 f0       	breq	.+28     	; 0xe62 <__fp_splitA+0x1a>
+ e46:	47 95       	ror	r20
 
-00000e42 <__fp_split3>:
- e42:	57 fd       	sbrc	r21, 7
- e44:	90 58       	subi	r25, 0x80	; 128
- e46:	44 0f       	add	r20, r20
- e48:	55 1f       	adc	r21, r21
- e4a:	59 f0       	breq	.+22     	; 0xe62 <__fp_splitA+0x10>
- e4c:	5f 3f       	cpi	r21, 0xFF	; 255
- e4e:	71 f0       	breq	.+28     	; 0xe6c <__fp_splitA+0x1a>
- e50:	47 95       	ror	r20
+00000e48 <__fp_splitA>:
+ e48:	88 0f       	add	r24, r24
+ e4a:	97 fb       	bst	r25, 7
+ e4c:	99 1f       	adc	r25, r25
+ e4e:	61 f0       	breq	.+24     	; 0xe68 <__fp_splitA+0x20>
+ e50:	9f 3f       	cpi	r25, 0xFF	; 255
+ e52:	79 f0       	breq	.+30     	; 0xe72 <__fp_splitA+0x2a>
+ e54:	87 95       	ror	r24
+ e56:	08 95       	ret
+ e58:	12 16       	cp	r1, r18
+ e5a:	13 06       	cpc	r1, r19
+ e5c:	14 06       	cpc	r1, r20
+ e5e:	55 1f       	adc	r21, r21
+ e60:	f2 cf       	rjmp	.-28     	; 0xe46 <__fp_split3+0xe>
+ e62:	46 95       	lsr	r20
+ e64:	f1 df       	rcall	.-30     	; 0xe48 <__fp_splitA>
+ e66:	08 c0       	rjmp	.+16     	; 0xe78 <__fp_splitA+0x30>
+ e68:	16 16       	cp	r1, r22
+ e6a:	17 06       	cpc	r1, r23
+ e6c:	18 06       	cpc	r1, r24
+ e6e:	99 1f       	adc	r25, r25
+ e70:	f1 cf       	rjmp	.-30     	; 0xe54 <__fp_splitA+0xc>
+ e72:	86 95       	lsr	r24
+ e74:	71 05       	cpc	r23, r1
+ e76:	61 05       	cpc	r22, r1
+ e78:	08 94       	sec
+ e7a:	08 95       	ret
 
-00000e52 <__fp_splitA>:
- e52:	88 0f       	add	r24, r24
- e54:	97 fb       	bst	r25, 7
- e56:	99 1f       	adc	r25, r25
- e58:	61 f0       	breq	.+24     	; 0xe72 <__fp_splitA+0x20>
- e5a:	9f 3f       	cpi	r25, 0xFF	; 255
- e5c:	79 f0       	breq	.+30     	; 0xe7c <__fp_splitA+0x2a>
- e5e:	87 95       	ror	r24
- e60:	08 95       	ret
- e62:	12 16       	cp	r1, r18
- e64:	13 06       	cpc	r1, r19
- e66:	14 06       	cpc	r1, r20
- e68:	55 1f       	adc	r21, r21
- e6a:	f2 cf       	rjmp	.-28     	; 0xe50 <__fp_split3+0xe>
- e6c:	46 95       	lsr	r20
- e6e:	f1 df       	rcall	.-30     	; 0xe52 <__fp_splitA>
- e70:	08 c0       	rjmp	.+16     	; 0xe82 <__fp_splitA+0x30>
- e72:	16 16       	cp	r1, r22
- e74:	17 06       	cpc	r1, r23
- e76:	18 06       	cpc	r1, r24
- e78:	99 1f       	adc	r25, r25
- e7a:	f1 cf       	rjmp	.-30     	; 0xe5e <__fp_splitA+0xc>
- e7c:	86 95       	lsr	r24
- e7e:	71 05       	cpc	r23, r1
- e80:	61 05       	cpc	r22, r1
- e82:	08 94       	sec
- e84:	08 95       	ret
+00000e7c <__fp_zero>:
+ e7c:	e8 94       	clt
 
-00000e86 <__fp_zero>:
- e86:	e8 94       	clt
+00000e7e <__fp_szero>:
+ e7e:	bb 27       	eor	r27, r27
+ e80:	66 27       	eor	r22, r22
+ e82:	77 27       	eor	r23, r23
+ e84:	cb 01       	movw	r24, r22
+ e86:	97 f9       	bld	r25, 7
+ e88:	08 95       	ret
 
-00000e88 <__fp_szero>:
- e88:	bb 27       	eor	r27, r27
- e8a:	66 27       	eor	r22, r22
- e8c:	77 27       	eor	r23, r23
- e8e:	cb 01       	movw	r24, r22
- e90:	97 f9       	bld	r25, 7
+00000e8a <__gesf2>:
+ e8a:	0e 94 d0 06 	call	0xda0	; 0xda0 <__fp_cmp>
+ e8e:	08 f4       	brcc	.+2      	; 0xe92 <__gesf2+0x8>
+ e90:	8f ef       	ldi	r24, 0xFF	; 255
  e92:	08 95       	ret
 
-00000e94 <__gesf2>:
- e94:	0e 94 d5 06 	call	0xdaa	; 0xdaa <__fp_cmp>
- e98:	08 f4       	brcc	.+2      	; 0xe9c <__gesf2+0x8>
- e9a:	8f ef       	ldi	r24, 0xFF	; 255
- e9c:	08 95       	ret
+00000e94 <__mulsf3>:
+ e94:	0e 94 5d 07 	call	0xeba	; 0xeba <__mulsf3x>
+ e98:	0c 94 0b 07 	jmp	0xe16	; 0xe16 <__fp_round>
+ e9c:	0e 94 fd 06 	call	0xdfa	; 0xdfa <__fp_pscA>
+ ea0:	38 f0       	brcs	.+14     	; 0xeb0 <__mulsf3+0x1c>
+ ea2:	0e 94 04 07 	call	0xe08	; 0xe08 <__fp_pscB>
+ ea6:	20 f0       	brcs	.+8      	; 0xeb0 <__mulsf3+0x1c>
+ ea8:	95 23       	and	r25, r21
+ eaa:	11 f0       	breq	.+4      	; 0xeb0 <__mulsf3+0x1c>
+ eac:	0c 94 f4 06 	jmp	0xde8	; 0xde8 <__fp_inf>
+ eb0:	0c 94 fa 06 	jmp	0xdf4	; 0xdf4 <__fp_nan>
+ eb4:	11 24       	eor	r1, r1
+ eb6:	0c 94 3f 07 	jmp	0xe7e	; 0xe7e <__fp_szero>
 
-00000e9e <__mulsf3>:
- e9e:	0e 94 62 07 	call	0xec4	; 0xec4 <__mulsf3x>
- ea2:	0c 94 10 07 	jmp	0xe20	; 0xe20 <__fp_round>
- ea6:	0e 94 02 07 	call	0xe04	; 0xe04 <__fp_pscA>
- eaa:	38 f0       	brcs	.+14     	; 0xeba <__mulsf3+0x1c>
- eac:	0e 94 09 07 	call	0xe12	; 0xe12 <__fp_pscB>
- eb0:	20 f0       	brcs	.+8      	; 0xeba <__mulsf3+0x1c>
- eb2:	95 23       	and	r25, r21
- eb4:	11 f0       	breq	.+4      	; 0xeba <__mulsf3+0x1c>
- eb6:	0c 94 f9 06 	jmp	0xdf2	; 0xdf2 <__fp_inf>
- eba:	0c 94 ff 06 	jmp	0xdfe	; 0xdfe <__fp_nan>
- ebe:	11 24       	eor	r1, r1
- ec0:	0c 94 44 07 	jmp	0xe88	; 0xe88 <__fp_szero>
+00000eba <__mulsf3x>:
+ eba:	0e 94 1c 07 	call	0xe38	; 0xe38 <__fp_split3>
+ ebe:	70 f3       	brcs	.-36     	; 0xe9c <__mulsf3+0x8>
 
-00000ec4 <__mulsf3x>:
- ec4:	0e 94 21 07 	call	0xe42	; 0xe42 <__fp_split3>
- ec8:	70 f3       	brcs	.-36     	; 0xea6 <__mulsf3+0x8>
-
-00000eca <__mulsf3_pse>:
- eca:	95 9f       	mul	r25, r21
- ecc:	c1 f3       	breq	.-16     	; 0xebe <__mulsf3+0x20>
- ece:	95 0f       	add	r25, r21
- ed0:	50 e0       	ldi	r21, 0x00	; 0
- ed2:	55 1f       	adc	r21, r21
- ed4:	62 9f       	mul	r22, r18
- ed6:	f0 01       	movw	r30, r0
- ed8:	72 9f       	mul	r23, r18
- eda:	bb 27       	eor	r27, r27
- edc:	f0 0d       	add	r31, r0
- ede:	b1 1d       	adc	r27, r1
- ee0:	63 9f       	mul	r22, r19
- ee2:	aa 27       	eor	r26, r26
- ee4:	f0 0d       	add	r31, r0
- ee6:	b1 1d       	adc	r27, r1
- ee8:	aa 1f       	adc	r26, r26
- eea:	64 9f       	mul	r22, r20
- eec:	66 27       	eor	r22, r22
+00000ec0 <__mulsf3_pse>:
+ ec0:	95 9f       	mul	r25, r21
+ ec2:	c1 f3       	breq	.-16     	; 0xeb4 <__mulsf3+0x20>
+ ec4:	95 0f       	add	r25, r21
+ ec6:	50 e0       	ldi	r21, 0x00	; 0
+ ec8:	55 1f       	adc	r21, r21
+ eca:	62 9f       	mul	r22, r18
+ ecc:	f0 01       	movw	r30, r0
+ ece:	72 9f       	mul	r23, r18
+ ed0:	bb 27       	eor	r27, r27
+ ed2:	f0 0d       	add	r31, r0
+ ed4:	b1 1d       	adc	r27, r1
+ ed6:	63 9f       	mul	r22, r19
+ ed8:	aa 27       	eor	r26, r26
+ eda:	f0 0d       	add	r31, r0
+ edc:	b1 1d       	adc	r27, r1
+ ede:	aa 1f       	adc	r26, r26
+ ee0:	64 9f       	mul	r22, r20
+ ee2:	66 27       	eor	r22, r22
+ ee4:	b0 0d       	add	r27, r0
+ ee6:	a1 1d       	adc	r26, r1
+ ee8:	66 1f       	adc	r22, r22
+ eea:	82 9f       	mul	r24, r18
+ eec:	22 27       	eor	r18, r18
  eee:	b0 0d       	add	r27, r0
  ef0:	a1 1d       	adc	r26, r1
- ef2:	66 1f       	adc	r22, r22
- ef4:	82 9f       	mul	r24, r18
- ef6:	22 27       	eor	r18, r18
- ef8:	b0 0d       	add	r27, r0
- efa:	a1 1d       	adc	r26, r1
- efc:	62 1f       	adc	r22, r18
- efe:	73 9f       	mul	r23, r19
- f00:	b0 0d       	add	r27, r0
- f02:	a1 1d       	adc	r26, r1
- f04:	62 1f       	adc	r22, r18
- f06:	83 9f       	mul	r24, r19
+ ef2:	62 1f       	adc	r22, r18
+ ef4:	73 9f       	mul	r23, r19
+ ef6:	b0 0d       	add	r27, r0
+ ef8:	a1 1d       	adc	r26, r1
+ efa:	62 1f       	adc	r22, r18
+ efc:	83 9f       	mul	r24, r19
+ efe:	a0 0d       	add	r26, r0
+ f00:	61 1d       	adc	r22, r1
+ f02:	22 1f       	adc	r18, r18
+ f04:	74 9f       	mul	r23, r20
+ f06:	33 27       	eor	r19, r19
  f08:	a0 0d       	add	r26, r0
  f0a:	61 1d       	adc	r22, r1
- f0c:	22 1f       	adc	r18, r18
- f0e:	74 9f       	mul	r23, r20
- f10:	33 27       	eor	r19, r19
- f12:	a0 0d       	add	r26, r0
- f14:	61 1d       	adc	r22, r1
- f16:	23 1f       	adc	r18, r19
- f18:	84 9f       	mul	r24, r20
- f1a:	60 0d       	add	r22, r0
- f1c:	21 1d       	adc	r18, r1
- f1e:	82 2f       	mov	r24, r18
- f20:	76 2f       	mov	r23, r22
- f22:	6a 2f       	mov	r22, r26
- f24:	11 24       	eor	r1, r1
- f26:	9f 57       	subi	r25, 0x7F	; 127
- f28:	50 40       	sbci	r21, 0x00	; 0
- f2a:	9a f0       	brmi	.+38     	; 0xf52 <__mulsf3_pse+0x88>
- f2c:	f1 f0       	breq	.+60     	; 0xf6a <__mulsf3_pse+0xa0>
- f2e:	88 23       	and	r24, r24
- f30:	4a f0       	brmi	.+18     	; 0xf44 <__mulsf3_pse+0x7a>
- f32:	ee 0f       	add	r30, r30
- f34:	ff 1f       	adc	r31, r31
- f36:	bb 1f       	adc	r27, r27
- f38:	66 1f       	adc	r22, r22
- f3a:	77 1f       	adc	r23, r23
- f3c:	88 1f       	adc	r24, r24
- f3e:	91 50       	subi	r25, 0x01	; 1
- f40:	50 40       	sbci	r21, 0x00	; 0
- f42:	a9 f7       	brne	.-22     	; 0xf2e <__mulsf3_pse+0x64>
- f44:	9e 3f       	cpi	r25, 0xFE	; 254
- f46:	51 05       	cpc	r21, r1
- f48:	80 f0       	brcs	.+32     	; 0xf6a <__mulsf3_pse+0xa0>
- f4a:	0c 94 f9 06 	jmp	0xdf2	; 0xdf2 <__fp_inf>
- f4e:	0c 94 44 07 	jmp	0xe88	; 0xe88 <__fp_szero>
- f52:	5f 3f       	cpi	r21, 0xFF	; 255
- f54:	e4 f3       	brlt	.-8      	; 0xf4e <__mulsf3_pse+0x84>
- f56:	98 3e       	cpi	r25, 0xE8	; 232
- f58:	d4 f3       	brlt	.-12     	; 0xf4e <__mulsf3_pse+0x84>
- f5a:	86 95       	lsr	r24
- f5c:	77 95       	ror	r23
- f5e:	67 95       	ror	r22
- f60:	b7 95       	ror	r27
- f62:	f7 95       	ror	r31
- f64:	e7 95       	ror	r30
- f66:	9f 5f       	subi	r25, 0xFF	; 255
- f68:	c1 f7       	brne	.-16     	; 0xf5a <__mulsf3_pse+0x90>
- f6a:	fe 2b       	or	r31, r30
- f6c:	88 0f       	add	r24, r24
- f6e:	91 1d       	adc	r25, r1
- f70:	96 95       	lsr	r25
- f72:	87 95       	ror	r24
- f74:	97 f9       	bld	r25, 7
- f76:	08 95       	ret
+ f0c:	23 1f       	adc	r18, r19
+ f0e:	84 9f       	mul	r24, r20
+ f10:	60 0d       	add	r22, r0
+ f12:	21 1d       	adc	r18, r1
+ f14:	82 2f       	mov	r24, r18
+ f16:	76 2f       	mov	r23, r22
+ f18:	6a 2f       	mov	r22, r26
+ f1a:	11 24       	eor	r1, r1
+ f1c:	9f 57       	subi	r25, 0x7F	; 127
+ f1e:	50 40       	sbci	r21, 0x00	; 0
+ f20:	9a f0       	brmi	.+38     	; 0xf48 <__mulsf3_pse+0x88>
+ f22:	f1 f0       	breq	.+60     	; 0xf60 <__mulsf3_pse+0xa0>
+ f24:	88 23       	and	r24, r24
+ f26:	4a f0       	brmi	.+18     	; 0xf3a <__mulsf3_pse+0x7a>
+ f28:	ee 0f       	add	r30, r30
+ f2a:	ff 1f       	adc	r31, r31
+ f2c:	bb 1f       	adc	r27, r27
+ f2e:	66 1f       	adc	r22, r22
+ f30:	77 1f       	adc	r23, r23
+ f32:	88 1f       	adc	r24, r24
+ f34:	91 50       	subi	r25, 0x01	; 1
+ f36:	50 40       	sbci	r21, 0x00	; 0
+ f38:	a9 f7       	brne	.-22     	; 0xf24 <__mulsf3_pse+0x64>
+ f3a:	9e 3f       	cpi	r25, 0xFE	; 254
+ f3c:	51 05       	cpc	r21, r1
+ f3e:	80 f0       	brcs	.+32     	; 0xf60 <__mulsf3_pse+0xa0>
+ f40:	0c 94 f4 06 	jmp	0xde8	; 0xde8 <__fp_inf>
+ f44:	0c 94 3f 07 	jmp	0xe7e	; 0xe7e <__fp_szero>
+ f48:	5f 3f       	cpi	r21, 0xFF	; 255
+ f4a:	e4 f3       	brlt	.-8      	; 0xf44 <__mulsf3_pse+0x84>
+ f4c:	98 3e       	cpi	r25, 0xE8	; 232
+ f4e:	d4 f3       	brlt	.-12     	; 0xf44 <__mulsf3_pse+0x84>
+ f50:	86 95       	lsr	r24
+ f52:	77 95       	ror	r23
+ f54:	67 95       	ror	r22
+ f56:	b7 95       	ror	r27
+ f58:	f7 95       	ror	r31
+ f5a:	e7 95       	ror	r30
+ f5c:	9f 5f       	subi	r25, 0xFF	; 255
+ f5e:	c1 f7       	brne	.-16     	; 0xf50 <__mulsf3_pse+0x90>
+ f60:	fe 2b       	or	r31, r30
+ f62:	88 0f       	add	r24, r24
+ f64:	91 1d       	adc	r25, r1
+ f66:	96 95       	lsr	r25
+ f68:	87 95       	ror	r24
+ f6a:	97 f9       	bld	r25, 7
+ f6c:	08 95       	ret
 
-00000f78 <_exit>:
- f78:	f8 94       	cli
+00000f6e <_exit>:
+ f6e:	f8 94       	cli
 
-00000f7a <__stop_program>:
- f7a:	ff cf       	rjmp	.-2      	; 0xf7a <__stop_program>
+00000f70 <__stop_program>:
+ f70:	ff cf       	rjmp	.-2      	; 0xf70 <__stop_program>
