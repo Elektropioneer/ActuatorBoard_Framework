@@ -6,17 +6,20 @@
 C_SRCS += \
 ../ax.c \
 ../dynamixel.c \
-../main.c 
+../main.c \
+../usart.c 
 
 OBJS += \
 ./ax.o \
 ./dynamixel.o \
-./main.o 
+./main.o \
+./usart.o 
 
 C_DEPS += \
 ./ax.d \
 ./dynamixel.d \
-./main.d 
+./main.d \
+./usart.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

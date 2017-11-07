@@ -35,3 +35,19 @@ uint8_t ax_check_moving(uint8_t id) {
 	else
 		return 0;
 }
+
+uint8_t ax_check_temperature(uint8_t id) {
+	uint8_t temperature_status;
+	if(dynamixel_readbyte(id, AX_PRESENT_VOLTAGE, &temperature_status) == DYNAMIXEL_SUCCESS)
+		return temperature_status;
+	else
+		return 0;
+}
+
+uint8_t ax_check_voltage(uint8_t id) {
+	uint8_t voltage_status;
+	if(dynamixel_readbyte(id, AX_PRESENT_VOLTAGE, &voltage_status) == DYNAMIXEL_SUCCESS)
+		return voltage_status;
+	else
+		return 0;
+}

@@ -1,9 +1,3 @@
-/*
- * main.c
- *
- *  Created on: Oct 29, 2017
- *      Author: silardg
- */
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
